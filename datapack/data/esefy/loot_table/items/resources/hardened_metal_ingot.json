@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 1,
+          "functions": [
+            {
+              "function":"minecraft:set_components",
+              "components": {
+                "!minecraft:food": {},
+                "!minecraft:consumable": {},
+                "!minecraft:rarity": {},
+
+                "minecraft:item_name": "Hardened Metal Ingot",
+                "minecraft:item_model": "esefy:hardened_metal_ingot",
+                "minecraft:custom_data": "{Esefy:{id:\"hardened_metal_ingot\"}}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

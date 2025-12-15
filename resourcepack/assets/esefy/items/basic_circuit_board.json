@@ -1,0 +1,16 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "minecraft:item/activator_rail",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+give @s poisonous_potato[item_name=[{"text":"Splint","italic":false}],consumable={consume_seconds:1,animation:block,sound:"minecraft:entity.skeleton.step",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,amplifier:0}]}]},!food,item_model="minecraft:stick"] 8

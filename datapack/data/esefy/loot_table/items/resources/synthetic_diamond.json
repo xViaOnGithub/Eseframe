@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            {
+              "function":"minecraft:set_components",
+              "components": {
+                "!minecraft:rarity": {},
+
+                "minecraft:item_name": "Synthetic Diamond",
+                "minecraft:item_model": "esefy:synthetic_diamond",
+                "minecraft:custom_data": "{Esefy:{id:\"synthetic_diamond\"}}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

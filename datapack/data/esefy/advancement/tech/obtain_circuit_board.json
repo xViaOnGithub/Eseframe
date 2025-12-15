@@ -1,0 +1,54 @@
+{
+  "parent": "esefy:tech/root",
+  "criteria": {
+    "obtain_basic_circuit_board": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "Esefy": {
+                  "id": "basic_circuit_board"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "obtain_advanced_circuit_board": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "Esefy": {
+                  "id": "advanced_circuit_board"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": "Slay a metallic golem to obtain a circuit board",
+    "icon": {
+      "components": {
+        "minecraft:item_model": "esefy:basic_circuit_board"
+      },
+      "count": 1,
+      "id": "minecraft:poisonous_potato"
+    },
+    "title": "Acquire Software"
+  },
+  "requirements": [
+    [
+      "obtain_basic_circuit_board",
+      "obtain_advanced_circuit_board"
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Exclusively uses vanilla item textures for resource pack compatibility.",
+    "min_format": 69,
+    "max_format": 69
+  }
+}

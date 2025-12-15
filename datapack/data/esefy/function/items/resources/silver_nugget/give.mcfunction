@@ -1,0 +1,1 @@
+give @s minecraft:poisonous_potato[!minecraft:consumable,!minecraft:food,!minecraft:rarity,minecraft:item_name="Silver Nugget",minecraft:item_model="esefy:silver_nugget",minecraft:custom_data={Esefy:{id:"silver_nugget"}}]

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 1,
+          "functions": [
+            {
+              "function":"minecraft:set_components",
+              "components": {
+                "!minecraft:food": {},
+                "!minecraft:consumable": {},
+                "!minecraft:rarity": {},
+
+                "minecraft:item_name": "Neptunium",
+                "minecraft:item_model": "esefy:neptunium",
+                "minecraft:custom_data": "{Esefy:{id:\"neptunium\"}}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

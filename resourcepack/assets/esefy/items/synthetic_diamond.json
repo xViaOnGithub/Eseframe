@@ -1,0 +1,17 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "minecraft:item/diamond",
+        "tints": [
+          {
+            "type": "minecraft:constant",
+            "value": 11579568
+          }
+        ]
+      }
+    ]
+  }
+}

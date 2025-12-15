@@ -1,0 +1,1 @@
+give @s golden_axe[minecraft:item_name="Pure Golden Axe",minecraft:enchantable={value:100},minecraft:rarity=uncommon,minecraft:lore=[{text:"Enchantibility is 100 (wip item)",color:"white",italic:false}],max_damage=16]
