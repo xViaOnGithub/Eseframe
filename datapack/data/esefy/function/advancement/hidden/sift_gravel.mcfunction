@@ -1,1 +1,0 @@
-advancement revoke @s only esefy:internal/detection/sift_gravel

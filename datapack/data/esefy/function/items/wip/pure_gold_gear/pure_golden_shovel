@@ -1,1 +1,0 @@
-give @s golden_shovel[minecraft:item_name="Pure Golden Shovel",minecraft:enchantable={value:100},minecraft:rarity=uncommon,minecraft:lore=[{text:"Enchantibility is 100 (wip item)",color:"white",italic:false}],max_damage=16]

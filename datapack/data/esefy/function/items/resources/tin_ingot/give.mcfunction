@@ -1,1 +1,0 @@
-give @s minecraft:poisonous_potato[!minecraft:consumable,!minecraft:food,!minecraft:rarity,minecraft:item_name="Tin Ingot",minecraft:item_model="esefy:tin_ingot",minecraft:custom_data={Esefy:{id:"tin_ingot"}}]

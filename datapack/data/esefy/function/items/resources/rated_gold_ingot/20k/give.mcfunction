@@ -1,1 +1,0 @@
-give @s minecraft:gold_ingot[lore=[[{"text":"Purity: ★★★★☆","italic":false,"color":"gray"}]],custom_data={Esefy:{id:"rated_gold_ingot",gold_purity:8b}}]
