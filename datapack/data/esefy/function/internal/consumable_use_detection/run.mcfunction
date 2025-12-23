@@ -2,7 +2,7 @@
 # It is automatically ran as and at the player using the consumable item with the tag.
 # When this function is ran, it then runs function "esefy:consumable_use_detection/items/[Esefy.id from custom data component]/run"
 
-say a
+
 # Revoke the advancement so it can be detected again next tick.
 advancement revoke @s only esefy:internal/generic/detect_item_use
 
