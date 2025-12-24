@@ -1,2 +1,1 @@
-say hello esefy :) commit
-scoreboard objectives add esefy_internal_math dummy
+say hello esefy :)
