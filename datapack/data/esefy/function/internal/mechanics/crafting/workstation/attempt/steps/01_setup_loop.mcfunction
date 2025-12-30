@@ -1,2 +1,1 @@
-# some comments would be nice...
-$function esefy:util/loop/start {min:0,max:$(recipe_count_minus_one),data:"$(crafting_station)",reciever:"esefy:internal/mechanics/crafting/workstation/attempt/steps/02_loop_reciever"}
+$function esefy:util/loop/start {min:0,max:$(recipe_count_minus_one),data:"$(workstation)",reciever:"esefy:internal/mechanics/crafting/workstation/attempt/steps/02_loop_reciever"}

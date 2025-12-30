@@ -7,7 +7,7 @@
 #    AS: The (player) entity attempting to craft.
 #    AT: The block entity to check for recipe input.
 #      Run this function when the player "activates" a custom crafting station
-#      whose type is specified in $(crafting_station) to attempt crafting.
+#      whose type is specified in $(workstation) to attempt crafting.
 
 
 ## MACRO KEY            TYPE(S)         DESCRIPTION
@@ -25,7 +25,7 @@
 #  - esefy:tmp.recipe_performer
 
 ## STORAGE PATHS USED (PERSISTENT)
-#  - esefy:recipe.$(crafting_station)   (read-only)
+#  - esefy:recipe.$(workstation)   (read-only)
 
 ## TEMPORARY SCOREBOARD (CLEARED ON CLEANUP)
 #  - esefy.temporary.workstation_crafting
@@ -35,7 +35,7 @@
 
 
 ## Functions outside folder called: 1
-#  - esefy:path/to/function/function_name_here LOOP FUNCTION HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#  - esefy:util/loop/start
 
 ## Functions outside namespace called: 0
  
@@ -49,8 +49,8 @@ $execute unless data storage esefy:recipes $(workstation)[] run return fail
 # Create temporary scoreboard
 scoreboard objectives add esefy.temporary.workstation_crafting dummy
 
-# Create temporary storage & store crafting station key
-$data modify storage esefy:tmp recipe_performer.crafting_station set value "$(workstation)"
+# Create temporary storage & store crafting station
+$data modify storage esefy:tmp recipe_performer.workstation set value "$(workstation)"
 
 # Store the highest index recipe of this crafting station 
 $execute store result score #highest_recipe_index esefy.temporary.workstation_crafting if data storage esefy:recipes $(workstation)[]
