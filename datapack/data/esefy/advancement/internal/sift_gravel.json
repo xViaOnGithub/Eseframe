@@ -21,6 +21,7 @@
     ]
   ],
   "rewards": {
+    "function": "esefy:internal/advancement/on_grant/sift_gravel",
     "loot": [
       "esefy:gameplay/sift_gravel"
     ]
