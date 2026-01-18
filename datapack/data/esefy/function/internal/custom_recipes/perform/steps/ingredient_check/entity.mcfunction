@@ -1,0 +1,3 @@
+# Checks if the ingredient is in the given slot(s) of this entity
+# Sets storage esefy:tmp custom_recipe_attempt.single_recipe.success if the ingredient was found
+$execute store result storage esefy:tmp custom_recipe_attempt.single_recipe.success byte 1 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{slots:{"$(slot_type).$(slot_number)":{items:$(items),count:{min:$(min_count)},components:$(components),predicates:$(predicates)}}}}
