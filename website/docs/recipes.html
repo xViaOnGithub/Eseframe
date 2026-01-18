@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            /* Not used currently */
+            .nbt dd {
+                font-style: italic;
+                font-family: sans-serif;
+                color: darkslategray;
+                font-size: small;
+                float: right;
+            }
+            /* Not used currently */
+            .nbt dd::before {
+                content: "# ";
+            }
+
+            .nbt .data_type {
+                font-size: x-small;
+                color: gray;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/index.html">back to home (absolute link)</a>
+        <h1>Recipes</h1>
+        <p>TODO: intro</p>
+        <p>TODO: links to each section</p>
+
+        <h2>Overview</h2>
+        <p>TODO</p>
+
+        <h2>Format of NBT</h2>
+        <div>
+            <h3>storage esefy:recipes</h3>
+            <p>Next to each data is the <a href="https://minecraft.wiki/w/NBT_format#Data_types">data type</a></p>
+            <div class="nbt">
+                <ul>
+                    <li>
+                        loaded <span class="data_type">compound</span>
+                        <ul>
+                            <li>
+                                [recipe_group] <span class="data_type">compound</span>
+                                <ul>
+                                    <li>
+                                        recipes <span class="data_type">compound</span>
+                                        <ul>
+                                            <li>
+                                                [recipe_id] <span class="data_type">compound</span>
+                                                <ul>
+                                                    <li>
+                                                        ingredients
+                                                        <span class="data_type">list</span>
+                                                        <ol>
+                                                            <li>
+                                                                <span class="data_type">compound</span>
+                                                                <ul>
+                                                                    <li>
+                                                                        items
+                                                                        <span class="data_type">string or list</span>
+                                                                        <ol>
+                                                                            <li>
+                                                                                "[namespace:item_id]"
+                                                                                <span class="data_type">string</span>
+                                                                            </li>
+                                                                            <li>...</li>
+                                                                        </ol>
+                                                                    </li>
+                                                                    <li>
+                                                                        min_count
+                                                                        <span class="data_type"
+                                                                            >(optional) integer</span
+                                                                        >
+                                                                    </li>
+                                                                    <li>
+                                                                        slot
+                                                                        <span class="data_type"
+                                                                            >(optional) integer list</span
+                                                                        >
+                                                                    </li>
+                                                                    <li>
+                                                                        components
+                                                                        <span class="data_type"
+                                                                            >(optional) compound</span
+                                                                        >
+                                                                    </li>
+                                                                    <li>
+                                                                        predicates
+                                                                        <span class="data_type"
+                                                                            >(optional) compound</span
+                                                                        >
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>...</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        results <span class="data_type">compound</span>
+                                                        <ul>
+                                                            <li>
+                                                                loot
+                                                                <span class="data_type"
+                                                                    >(optional) string or compound</span
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                function
+                                                                <span class="data_type"
+                                                                    >(optional) string or compound</span
+                                                                >
+                                                                <ul>
+                                                                    <li>
+                                                                        path
+                                                                        <span class="data_type">string</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        data
+                                                                        <span class="data_type"
+                                                                            >(optional) compound</span
+                                                                        >
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                advancement
+                                                                <span class="data_type">(optional) string</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>...</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        recipe_ids <span class="data_type">list</span>
+                                        <ol>
+                                            <li>"[recipe_id]" <span class="data_type">string</span></li>
+                                            <li>...</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        disabled <span class="data_type">compound</span>
+                        <ol>
+                            <li>
+                                [recipe_group] <span class="data_type">list</span>
+                                <ul>
+                                    <li>"[recipe_id]" <span class="data_type">string</span></li>
+                                    <li>...</li>
+                                </ul>
+                            </li>
+                            <li>...</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>Notes to add as (TODO) descriptions once resolved:</p>
+        <ul>
+            <li>"min_count" defaults to 1 if not given</li>
+            <li>
+                each ingrediant's "min_count" requirements must be met within one slot. for example, if the count asks
+                for 3 of an item, there must be a single stack somewhere in the container/inventory that has 3 of that
+                item.
+            </li>
+            <li>
+                "items" can be a string of an item id (ex. minecraft:dirt), an item tag (ex. #minecraft:planks), or a
+                list of item ids and/or tags where atleast one has to be met
+            </li>
+            <li>
+                explain somewhere below the difference between "predicates" and "components" and suggest which one to
+                use (maybe in a section that goes through each part of the recipe in a table?)
+            </li>
+        </ul>
+    </body>
+</html>
