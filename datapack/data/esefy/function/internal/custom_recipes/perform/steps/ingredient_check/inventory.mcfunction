@@ -1,0 +1,3 @@
+# Checks if the ingredient is in the inventory of the player running this function
+# Sets storage esefy:tmp recipe_handler.single_recipe.success if the ingredient was found
+$execute store result storage esefy:tmp recipe_handler.single_recipe.success byte 1 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{slots:{"inventory.$(slot)":{items:$(items),count:{min:$(min_count)},components:$(components),predicates:$(predicates)}}}}
