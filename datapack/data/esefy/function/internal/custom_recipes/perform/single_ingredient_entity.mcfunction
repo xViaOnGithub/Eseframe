@@ -1,17 +1,16 @@
-# Run this AS the entity being checked.
+# Run this AS the entity being checked, WITH storage esefy:tmp custom_recipe_attempt.ingredient.
 
-# Macro aurgs:
-# recipe_group      string
-# recipe_id         string
-# ingredient_index  integer (starts at 0)
-# slot_type         string  (inventory, hotbar, container, etc.)
+# Macros:
+# group      string
+# id         string
+# index      integer (starts at 0)
+# slot_type  string  (inventory, hotbar, container, etc.)
 
-# storage used: esefy:tmp custom_recipe_attempt.ingredient (not deleted afterward)
+# storage used: esefy:tmp custom_recipe_attempt.ingredient.macro (deleted afterward)
 
 
-## USE THE MACRO BEFORE PUSH, THIS IS HARD-CODED RN
-# Import ingredient data from recipe
-$data modify storage esefy:tmp custom_recipe_attempt.ingredient.macro set from storage esefy:recipes loaded.$(recipe_group).recipes.$(recipe_id).ingredients[$(ingredient_index)]
+# Import ingredient data from recipe storage, using macro to determine a path
+$data modify storage esefy:tmp custom_recipe_attempt.ingredient.macro set from storage esefy:recipes loaded.$(group).recipes.$(id).ingredients[$(index)]
 
 # Set entity item slot type from macro
 $data modify storage esefy:tmp custom_recipe_attempt.ingredient.macro.slot_type set value "$(slot_type)"
@@ -31,6 +30,9 @@ data merge storage esefy:tmp {custom_recipe_attempt:{ingredient:{macro:{predicat
 
 # Check if the ingredient is present in the given slot
 function esefy:internal/custom_recipes/perform/steps/ingredient_check/entity with storage esefy:tmp custom_recipe_attempt.ingredient.macro
+
+# Clean up temporary macro compound
+data remove storage esefy:tmp custom_recipe_attempt.ingredient.macro
 
 # Return 1 if the ingredient check succeeded
 execute if data storage esefy:tmp {custom_recipe_attempt:{ingredient:{success:1b}}} run return 1
