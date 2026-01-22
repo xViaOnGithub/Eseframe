@@ -1,58 +1,28 @@
 ## PURPOSE:
-#      Runs a "reciever" function mutliple times in a row, macroing in the inputted
-#      data as well as an incrementing index of numbers within a specified range.
+#      Runs a "target" function mutliple times in a row, [TODO Summary]
 
 
 ## HOW TO USE:
 #    AS: Any (current single executor is passed onto reciever)
 #    AT: Any (position is passed onto reciever)
 #       
-#       Call this function with the function you wish to loop as the "reciever"
-#       macro. For example, if you are trying to run a function that you would
-#       normally call with "function esefy:path/to/function/run", you would set
-#       "reciever" to "esefy:path/to/function/run".
-#       
-#       
-#       Set "min" and "max" to the respective indexes you wish to start and end at
-#       (inclusive):
-#       "min": 0
-#       "max": 5
-#       indexes used: 0,1,2,3,4,5
-#       
-#       Notice how the reciever is called 6 times-- it starts with "min", which
-#       means in the case it starts with 0. This can be a good thing if you are
-#       working with an array (whose first item has an index of 0), for example.
-#       
-#       
-#       When the reciever function is called by the loop, the data storage path
-#       esefy:tmp.loop is macro'd in. Here are the keys that are sent to the
-#       reciever:
-#       - $(data): A copy of the "data" key that was input into this function.
-#       - $(index): The current index.
-#       - $(start_index): A copy of the "min" key.
-#       - $(end_index): A copy of the "max" key.
-#       
-#       EXAMPLE:
-#       One good use for this is using the reciever function to macro multiple
-#       entries from an array into another function:
-#       "$function esefy:run/this/with/array/entries with storage esefy:example path[$(index)]"
-#       
-#       You could even use the $(input) to chose a path: 
-#       "$function esefy:run/this/with/array/entries with storage esefy:example $(input)[$(index)]"
-#       
-#       
-#       
-#       If a reciever returns 1, the loop will stop immeadiately.
+#       [TODO Overview]
 
 
 ## MACRO KEYS               TYPE(S)         DESCRIPTION
-#   min                     integer         The starting index.
-#   max                     integer         The highest index allowed before the
-#                                           loop stops itself.
-#   reciever                string          The function that will be called
-#                                           repeatively.
-#   data                    any             Data that can be accessed by the
-#                                           reciever function using a macro.
+#   start_index             integer         The starting index.
+#   end_index               integer         The highest index allowed before the
+#                                           loop stops itself. Must be higher than the start index.
+#   target_function_path    string          A path to the function that will be called
+#                                           repeatively. Example: "namespace:path/to/function"
+#   index_path              string          The data at this path will be replaced with an integer
+#                                           representing the index of the loop before the target
+#                                           function is called.
+#                                           Example: "storage namespace:storage_name path/to/data" or "entity
+#                                           @s Pos[1]"
+#   macro_path              string          The compound at this path will be passed to the
+#                                           target function as a macro.
+#                                           Example: "storage namespace:storage_name path/to/data"
 
 
 ## RETURN CODES
@@ -66,10 +36,10 @@
 #  - (none)
 
 ## TEMPORARY SCOREBOARD (CLEARED ON CLEANUP)
-#  - esefy.temporary.loop_util
+#  - (none)
 
 ## SCOREBOARDS USED (PERSISTENT)
-#  - (none)
+#  - esefy.util.loop
 
 
 ## Functions outside folder called: 0
@@ -79,30 +49,36 @@
 #-------------------------------------------------------------------------------#
 
 ## KNOWN BUGS
-#  - Calling this function while another loop is running will probaby break
-#    everything, since it is not currently implemented with nesting in mind.
+#  - [STORAGE/SCOREBOARD LEAK]
+#    If a loop is interrupted--most likely by an error or by a gamerule command
+#    limit during intense nesting, leftover storage and scores are not cleared.
+#    NOTE: If this happens, it can be fixed with a /reload
+#        Possible fixes: 
+#           - Isolation of error-prone macros
+#           - Detecting when the last loop did not finish, then throw an error
+#             and emergency clean up before the next loop starts 
+#           - Somehow try to continue the broken loop the next tick? (HARD) 
 
 #-------------------------------------------------------------------------------#
 
+## Add macros to storage esefy:util loop
+$data merge storage esefy:util {loop:{end_index:$(end_index),target_function_path:"$(target_function_path)",index_path:"$(index_path)",macro_path:"$(macro_path)"}}
 
 
-# Create temporary storage and store data intput, 
-$data modify storage esefy:tmp loop.data set value $(data)
-$data modify storage esefy:tmp loop.start_index set value $(min)
-$data modify storage esefy:tmp loop.end_index set value $(max)
+## Generate loop id and set initial index
 
-# Set up scoreboard
-scoreboard objectives add esefy.temporary.loop_util dummy
+# Increment loop layer counter
+scoreboard players add #loop_id_creator esefy.util.loop 1
 
-# Start the index at $(min)
-$scoreboard players set #index esefy.temporary.loop_util $(min)
+# Store the new loop id to loop.id
+execute store result storage esefy:util loop.id int 1 run scoreboard players get #loop_id_creator esefy.util.loop
 
-# Set the length of the loop with the max macro'd in
-$scoreboard players set #length esefy.temporary.loop_util $(max)
+# Set the initial loop index
+data modify storage esefy:util loop.tmp.id set from storage esefy:util loop.id
+$data modify storage esefy:util loop.tmp.start_index set value $(start_index)
+function esefy:util/loop/steps/01_set_initial_index with storage esefy:util loop.tmp
+data remove storage esefy:util loop.tmp
 
-# Call a repeating function that repeatively macros loop data into the reciever 
-$function esefy:util/loop/steps/repeating {reciever_function:"$(reciever)"}
 
-# Clean up
-data remove storage esefy:tmp loop
-scoreboard objectives remove esefy.temporary.loop_util
+## Begin looping
+function esefy:util/loop/steps/02_repeating with storage esefy:util loop

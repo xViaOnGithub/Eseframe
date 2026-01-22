@@ -1,0 +1,1 @@
+$scoreboard players set $(id) esefy.util.loop $(start_index)
