@@ -40,123 +40,79 @@
             <div class="nbt">
                 <ul>
                     <li>
-                        loaded <span class="data_type">compound</span>
-                        <ul>
+                        recipes <span class="data_type">list</span>
+                        <ol>
                             <li>
-                                [recipe_group] <span class="data_type">compound</span>
+                                <span class="data_type">compound</span>
                                 <ul>
+                                    <li>id <span class="data_type">string</span></li>
+                                    <li>group <span class="data_type">(optional) string</span></li>
                                     <li>
-                                        recipes <span class="data_type">compound</span>
-                                        <ul>
+                                        ingredients
+                                        <span class="data_type">list</span>
+                                        <ol>
                                             <li>
-                                                [recipe_id] <span class="data_type">compound</span>
+                                                <span class="data_type">compound</span>
                                                 <ul>
                                                     <li>
-                                                        ingredients
-                                                        <span class="data_type">list</span>
+                                                        items
+                                                        <span class="data_type">string or list</span>
                                                         <ol>
                                                             <li>
-                                                                <span class="data_type">compound</span>
-                                                                <ul>
-                                                                    <li>
-                                                                        items
-                                                                        <span class="data_type">string or list</span>
-                                                                        <ol>
-                                                                            <li>
-                                                                                "[namespace:item_id]"
-                                                                                <span class="data_type">string</span>
-                                                                            </li>
-                                                                            <li>...</li>
-                                                                        </ol>
-                                                                    </li>
-                                                                    <li>
-                                                                        min_count
-                                                                        <span class="data_type"
-                                                                            >(optional) integer</span
-                                                                        >
-                                                                    </li>
-                                                                    <li>
-                                                                        slot
-                                                                        <span class="data_type"
-                                                                            >(optional) integer</span
-                                                                        >
-                                                                    </li>
-                                                                    <li>
-                                                                        components
-                                                                        <span class="data_type"
-                                                                            >(optional) compound</span
-                                                                        >
-                                                                    </li>
-                                                                    <li>
-                                                                        predicates
-                                                                        <span class="data_type"
-                                                                            >(optional) compound</span
-                                                                        >
-                                                                    </li>
-                                                                </ul>
+                                                                "[namespace:item_id]"
+                                                                <span class="data_type">string</span>
                                                             </li>
                                                             <li>...</li>
                                                         </ol>
                                                     </li>
                                                     <li>
-                                                        results <span class="data_type">compound</span>
-                                                        <ul>
-                                                            <li>
-                                                                loot
-                                                                <span class="data_type"
-                                                                    >(optional) string or compound</span
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                function
-                                                                <span class="data_type"
-                                                                    >(optional) string or compound</span
-                                                                >
-                                                                <ul>
-                                                                    <li>
-                                                                        path
-                                                                        <span class="data_type">string</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        data
-                                                                        <span class="data_type"
-                                                                            >(optional) compound</span
-                                                                        >
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                advancement
-                                                                <span class="data_type">(optional) string</span>
-                                                            </li>
-                                                        </ul>
+                                                        min_count
+                                                        <span class="data_type">(optional) integer</span>
+                                                    </li>
+                                                    <li>
+                                                        slot
+                                                        <span class="data_type">(optional) integer</span>
+                                                    </li>
+                                                    <li>
+                                                        components
+                                                        <span class="data_type">(optional) compound</span>
+                                                    </li>
+                                                    <li>
+                                                        predicates
+                                                        <span class="data_type">(optional) compound</span>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>...</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        recipe_ids <span class="data_type">list</span>
-                                        <ol>
-                                            <li>"[recipe_id]" <span class="data_type">string</span></li>
-                                            <li>...</li>
                                         </ol>
                                     </li>
-                                </ul>
-                            </li>
-                            <li>...</li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        disabled <span class="data_type">compound</span>
-                        <ol>
-                            <li>
-                                [recipe_group] <span class="data_type">list</span>
-                                <ul>
-                                    <li>"[recipe_id]" <span class="data_type">string</span></li>
-                                    <li>...</li>
+                                    <li>
+                                        results <span class="data_type">compound</span>
+                                        <ul>
+                                            <li>
+                                                loot
+                                                <span class="data_type">(optional) string or compound</span>
+                                            </li>
+                                            <li>
+                                                function
+                                                <span class="data_type">(optional) string or compound</span>
+                                                <ul>
+                                                    <li>
+                                                        path
+                                                        <span class="data_type">string</span>
+                                                    </li>
+                                                    <li>
+                                                        data
+                                                        <span class="data_type">(optional) compound</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                advancement
+                                                <span class="data_type">(optional) string</span>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li>...</li>
@@ -165,6 +121,7 @@
                 </ul>
             </div>
         </div>
+
         <p>Notes to add as (TODO) descriptions once resolved:</p>
         <ul>
             <li>"min_count" defaults to 1 if not given</li>
