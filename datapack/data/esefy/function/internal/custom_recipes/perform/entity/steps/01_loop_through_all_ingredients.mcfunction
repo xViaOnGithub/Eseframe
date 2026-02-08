@@ -1,0 +1,2 @@
+# Starts a loop that runs 02 with every ingredient.
+$function esefy:util/loop/start {start_index:0,end_index:$(ingredient_count),target_function_path:"esefy:internal/custom_recipes/perform/entity/steps/02_ingredient_entity",index_path:"storage esefy:tmp perform_custom_recipe_entity.ingredient_index",macro_path:"storage esefy:tmp perform_custom_recipe_entity"}
