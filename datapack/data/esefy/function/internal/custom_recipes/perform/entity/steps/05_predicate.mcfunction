@@ -1,2 +1,2 @@
 say predicate didnt crash (yipee)
-$execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{slots:{"$(slot_type).$(slot)":{items:$(items),count:{min:$(min_count)},components:$(components),predicates:$(predicates)}}}} run data modify storage esefy:tmp perform_custom_recipe_entity.any_ingredient_missing set value 0b
+$execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{slots:{"$(slot_type).$(slot)":{items:$(items),count:{min:$(min_count)},components:$(components)}}}} run data modify storage esefy:tmp perform_custom_recipe_entity.any_ingredient_missing set value 0b

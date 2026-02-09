@@ -3,7 +3,7 @@
 
 
 # Set default values of an ingredient
-data modify storage esefy:tmp perform_custom_recipe_entity.ingredient_predicate_macro set value {items:"minecraft:barrier",min_count:0,predicates:{},components:{},slot:"*"}
+data modify storage esefy:tmp perform_custom_recipe_entity.ingredient_predicate_macro set value {items:"minecraft:barrier",min_count:0,components:{},slot:"*"}
 
 # Merge recipe data over the default values
 $data merge storage esefy:tmp {perform_custom_recipe_entity:{ingredient_predicate_macro:$(ingredient_data)}}
