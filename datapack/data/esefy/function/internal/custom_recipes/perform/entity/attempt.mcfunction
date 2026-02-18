@@ -1,5 +1,3 @@
-say TODO: this function is currently a placeholder that just checks the first item of a recipe with the id "test"
-
 #macros: id, slot_type
 # (maybe have a check_only/dry_run?)
 
@@ -18,6 +16,8 @@ say TODO: this function is currently a placeholder that just checks the first it
 #04: run a predicate that checks if the ingredient is present
 
 ## storage esefy:tmp perform_custom_recipe_entity
+
+## UPDATE THIS!! TODO
 #       id (string)                                     Recipe id, set from macro id in start
 #       ingredient_data (compound)                      Set from storage in 0#???
 #       ingredient_index (integer)                      Which ingredient is being checked when checking       
@@ -25,7 +25,7 @@ say TODO: this function is currently a placeholder that just checks the first it
 #       ingredient_check_success (byte)                 Whether the last ingredient check succeeded
 #       any_ingredient_missing (byte)                   Starts at 0b, set to 1b if any predicate check fails.
 
-
+## Temporary scoreboard used: esefy.tmp.perform_custom_recipe
 
 
 # Return 0 if recipe does not exist, or if ingredients field is empty
@@ -35,7 +35,10 @@ $execute unless data storage esefy:recipes recipes[{id:"$(id)"}].ingredients[] r
 
 ## Set up data storage
 # Set default and macro values
-$data modify storage esefy:tmp perform_custom_recipe_entity set value {id:"$(id)",slot_type:"$(slot_type)",any_ingredient_missing:0b}
+$data modify storage esefy:tmp perform_custom_recipe_entity set value {id:"$(id)",any_ingredient_missing:0b}
+
+# Set up scoreboard
+scoreboard objectives add esefy.tmp.perform_custom_recipe dummy
 
 
 ## SET ingredient_count
@@ -47,8 +50,29 @@ execute store result storage esefy:tmp perform_custom_recipe_entity.ingredient_c
 function esefy:internal/custom_recipes/perform/entity/steps/01_loop_through_all_ingredients with storage esefy:tmp perform_custom_recipe_entity
 
 # Return if any ingredient was missing.
+# TODO: cleanup needs to be ran here
 execute if data storage esefy:tmp {perform_custom_recipe_entity:{any_ingredient_missing:1b}} run return fail
 
 
 ## From this point on, we can assume all ingredients are present.
-# TODO: Everything else. :/
+
+
+## Clear items
+function esefy:internal/custom_recipes/perform/entity/steps/04_loop_ingredients_for_clear with storage esefy:tmp perform_custom_recipe_entity
+
+
+# Clean up here?
+
+
+## Give results (seprate functions incase any fail to parse)
+# Loot
+$execute if data storage esefy:recipes recipes[{id:"$(id)"}].results.advancement run function esefy:internal/custom_recipes/perform/entity/steps/07_result_advancement with storage esefy:recipes recipes[{id:"$(id)"}].results
+$execute if data storage esefy:recipes recipes[{id:"$(id)"}].results.loot run function esefy:internal/custom_recipes/perform/entity/steps/08_result_loot with storage esefy:recipes recipes[{id:"$(id)"}].results
+$execute if data storage esefy:recipes recipes[{id:"$(id)"}].results.function run function esefy:internal/custom_recipes/perform/entity/steps/09_result_function with storage esefy:recipes recipes[{id:"$(id)"}].results
+
+
+
+## TODO Cleanup
+# Remove scoreboard
+#scoreboard objectives remove esefy.tmp.perform_custom_recipe
+# TODO: remove data

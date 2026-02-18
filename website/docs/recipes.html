@@ -55,27 +55,19 @@
                                                 <span class="data_type">compound</span>
                                                 <ul>
                                                     <li>
-                                                        items
-                                                        <span class="data_type">string or list</span>
-                                                        <ol>
-                                                            <li>
-                                                                "[namespace:item_id]"
-                                                                <span class="data_type">string</span>
-                                                            </li>
-                                                            <li>...</li>
-                                                        </ol>
+                                                        <a
+                                                            href="https://minecraft.wiki/w/Argument_types#minecraft:item_predicate"
+                                                            >item_predicate</a
+                                                        >
+                                                        <span class="data_type">string</span>
                                                     </li>
                                                     <li>
-                                                        min_count
-                                                        <span class="data_type">(optional) integer</span>
+                                                        count
+                                                        <span class="data_type">integer, atleast 1</span>
                                                     </li>
                                                     <li>
                                                         slot
-                                                        <span class="data_type">(optional) integer</span>
-                                                    </li>
-                                                    <li>
-                                                        components
-                                                        <span class="data_type">(optional) compound</span>
+                                                        <span class="data_type">integer or string "*" for any</span>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -117,23 +109,5 @@
                 </ul>
             </div>
         </div>
-
-        <p>Notes to add as (TODO) descriptions once resolved:</p>
-        <ul>
-            <li>"min_count" defaults to 1 if not given</li>
-            <li>
-                each ingrediant's "min_count" requirements must be met within one slot. for example, if the count asks
-                for 3 of an item, there must be a single stack somewhere in the container/inventory that has 3 of that
-                item.
-            </li>
-            <li>
-                "items" can be a string of an item id (ex. minecraft:dirt), an item tag (ex. #minecraft:planks), or a
-                list of item ids
-            </li>
-            <li>
-                explain somewhere below the difference between "predicates" and "components" and suggest which one to
-                use (maybe in a section that goes through each part of the recipe in a table?)
-            </li>
-        </ul>
     </body>
 </html>
