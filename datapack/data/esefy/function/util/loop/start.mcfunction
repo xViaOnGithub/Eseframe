@@ -26,6 +26,9 @@
 
 
 ## RETURN CODES
+#   1: Loop ended normally 
+#   0: Loop ended early because function esefy:util/loop/break was called
+
 
 #-------------------------------------------------------------------------------#
 
@@ -80,5 +83,5 @@ function esefy:util/loop/steps/01_set_initial_index with storage esefy:util loop
 data remove storage esefy:util loop.tmp
 
 
-## Begin looping
-function esefy:util/loop/steps/02_repeating with storage esefy:util loop
+## Begin looping and pass on it's return code
+return run function esefy:util/loop/steps/02_repeating with storage esefy:util loop
