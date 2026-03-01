@@ -28,9 +28,9 @@
 ## Temporary scoreboard used: esefy.tmp.perform_custom_recipe
 
 
-# Return 0 if recipe does not exist, or if ingredients field is empty
-$execute unless data storage esefy:recipes recipes[{id:"$(id)"}].ingredients[] run say invalid recipe
-$execute unless data storage esefy:recipes recipes[{id:"$(id)"}].ingredients[] run return 0
+# Return fail if recipe does not exist, or if ingredients field is empty
+$execute unless data storage esefy:recipes recipes[{id:"$(id)"}].ingredients[] run say recipe not found or has no ingredients!
+$execute unless data storage esefy:recipes recipes[{id:"$(id)"}].ingredients[] run return fail
 
 
 ## Set up data storage
