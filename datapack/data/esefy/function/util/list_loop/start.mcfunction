@@ -1,7 +1,7 @@
 function esefy:util/list_loop/initialize
 
 # Set up function parameters that doesn't require math
-$data modify storage esefy:tmp list_loop.macro set value {function:"$(function_path)",list:"$(list_path)",index:0}
+$data modify storage esefy:tmp list_loop.macro set value {function:"$(function_path)",list:'$(list_path)',index:0}
 
 # Subtract 1 from the length of the list to get the max index
 
