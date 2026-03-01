@@ -13,7 +13,7 @@ $say score #index esefy.util.list_loop matches $(max_index)
 $execute if score #index esefy.util.list_loop matches $(max_index).. run return 1
 
 
-$data modify storage esefy:tmp list_loop.macro set value {function:"$(function)",list:"$(list)",max_index:$(max_index)}
+$data modify storage esefy:tmp list_loop.macro set value {function:"$(function)",list:'$(list)',max_index:$(max_index)}
 execute store result storage esefy:tmp list_loop.macro.index int 1 run scoreboard players add #index esefy.util.list_loop 1
 
 
