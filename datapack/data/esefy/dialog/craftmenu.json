@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Placeholder Crafting Mneu",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "This menu currently has the player run the /function command directly, which will only work for players with permission to use that command.\n\nIn the future, that will be replace with /trigger commands that will (somehow) be detected to do something similar."
+  },
+  "actions": [
+    {
+      "label": "Craft esefy:test",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esefy:test\"}"
+      }
+    }
+  ]
+}
