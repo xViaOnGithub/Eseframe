@@ -1,5 +1,6 @@
 {
  "values": [
- "esefy:load"
+ "esefy:load",
+ "#esefy:initialize"
  ]
 }
