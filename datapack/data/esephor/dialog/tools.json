@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:notice",
+  "title": "Tools",
+  "can_close_with_escape": true,
+  "pause": false
+}

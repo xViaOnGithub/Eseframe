@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "#esephor:guide_catagories",
     "esefy:craftmenu"
   ]
 }

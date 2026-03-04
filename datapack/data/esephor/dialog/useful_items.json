@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:notice",
+  "title": "Useful Items",
+  "can_close_with_escape": true,
+  "pause": false
+}
