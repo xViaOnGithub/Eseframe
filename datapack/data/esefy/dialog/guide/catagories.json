@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:dialog_list",
+  "can_close_with_escape": true,
+  "pause": false,
+  "button_width": 310,
+  "columns": 1,
+  "dialogs": "#esefy:guide_catagories",
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "width": 200
+  },
+  "title": "Esefy Guide"
+}
