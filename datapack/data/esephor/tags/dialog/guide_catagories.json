@@ -1,14 +1,7 @@
 {
   "replace": false,
   "values": [
-    "esephor:resources",
-    "esephor:tools",
     "esephor:useful_items",
-    "esephor:miscellaneous_items",
-    "esephor:weapons",
-    "esephor:technical_gadgets",
-    "esephor:magical_gadgets",
-    "esephor:talismans",
-    "esephor:ender_talismans"
+    "esephor:miscellaneous_items"
   ]
 }
