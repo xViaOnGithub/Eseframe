@@ -10,30 +10,25 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": 2
-            },
-            {
               "function": "minecraft:set_components",
               "components": {
                 "!minecraft:rarity": {},
                 "!minecraft:food": {},
                 "minecraft:item_name": {
-                  "text": "Rag",
+                  "text": "Splint",
                   "color": "red"
                 },
-                "minecraft:item_model": "minecraft:paper",
+                "minecraft:item_model": "minecraft:stick",
                 "minecraft:custom_data": {
                   "esephor": {
-                    "id": "rag",
-                    "extinguish_on_consume": true
+                    "id": "splint"
                   }
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 0,
                   "animation": "eat",
                   "sound": {
-                    "sound_id": "minecraft:block.wool.break",
+                    "sound_id": "minecraft:entity.skeleton.hurt",
                     "range": 0
                   },
                   "has_consume_particles": false,
@@ -62,11 +57,6 @@
                   "",
                   {
                     "text": "Heals 2 Hearts",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "Extinguishes Fire",
                     "color": "white",
                     "italic": false
                   },
