@@ -22,7 +22,7 @@
                   "text": "Splint",
                   "color": "red"
                 },
-                "minecraft:item_model": "stick",
+                "minecraft:item_model": "minecraft:stick",
                 "minecraft:custom_data": {
                   "esephor": {
                     "id": "splint"

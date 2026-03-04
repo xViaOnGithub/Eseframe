@@ -22,7 +22,7 @@
                   "text": "Rag",
                   "color": "red"
                 },
-                "minecraft:item_model": "paper",
+                "minecraft:item_model": "minecraft:paper",
                 "minecraft:custom_data": {
                   "esephor": {
                     "id": "rag",

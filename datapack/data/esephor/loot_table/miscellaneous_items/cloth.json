@@ -23,7 +23,7 @@
                   "text": "Cloth",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "paper",
+                "minecraft:item_model": "minecraft:paper",
                 "minecraft:custom_data": {
                   "esephor": {
                     "id": "cloth"
