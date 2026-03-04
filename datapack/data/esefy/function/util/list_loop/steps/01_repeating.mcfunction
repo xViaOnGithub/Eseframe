@@ -1,5 +1,3 @@
-say index
-
 # Run function with list entry, store success
 $execute store success storage esefy:tmp list_loop.success byte 1 run function $(function) with $(list)[$(index)]
 
