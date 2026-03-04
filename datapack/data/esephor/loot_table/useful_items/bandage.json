@@ -19,20 +19,21 @@
                 "!minecraft:rarity": {},
                 "!minecraft:food": {},
                 "minecraft:item_name": {
-                  "text": "Splint",
+                  "text": "Bandage",
                   "color": "red"
                 },
-                "minecraft:item_model": "stick",
+                "minecraft:item_model": "paper",
                 "minecraft:custom_data": {
                   "esephor": {
-                    "id": "splint"
+                    "id": "bandage",
+                    "extinguish_on_consume": true
                   }
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 0,
                   "animation": "eat",
                   "sound": {
-                    "sound_id": "minecraft:entity.skeleton.hurt",
+                    "sound_id": "minecraft:block.wool.break",
                     "range": 0
                   },
                   "has_consume_particles": false,
@@ -42,7 +43,7 @@
                       "effects": [
                         {
                           "id": "minecraft:instant_health",
-                          "amplifier": 0,
+                          "amplifier": 1,
                           "duration": 1,
                           "show_icon": false,
                           "show_particles": false
@@ -54,13 +55,18 @@
                 "minecraft:lore": [
                   "",
                   {
-                    "text": "Level I - Medical Supply",
+                    "text": "Level II - Medical Supply",
                     "color": "green",
                     "italic": false
                   },
                   "",
                   {
-                    "text": "Heals 2 Hearts",
+                    "text": "Heals 4 Hearts",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Extinguishes Fire",
                     "color": "white",
                     "italic": false
                   },

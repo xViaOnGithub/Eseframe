@@ -1,0 +1,2 @@
+execute unless data entity @s {Fire:-20s} run summon minecraft:splash_potion ~ ~-0.1 ~ {Motion:[0.0f,0.2f,0.0f],LeftOwner:1b,Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}}
+advancement revoke @s only esephor:internal/temporary/extinguish
