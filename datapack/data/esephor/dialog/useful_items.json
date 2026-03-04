@@ -1,6 +1,34 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": "Useful Items",
   "can_close_with_escape": true,
-  "pause": false
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    }
+  },
+  "actions": [
+    {
+      "label": "Craft Rag",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:rag\"}"
+      }
+    },
+    {
+      "label": "Craft Bandage",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:bandage\"}"
+      }
+    },
+    {
+      "label": "Craft Splint",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:splint\"}"
+      }
+    }
+  ]
 }

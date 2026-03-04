@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Miscellaneous Items",
+  "can_close_with_escape": true,
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    }
+  },
+  "actions": [
+    {
+      "label": "Craft Cloth",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:cloth\"}"
+      }
+    }
+  ]
+}
