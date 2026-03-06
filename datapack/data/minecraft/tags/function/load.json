@@ -1,6 +1,5 @@
 {
  "values": [
- "esefy:load",
- "#esefy:initialize"
+ "#eseframe:initialize"
  ]
 }

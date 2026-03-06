@@ -1,7 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "esefy:internal/custom_recipes/load_recipes",
-        "#esephor:eseframe/load_recipes"
-    ]
-}
