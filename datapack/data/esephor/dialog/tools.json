@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Tools",
+  "can_close_with_escape": true,
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    }
+  },
+  "actions": [
+    {
+      "label": "Craft Gold Pan",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:gold_pan\"}"
+      }
+    },
+    {
+      "label": "Craft Cobalt Pickaxe",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:cobalt_pickaxe\"}"
+      }
+    }
+  ]
+}

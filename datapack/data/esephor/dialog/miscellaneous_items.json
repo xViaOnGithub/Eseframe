@@ -10,6 +10,9 @@
   },
   "actions": [
     {
+      "label": "TODO: Sifted Ore"
+    },
+    {
       "label": "Craft Cloth",
       "action": {
         "type": "minecraft:run_command",

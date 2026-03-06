@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "esephor:useful_items",
+    "esephor:tools",
+    "esephor:resources",
     "esephor:miscellaneous_items"
   ]
 }

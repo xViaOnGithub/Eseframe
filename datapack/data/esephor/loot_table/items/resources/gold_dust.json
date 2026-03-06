@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:rarity": {},
+                "!minecraft:food": {},
+                "!minecraft:consumable": {},
+                "minecraft:item_name": {
+                  "text": "Gold Dust",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "minecraft:glowstone_dust",
+                "minecraft:custom_data": {
+                  "esephor": {
+                    "id": "gold_dust"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:efficiency": 6,
+                  "minecraft:unbreaking": 10
+                },
+                "!minecraft:enchantable": {},
+                "minecraft:item_name": {
+                  "text": "Cobalt Pickaxe",
+                  "color": "blue"
+                },
+                "minecraft:custom_data": {
+                  "esephor": {
+                    "id": "cobalt_pickaxe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

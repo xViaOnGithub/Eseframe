@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/iron_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/gold_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/copper_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/tin_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/silver_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/lead_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/aluminum_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/zinc_dust"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/resources/magnesium"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "esephor:random_dust"
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay_ball",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "esephor:items/miscellaneous_items/sifted_ore",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "weight": 5
+        }
+      ]
+    }
+  ],
+  "random_sequence": "esephor:sift_gravel"
+}
