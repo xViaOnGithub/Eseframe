@@ -1,0 +1,12 @@
+{
+    "values": [
+        "esephor:eseframe/recipes/bandage",
+        "esephor:eseframe/recipes/cloth",
+        "esephor:eseframe/recipes/cobalt_ingot",
+        "esephor:eseframe/recipes/cobalt_pickaxe",
+        "esephor:eseframe/recipes/gold_pan",
+        "esephor:eseframe/recipes/nickel_ingot",
+        "esephor:eseframe/recipes/rag",
+        "esephor:eseframe/recipes/splint"
+    ]
+}
