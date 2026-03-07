@@ -7,7 +7,27 @@
         "esephor:eseframe/recipes/gold_pan",
         "esephor:eseframe/recipes/nickel_ingot",
         "esephor:eseframe/recipes/rag",
+        
         "esephor:eseframe/recipes/fortune_cookie",
+        "esephor:eseframe/recipes/diet_cookie",
+        "esephor:eseframe/recipes/beef_jerky",
+        "esephor:eseframe/recipes/pork_jerky",
+        "esephor:eseframe/recipes/chicken_jerky",
+        "esephor:eseframe/recipes/mutton_jerky",
+        "esephor:eseframe/recipes/rabbit_jerky",
+        "esephor:eseframe/recipes/fish_jerky",
+        "esephor:eseframe/recipes/kelp_cookie",
+        "esephor:eseframe/recipes/magic_sugar",
+        "esephor:eseframe/recipes/monster_jerky",
+        "esephor:eseframe/recipes/apple_juice",
+        "esephor:eseframe/recipes/carrot_juice",
+        "esephor:eseframe/recipes/melon_juice",
+        "esephor:eseframe/recipes/pumpkin_juice",
+        "esephor:eseframe/recipes/sweet_berry_juice",
+        "esephor:eseframe/recipes/golden_apple_juice",
+        "esephor:eseframe/recipes/enchanted_golden_apple_from_24k_gold",
+        "esephor:eseframe/recipes/glow_berry_juice",
+        
         "esephor:eseframe/recipes/splint"
     ]
 }

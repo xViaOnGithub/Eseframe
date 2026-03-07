@@ -1,0 +1,2 @@
+advancement revoke @s only esephor:internal/temporary/ate_diet_cookie
+tellraw @s [{text:"Esephor",color:green,bold:true},{text:"> ",color:gray,bold:false},{text:"You are starting to feel very light...",color:yellow,bold:false}]

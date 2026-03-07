@@ -15,6 +15,132 @@
         "type": "minecraft:run_command",
         "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:fortune_cookie'}"
       }
+    },
+    {
+      "label": "Craft Diet Cookie",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:diet_cookie'}"
+      }
+    },
+    {
+      "label": "Craft Beef Jerky",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:beef_jerky'}"
+      }
+    },
+    {
+      "label": "Craft Pork Jerky",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:pork_jerky'}"
+      }
+    },
+    {
+      "label": "Craft Chicken Jerky",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:chicken_jerky'}"
+      }
+    },
+    {
+      "label": "Craft Mutton Jerky",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:mutton_jerky'}"
+      }
+    },
+    {
+      "label": "Craft Rabbit Jerky",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:rabbit_jerky'}"
+      }
+    },
+    {
+      "label": "Craft Fish Jerky",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:fish_jerky'}"
+      }
+    },
+    {
+      "label": "Craft Kelp Cookie",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:kelp_cookie'}"
+      }
+    },
+    {
+      "label": "Craft Magic Sugar",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:magic_sugar'}"
+      }
+    },
+    {
+      "label": "Craft Monster Jerky",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:monster_jerky'}"
+      }
+    },
+    {
+      "label": "Craft Apple Juice",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:apple_juice'}"
+      }
+    },
+    {
+      "label": "Craft Carrot Juice",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:carrot_juice'}"
+      }
+    },
+    {
+      "label": "Craft Melon Juice",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:melon_juice'}"
+      }
+    },
+    {
+      "label": "Craft Pumpkin Juice",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:pumpkin_juice'}"
+      }
+    },
+    {
+      "label": "Craft Sweet Berry Juice",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:sweet_berry_juice'}"
+      }
+    },
+    {
+      "label": "Craft Golden Apple Juice",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:golden_apple_juice'}"
+      }
+    },
+    {
+      "label": "Craft Enchanted Golden Apple",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:enchanted_golden_apple_from_24k_gold'}"
+      }
+    },
+    {
+      "label": "Craft Glow Berry Juice",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:glow_berry_juice'}"
+      }
     }
   ]
 }

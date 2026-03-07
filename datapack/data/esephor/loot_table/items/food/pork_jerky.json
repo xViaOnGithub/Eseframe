@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:rarity": {},
+                "minecraft:item_name": {
+                  "text": "Pork Jerky",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "minecraft:cooked_porkchop",
+                "minecraft:custom_data": {
+                  "esephor": {
+                    "id": "pork_jerky"
+                  }
+                },
+                "minecraft:consumable": {},
+                "minecraft:lore": [
+                  "",
+                  {
+                    "text": "Extra saturating!",
+                    "color": "white",
+                    "italic": false
+                  }
+                ],
+                "minecraft:food": {
+                  "nutrition": 8,
+                  "saturation": 20
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

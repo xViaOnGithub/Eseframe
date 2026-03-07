@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "eat_diet_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "esephor": {
+                "id": "diet_cookie"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eat_diet_cookie"
+    ]
+  ],
+  "rewards": {
+    "function": "esephor:diet_cookie_message"
+  }
+}
