@@ -7,7 +7,6 @@ execute if data storage eseframe:tmp {list_loop:{success:0b}} run return 0
 $scoreboard players set #index eseframe.util.list_loop $(index)
 
 # Return 1 if loop is complete
-$say score #index eseframe.util.list_loop matches $(max_index)
 $execute if score #index eseframe.util.list_loop matches $(max_index).. run return 1
 
 

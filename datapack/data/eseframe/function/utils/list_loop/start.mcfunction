@@ -1,4 +1,4 @@
-function eseframe:util/list_loop/initialize
+function eseframe:utils/list_loop/initialize
 
 # Set up function parameters that doesn't require math
 $data modify storage eseframe:tmp list_loop.macro set value {function:"$(function_path)",list:'$(list_path)',index:0}

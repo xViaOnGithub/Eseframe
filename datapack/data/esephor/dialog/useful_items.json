@@ -13,21 +13,21 @@
       "label": "Craft Rag",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function eseframe:custom_recipes/entity/attempt {id:\"esephor:rag\"}"
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:\"esephor:rag\"}"
       }
     },
     {
       "label": "Craft Bandage",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function eseframe:custom_recipes/entity/attempt {id:\"esephor:bandage\"}"
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:\"esephor:bandage\"}"
       }
     },
     {
       "label": "Craft Splint",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function eseframe:custom_recipes/entity/attempt {id:\"esephor:splint\"}"
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:\"esephor:splint\"}"
       }
     }
   ]
