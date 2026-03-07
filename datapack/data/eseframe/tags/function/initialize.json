@@ -1,5 +1,6 @@
 {
     "values": [
+        "eseframe:clear_old_content",
         "#eseframe:01_before_content_load",
         "#eseframe:02_load_content"
     ]

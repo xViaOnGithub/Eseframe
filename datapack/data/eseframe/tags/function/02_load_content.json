@@ -1,6 +1,5 @@
 {
     "values": [
-        "#esephor:eseframe/load_recipes",
-        "esefy:internal/custom_recipes/load_recipes"
+        "#esephor:eseframe/load_recipes"
     ]
 }

@@ -12,14 +12,14 @@ $execute unless data storage esefy:recipes recipes[{id:"$(id)"}].ingredients[] r
 scoreboard objectives add esefy.tmp.perform_custom_recipe dummy
 
 # Check if all the ingredients are present
-$execute store result storage esefy:tmp perform_custom_recipe_entity.ingredient_check_result byte 1 run function esefy:util/list_loop/start {function_path:"esefy:internal/custom_recipes/perform/entity/steps/01_check_ingredient",list_path:'storage esefy:recipes recipes[{id:"$(id)"}].ingredients'}
+$execute store result storage esefy:tmp perform_custom_recipe_entity.ingredient_check_result byte 1 run function eseframe:utils/list_loop/start {function_path:"esefy:internal/custom_recipes/perform/entity/steps/01_check_ingredient",list_path:'storage esefy:recipes recipes[{id:"$(id)"}].ingredients'}
 
 # TODO: cleanup needs to be ran here inline if it's gonna return
 # Return fail if ingredient check failed
 execute if data storage esefy:tmp {perform_custom_recipe_entity:{ingredient_check_result:0b}} if function esefy:internal/custom_recipes/perform/entity/steps/99_inline_cleanup run return fail
 
 ## Clear items
-$function esefy:util/list_loop/start {function_path:"esefy:internal/custom_recipes/perform/entity/steps/02_clear_ingredients",list_path:'storage esefy:recipes recipes[{id:"$(id)"}].ingredients'}
+$function eseframe:utils/list_loop/start {function_path:"esefy:internal/custom_recipes/perform/entity/steps/02_clear_ingredients",list_path:'storage esefy:recipes recipes[{id:"$(id)"}].ingredients'}
 
 # Give results (as separate functions to prevent parsing errors)
 $execute if data storage esefy:recipes recipes[{id:"$(id)"}].results.advancement run function esefy:internal/custom_recipes/perform/entity/steps/03_result_advancement with storage esefy:recipes recipes[{id:"$(id)"}].results

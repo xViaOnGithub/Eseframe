@@ -13,14 +13,14 @@
       "label": "Craft Nickel Ingot",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:nickel_ingot\"}"
+        "command": "function eseframe:custom_recipes/entity/attempt {id:\"esephor:nickel_ingot\"}"
       }
     },
     {
       "label": "Craft Cobalt Ingot",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:cobalt_ingot\"}"
+        "command": "function eseframe:custom_recipes/entity/attempt {id:\"esephor:cobalt_ingot\"}"
       }
     },
     {

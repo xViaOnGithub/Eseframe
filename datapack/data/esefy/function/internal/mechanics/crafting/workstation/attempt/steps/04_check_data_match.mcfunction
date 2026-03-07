@@ -1,1 +1,0 @@
-$execute unless data block ~ ~ ~ $(data) run data modify storage esefy:tmp recipe_performer.recipe_success set value false

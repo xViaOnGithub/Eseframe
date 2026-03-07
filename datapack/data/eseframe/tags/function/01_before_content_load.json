@@ -1,6 +1,3 @@
 {
-    "values": [
-        "esefy:load",
-        "esefy:internal/custom_recipes/initialize"
-    ]
+    "values": []
 }

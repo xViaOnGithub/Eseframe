@@ -13,14 +13,14 @@
       "label": "Craft Gold Pan",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:gold_pan\"}"
+        "command": "function eseframe:custom_recipes/entity/attempt {id:\"esephor:gold_pan\"}"
       }
     },
     {
       "label": "Craft Cobalt Pickaxe",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function esefy:internal/custom_recipes/perform/entity/attempt {id:\"esephor:cobalt_pickaxe\"}"
+        "command": "function eseframe:custom_recipes/entity/attempt {id:\"esephor:cobalt_pickaxe\"}"
       }
     }
   ]

@@ -6,4 +6,4 @@
 # esephor:copper_dust   x1
 # esephor:nickel_ingot  x1
 
-data modify storage esefy:recipes recipes append value {id:"esephor:cobalt_ingot",ingredients:[{item_predicate:'*[minecraft:custom_data~{esephor:{id:"iron_dust"}}]',count:1},{item_predicate:'*[minecraft:custom_data~{esephor:{id:"copper_dust"}}]',count:1},{item_predicate:'*[minecraft:custom_data~{esephor:{id:"nickel_ingot"}}]',count:1}],results:{loot:"esephor:recipe/cobalt_ingot"}}
+data modify storage eseframe:recipes recipes append value {id:"esephor:cobalt_ingot",ingredients:[{item_predicate:'*[minecraft:custom_data~{esephor:{id:"iron_dust"}}]',count:1},{item_predicate:'*[minecraft:custom_data~{esephor:{id:"copper_dust"}}]',count:1},{item_predicate:'*[minecraft:custom_data~{esephor:{id:"nickel_ingot"}}]',count:1}],results:{loot:"esephor:recipe/cobalt_ingot"}}

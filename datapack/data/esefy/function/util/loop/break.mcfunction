@@ -1,1 +1,0 @@
-scoreboard players set break esefy.util.loop 1
