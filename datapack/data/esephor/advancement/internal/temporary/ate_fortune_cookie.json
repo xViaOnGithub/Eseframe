@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "eat_fortune_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "esephor": {
+                "id": "fortune_cookie"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eat_fortune_cookie"
+    ]
+  ],
+  "rewards": {
+    "function": "esephor:give_fortune/run"
+  }
+}

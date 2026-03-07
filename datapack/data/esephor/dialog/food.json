@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Food",
+  "can_close_with_escape": true,
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    }
+  },
+  "actions": [
+    {
+      "label": "Craft Fortune Cookie",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function eseframe:custom_recipes/perform/entity/attempt {id:'esephor:fortune_cookie'}"
+      }
+    }
+  ]
+}

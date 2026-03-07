@@ -7,6 +7,7 @@
         "esephor:eseframe/recipes/gold_pan",
         "esephor:eseframe/recipes/nickel_ingot",
         "esephor:eseframe/recipes/rag",
+        "esephor:eseframe/recipes/fortune_cookie",
         "esephor:eseframe/recipes/splint"
     ]
 }

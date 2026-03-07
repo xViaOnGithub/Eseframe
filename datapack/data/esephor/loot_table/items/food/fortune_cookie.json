@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:rarity": {},
+                "minecraft:item_name": {
+                  "text": "Fortune Cookie",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "minecraft:cookie",
+                "minecraft:custom_data": {
+                  "esephor": {
+                    "id": "fortune_cookie",
+                    "extinguish_on_consume": true
+                  }
+                },
+                "minecraft:consumable": {
+                  "on_consume_effects": []
+                },
+                "minecraft:lore": [
+                  "",
+                  {
+                    "text": "Tells you stuff about your future :o",
+                    "color": "green",
+                    "italic": true
+                  }
+                ],
+                "minecraft:food": {
+                  "nutrition": 2,
+                  "saturation": 0.4
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
