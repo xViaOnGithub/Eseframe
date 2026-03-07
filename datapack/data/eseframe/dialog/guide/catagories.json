@@ -4,12 +4,12 @@
   "pause": false,
   "button_width": 310,
   "columns": 1,
-  "dialogs": "#esefy:guide_catagories",
+  "dialogs": "#eseframe:guide_additions",
   "exit_action": {
     "label": {
       "translate": "gui.back"
     },
     "width": 200
   },
-  "title": "Slimefun Guide"
+  "title": "Eseframe Guide"
 }
