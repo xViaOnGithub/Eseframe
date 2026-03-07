@@ -20,8 +20,7 @@
                 "minecraft:item_model": "minecraft:cookie",
                 "minecraft:custom_data": {
                   "esephor": {
-                    "id": "fortune_cookie",
-                    "extinguish_on_consume": true
+                    "id": "fortune_cookie"
                   }
                 },
                 "minecraft:consumable": {
