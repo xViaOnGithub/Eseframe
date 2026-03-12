@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:dialog_list",
+  "type": "minecraft:dialog_list", 
   "can_close_with_escape": true,
   "pause": false,
   "button_width": 310,
