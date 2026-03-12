@@ -1,1 +1,0 @@
-$tellraw @s {"storage":"esephor:tmp", "nbt":"fortunes.text[$(random)]","color":"gray"}
