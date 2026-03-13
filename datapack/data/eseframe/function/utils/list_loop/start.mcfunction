@@ -4,8 +4,6 @@ function eseframe:utils/list_loop/initialize
 $data modify storage eseframe:tmp list_loop.macro set value {function:"$(function_path)",list:'$(list_path)',index:0}
 
 # Subtract 1 from the length of the list to get the max index
-
-$say execute store result score #max_index eseframe.util.list_loop if data $(list_path)[]
 $execute store result score #max_index eseframe.util.list_loop if data $(list_path)[]
 execute store result storage eseframe:tmp list_loop.macro.max_index int 1 run scoreboard players remove #max_index eseframe.util.list_loop 1
 
