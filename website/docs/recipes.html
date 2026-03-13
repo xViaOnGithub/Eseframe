@@ -35,18 +35,18 @@
 
         <h2>Format of NBT</h2>
         <div>
-            <h3>storage esefy:recipes</h3>
+            <h3>Storage eseframe:content</h3>
             <p>Next to each data is the <a href="https://minecraft.wiki/w/NBT_format#Data_types">data type</a></p>
             <div class="nbt">
                 <ul>
                     <li>
-                        recipes <span class="data_type">list</span>
+                        recipe <span class="data_type">list</span>
                         <ol>
                             <li>
                                 <span class="data_type">compound</span>
                                 <ul>
                                     <li>id <span class="data_type">string</span></li>
-                                    <li>group <span class="data_type">(optional) string</span></li>
+                                    <li>namespace <span class="data_type">string</span></li>
                                     <li>
                                         ingredients
                                         <span class="data_type">list</span>
@@ -55,51 +55,23 @@
                                                 <span class="data_type">compound</span>
                                                 <ul>
                                                     <li>
-                                                        <a
-                                                            href="https://minecraft.wiki/w/Argument_types#minecraft:item_predicate"
-                                                            >item_predicate</a
+                                                        item_predicate
+                                                        <span class="data_type"
+                                                            >string (must be a valid
+                                                            <a
+                                                                href="https://minecraft.wiki/w/Argument_types#minecraft:item_predicate"
+                                                                >item_predicate</a
+                                                            >)</span
                                                         >
-                                                        <span class="data_type">string</span>
                                                     </li>
                                                     <li>
                                                         count
                                                         <span class="data_type">integer, atleast 1</span>
                                                     </li>
-                                                    <li>
-                                                        slot
-                                                        <span class="data_type">integer or string "*" for any</span>
-                                                    </li>
                                                 </ul>
                                             </li>
                                             <li>...</li>
                                         </ol>
-                                    </li>
-                                    <li>
-                                        results <span class="data_type">compound</span>
-                                        <ul>
-                                            <li>
-                                                loot
-                                                <span class="data_type">(optional) string or compound</span>
-                                            </li>
-                                            <li>
-                                                function
-                                                <span class="data_type">(optional) string or compound</span>
-                                                <ul>
-                                                    <li>
-                                                        path
-                                                        <span class="data_type">string</span>
-                                                    </li>
-                                                    <li>
-                                                        data
-                                                        <span class="data_type">(optional) compound</span>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                advancement
-                                                <span class="data_type">(optional) string</span>
-                                            </li>
-                                        </ul>
                                     </li>
                                 </ul>
                             </li>

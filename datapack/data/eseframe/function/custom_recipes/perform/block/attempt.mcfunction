@@ -1,11 +1,11 @@
-#macros: id, slot_type
+#macros: id, namespace
 ## temporary storage eseframe:tmp perform_custom_recipe_block
 ## Temporary scoreboard used: eseframe.tmp.perform_custom_recipe
 
 
 # Return fail if recipe does not exist, or if ingredients field is empty
-$execute unless data storage eseframe:recipes recipes[{id:"$(id)"}].ingredients[] run say recipe not found or has no ingredients!
-$execute unless data storage eseframe:recipes recipes[{id:"$(id)"}].ingredients[] run return fail
+$execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run say recipe not found or has no ingredients!
+$execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run return fail
 
 
 # Set up scoreboard
@@ -15,7 +15,7 @@ scoreboard objectives add eseframe.tmp.perform_custom_recipe dummy
 scoreboard players reset #total_ingredient_count eseframe.tmp.perform_custom_recipe
 
 # Check if all the ingredients are present
-$execute store result storage eseframe:tmp perform_custom_recipe_block.ingredient_check_result byte 1 run function eseframe:utils/list_loop/start {function_path:"eseframe:custom_recipes/perform/block/steps/01_check_ingredient",list_path:'storage eseframe:recipes recipes[{id:"$(id)"}].ingredients'}
+$execute store result storage eseframe:tmp perform_custom_recipe_block.ingredient_check_result byte 1 run function eseframe:utils/list_loop/start {function_path:"eseframe:custom_recipes/perform/block/steps/01_check_ingredient",list_path:'storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
 
 # Return fail if ingredient check failed
 execute if data storage eseframe:tmp {perform_custom_recipe_block:{ingredient_check_result:0b}} if function eseframe:custom_recipes/perform/block/steps/99_inline_cleanup run return fail
@@ -28,10 +28,8 @@ execute unless score #total_ingredient_count eseframe.tmp.perform_custom_recipe 
 # Clear items
 data remove block ~ ~ ~ Items
 
-# Give results (as separate functions to prevent parsing errors)
-$execute if data storage eseframe:recipes recipes[{id:"$(id)"}].results.advancement run function eseframe:custom_recipes/perform/block/steps/03_result_advancement with storage eseframe:recipes recipes[{id:"$(id)"}].results
-$execute if data storage eseframe:recipes recipes[{id:"$(id)"}].results.loot run function eseframe:custom_recipes/perform/block/steps/04_result_loot with storage eseframe:recipes recipes[{id:"$(id)"}].results
-$execute if data storage eseframe:recipes recipes[{id:"$(id)"}].results.function run function eseframe:custom_recipes/perform/block/steps/05_result_function with storage eseframe:recipes recipes[{id:"$(id)"}].results
+# Give results
+$loot insert ~ ~ ~ loot $(namespace):eseframe/recipe/$(id)
 
 # Clean up
 function eseframe:custom_recipes/perform/block/steps/99_inline_cleanup

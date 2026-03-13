@@ -1,30 +1,55 @@
-#macros: id, slot_type
+## NOTE:
+# THE BLOCK VERSION OF THE CUSTOM RECIPE PERFORMER REQUIRES AN EXACT AMOUNT OF ITEMS,
+# BECAUSE IT CLEARS THE CONTAINER TO AVOID A VANILLA BEHAVIOR WHERE INSERTING LOOT INTO A
+# FULL CONTAINER WILL ONLY INSERT SOME ITEMS INSTEAD OF ALL OF THEM.
+# IT ALSO CLEARS THE CONTAINER BECAUSE clear DOES NOT WORK ON BLOCKS, WHICH MEANS SELECTIVELY
+# REMOVING ITEMS WOULD HAVE TO BE DONE THROUGH FUNCTIONS (todo?).
+
+## Possible fixes:
+# Removing ingredients:
+# - Manually remove ingredients from chest after ingredient check
+# Inserting and merging results (very hard without item loss):
+# - ?
+
+
+# Maybe I could just loot spawn the results as item entities?
+# I could add a macro for item output coordinates so a machine could
+# provide relative coords to spawn the items at.
+
+
+# ----------------------------------------------------------------------
+
+
+#macros: id, namespace
 ## temporary storage eseframe:tmp perform_custom_recipe_entity
 ## Temporary scoreboard used: eseframe.tmp.perform_custom_recipe
 
 
+# Return fail if block is not a container
+execute unless data block ~ ~ ~ Items run say this block is not a container!
+execute unless data block ~ ~ ~ Items run return fail
+
+
 # Return fail if recipe does not exist, or if ingredients field is empty
-$execute unless data storage eseframe:recipes recipes[{id:"$(id)"}].ingredients[] run say recipe not found or has no ingredients!
-$execute unless data storage eseframe:recipes recipes[{id:"$(id)"}].ingredients[] run return fail
+$execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run say recipe not found or has no ingredients!
+$execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run return fail
 
 
 # Set up scoreboard
 scoreboard objectives add eseframe.tmp.perform_custom_recipe dummy
 
 # Check if all the ingredients are present
-$execute store result storage eseframe:tmp perform_custom_recipe_entity.ingredient_check_result byte 1 run function eseframe:utils/list_loop/start {function_path:"eseframe:custom_recipes/perform/entity/steps/01_check_ingredient",list_path:'storage eseframe:recipes recipes[{id:"$(id)"}].ingredients'}
+$execute store result storage eseframe:tmp perform_custom_recipe_entity.ingredient_check_result byte 1 run function eseframe:utils/list_loop/start {function_path:"eseframe:custom_recipes/perform/entity/steps/01_check_ingredient",list_path:'storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
 
 # TODO: cleanup needs to be ran here inline if it's gonna return
 # Return fail if ingredient check failed
 execute if data storage eseframe:tmp {perform_custom_recipe_entity:{ingredient_check_result:0b}} if function eseframe:custom_recipes/perform/entity/steps/99_inline_cleanup run return fail
 
 ## Clear items
-$function eseframe:utils/list_loop/start {function_path:"eseframe:custom_recipes/perform/entity/steps/02_clear_ingredients",list_path:'storage eseframe:recipes recipes[{id:"$(id)"}].ingredients'}
+$function eseframe:utils/list_loop/start {function_path:"eseframe:custom_recipes/perform/entity/steps/02_clear_ingredients",list_path:'storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
 
-# Give results (as separate functions to prevent parsing errors)
-$execute if data storage eseframe:recipes recipes[{id:"$(id)"}].results.advancement run function eseframe:custom_recipes/perform/entity/steps/03_result_advancement with storage eseframe:recipes recipes[{id:"$(id)"}].results
-$execute if data storage eseframe:recipes recipes[{id:"$(id)"}].results.loot run function eseframe:custom_recipes/perform/entity/steps/04_result_loot with storage eseframe:recipes recipes[{id:"$(id)"}].results
-$execute if data storage eseframe:recipes recipes[{id:"$(id)"}].results.function run function eseframe:custom_recipes/perform/entity/steps/05_result_function with storage eseframe:recipes recipes[{id:"$(id)"}].results
+# Give results
+$loot give @s loot $(namespace):eseframe/recipe/$(id)
 
 ## TODO scoreboard and data Cleanup
 function eseframe:custom_recipes/perform/entity/steps/99_inline_cleanup
