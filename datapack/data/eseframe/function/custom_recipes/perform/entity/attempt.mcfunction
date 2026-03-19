@@ -25,11 +25,6 @@
 ## Temporary scoreboard used: eseframe.tmp.perform_custom_recipe
 
 
-# Return fail if block is not a container
-execute unless data block ~ ~ ~ Items run say this block is not a container!
-execute unless data block ~ ~ ~ Items run return fail
-
-
 # Return fail if recipe does not exist, or if ingredients field is empty
 $execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run say recipe not found or has no ingredients!
 $execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run return fail
