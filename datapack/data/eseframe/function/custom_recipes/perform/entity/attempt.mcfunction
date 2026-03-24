@@ -26,7 +26,8 @@
 
 
 # Return fail if recipe does not exist, or if ingredients field is empty
-$execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run say recipe not found or has no ingredients!
+$execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}] run say recipe not found!
+$execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run say recipe has no ingredients!
 $execute unless data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients[] run return fail
 
 
