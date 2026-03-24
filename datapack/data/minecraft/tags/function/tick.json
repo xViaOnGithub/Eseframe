@@ -1,5 +1,5 @@
 {
  "values": [
- "esefy:tick"
+ "eseframe:entity_manager/tick"
  ]
 }
