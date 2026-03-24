@@ -1,5 +1,5 @@
 {
- "values": [
- "eseframe:entity_manager/tick"
- ]
+    "values": [
+        "#eseframe:tick"
+    ]
 }
