@@ -1,6 +1,6 @@
 {
     "values": [
-        "#eseframe:clear_content",
-        "#eseframe_api:add_content"
+        "#eseframe:content/clear",
+        "#eseframe_api:content/add"
     ]
 }

@@ -1,1 +1,1 @@
-$function eseframe:add_recipe {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients)}
+$function eseframe:content/recipe/add {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients)}
