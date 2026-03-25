@@ -1,25 +1,3 @@
-## NOTE:
-# THE BLOCK VERSION OF THE CUSTOM RECIPE PERFORMER REQUIRES AN EXACT AMOUNT OF ITEMS,
-# BECAUSE IT CLEARS THE CONTAINER TO AVOID A VANILLA BEHAVIOR WHERE INSERTING LOOT INTO A
-# FULL CONTAINER WILL ONLY INSERT SOME ITEMS INSTEAD OF ALL OF THEM.
-# IT ALSO CLEARS THE CONTAINER BECAUSE clear DOES NOT WORK ON BLOCKS, WHICH MEANS SELECTIVELY
-# REMOVING ITEMS WOULD HAVE TO BE DONE THROUGH FUNCTIONS (todo?).
-
-## Possible fixes:
-# Removing ingredients:
-# - Manually remove ingredients from chest after ingredient check
-# Inserting and merging results (very hard without item loss):
-# - ?
-
-
-# Maybe I could just loot spawn the results as item entities?
-# I could add a macro for item output coordinates so a machine could
-# provide relative coords to spawn the items at.
-
-
-# ----------------------------------------------------------------------
-
-
 #macros: id, namespace
 ## temporary storage eseframe:tmp perform_custom_recipe_entity
 ## Temporary scoreboard used: eseframe.tmp.perform_custom_recipe
