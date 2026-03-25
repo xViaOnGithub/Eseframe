@@ -1,0 +1,1 @@
+$function eseframe:add_recipe {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients)}

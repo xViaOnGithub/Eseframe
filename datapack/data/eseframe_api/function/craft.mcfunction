@@ -1,0 +1,1 @@
+$function eseframe:craft {id:"$(id)",namespace:"$(namespace)"}
