@@ -1,5 +1,6 @@
 {
-  "values": [
-    "eseframe:guide/catagories"
-  ]
+    "replace": false,
+    "values": [
+        "eseframe:guide"
+    ]
 }
