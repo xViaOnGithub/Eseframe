@@ -1,1 +1,0 @@
-$function eseframe:custom_recipes/perform/entity/attempt {id:"$(id)",namespace:"$(namespace)"}
