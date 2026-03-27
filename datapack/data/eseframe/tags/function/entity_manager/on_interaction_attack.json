@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#eseframe_api:entity_manager/on_interaction_attack",
+        "eseframe:entity_manager/steps/tag/kill_on_attack"
+    ]
+}

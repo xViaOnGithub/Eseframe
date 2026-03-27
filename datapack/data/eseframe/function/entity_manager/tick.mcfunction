@@ -1,1 +1,1 @@
-execute as @e[tag=eseframe] at @s run function eseframe:entity_manager/01_as_tagged_entity
+execute as @e[tag=eseframe] at @s run function eseframe:entity_manager/as_tagged_entities
