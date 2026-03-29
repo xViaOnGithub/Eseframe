@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "eseframe:clear_cache/tick",
         "eseframe:entity_manager/tick"
     ] 
 }
