@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "use_hold": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "Eseframe": {
+                "detect_use_hold": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use_hold"
+    ]
+  ],
+  "rewards": {
+    "function": "eseframe:content/item/detect/use_hold/run"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "Eseframe": {
+                    "id": "test_item",
+                    "namespace": "eseframe",
+                    "detect_use_hold": true
+                  }
+                },
+                "minecraft:item_name": "test item :)",
+                
+                "consumable": {
+                    "consume_seconds": 99999999999999,
+                    "animation": "none",
+                    "has_consume_particles": false
+                },
+                "use_effects": {
+                    "speed_multiplier": 1,
+                    "interact_vibrations": true,
+                    "can_sprint": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
