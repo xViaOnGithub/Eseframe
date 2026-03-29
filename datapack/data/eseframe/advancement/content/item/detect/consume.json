@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "Eseframe": {
+                "detect_consume": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "consume"
+    ]
+  ],
+  "rewards": {
+    "function": "eseframe:content/item/detect/consume/run"
+  }
+}

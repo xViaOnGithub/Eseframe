@@ -12,16 +12,16 @@
               "components": {
                 "minecraft:custom_data": {
                   "Eseframe": {
-                    "id": "test_item",
+                    "id": "test_item_use_press",
                     "namespace": "eseframe",
-                    "detect_consume": true,
+                    "detect_use_press": true,
                     "detect_use_hold": true
                   }
                 },
-                "minecraft:item_name": "test item with all \"safe\" flags",
+                "minecraft:item_name": "test item with use_press detection",
                 
                 "consumable": {
-                    "consume_seconds": 3,
+                    "consume_seconds": 99999999999999,
                     "animation": "none",
                     "has_consume_particles": false
                 },
