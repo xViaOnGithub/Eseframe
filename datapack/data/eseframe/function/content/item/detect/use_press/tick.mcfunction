@@ -1,0 +1,2 @@
+# rename this
+execute store result storage eseframe:cache session.content.item.detect.use_press.copy_of_gametime_that_is_updated_on_tick_which_makes_it_one_tick_behind_gametime_when_read_by_a_function_invoked_by_advancements_due_to_execution_order long 1 run time query gametime

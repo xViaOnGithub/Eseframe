@@ -14,6 +14,7 @@
                   "Eseframe": {
                     "id": "test_item",
                     "namespace": "eseframe",
+                    "detect_use_press": true,
                     "detect_use_hold": true
                   }
                 },
