@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "use_hold": {
+    "use_press": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
@@ -17,7 +17,7 @@
   },
   "requirements": [
     [
-      "use_hold"
+      "use_press"
     ]
   ],
   "rewards": {
