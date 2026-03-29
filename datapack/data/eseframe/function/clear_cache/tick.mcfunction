@@ -1,1 +1,1 @@
-data remove storage eseframe:tmp tick
+data remove storage eseframe:cache tick

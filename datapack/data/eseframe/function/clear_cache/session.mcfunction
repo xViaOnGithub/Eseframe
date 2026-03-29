@@ -1,1 +1,1 @@
-data remove storage eseframe:tmp session
+data remove storage eseframe:cache session
