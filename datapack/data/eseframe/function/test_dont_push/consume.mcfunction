@@ -1,0 +1,1 @@
+say item consume

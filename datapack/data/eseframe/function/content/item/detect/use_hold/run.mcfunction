@@ -4,5 +4,5 @@
 # Remove the advancement so it can be earned again next tick
 advancement revoke @s only eseframe:content/item/detect/use_hold
 
-# Call a function that runs the use_hold function in the item's respective folder
-function eseframe:content/item/detect/use_hold/steps/01_call_function_in_item_folder with entity @s SelectedItem.components."minecraft:custom_data".Eseframe
+# Call a function that runs the use_hold function tag in the item's respective folder
+function eseframe:content/item/detect/use_hold/steps/01_call_function_tag_in_item_folder with entity @s SelectedItem.components."minecraft:custom_data".Eseframe
