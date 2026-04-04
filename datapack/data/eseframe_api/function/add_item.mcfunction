@@ -1,0 +1,1 @@
+$function eseframe:content/item/add {id:"$(id)",namespace:"$(namespace)",components:$(components)}

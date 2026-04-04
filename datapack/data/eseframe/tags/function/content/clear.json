@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "eseframe:content/item/clear",
         "eseframe:content/recipe/clear"
     ]
 }
