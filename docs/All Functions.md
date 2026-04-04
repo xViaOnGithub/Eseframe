@@ -4,11 +4,8 @@
 Registers a new recipe to Eseframe. 
 ##### [[craft|eseframe:craft]]
 Attempts to craft a registered recipe as the player running the function. 
-##### [[add_block|eseframe:add_block]]
-Registered a new custom block to Eseframe.
+##### [[add_item|eseframe:add_item]]
+Registers a new custom item to Eseframe.
 
-##### [[set_block|eseframe:set_block]]
-#todo
-
-##### [[set_block|eseframe:set_block_here]]
-#todo
+##### [[give|eseframe:give]]
+Gives the player running the function a registered custom item.
