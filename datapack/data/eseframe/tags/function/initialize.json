@@ -2,6 +2,6 @@
     "values": [
         "eseframe:clear_cache/session",
         "#eseframe:content/clear",
-        "#eseframe_api:content/add"
+        "#eseframe:content/add"
     ]
 }
