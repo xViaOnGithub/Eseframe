@@ -1,17 +1,16 @@
 > **There is a tutorial available for this command!** [[Core Tutorial - Adding a new recipe]]
-# `eseframe:add_recipe`
-##### Registers a new recipe to Eseframe.
+# `eseframe_api:add_recipe`
+##### Registers a new item to Eseframe.
 #api_function
 ## Description
-#todo 
-\[...it is recommended to run this on reload by adding a function in ur namespace with it to LOAD RECIPES TAG HERE]
+#todo
 ## [Macros](https://minecraft.wiki/w/Function_(Java_Edition)#Macros)
 
-| key         | type   | description                                                                          | example                                       |
-| ----------- | ------ | ------------------------------------------------------------------------------------ | --------------------------------------------- |
-| id          | string | A unique identifier for the recipe within the namespace.                             | "cool_sword"                                  |
-| namespace   | string | The namespace of the core adding the recipe                                          | "my_core"                                     |
-| ingredients | list   | A list containing at least one compound, each following the [[custom recipe format]] | \[{item_predicate:"minecraft:apple",count:2}] |
+| key         | type   | description                                            | example                                       |
+| ----------- | ------ | ------------------------------------------------------ | --------------------------------------------- |
+| id          | string | A unique identifier for the item within the namespace. | "cool_ingot"                                  |
+| namespace   | string | The namespace of the core adding the item              | "my_core"                                     |
+| ingredients | list   | A the [[custom recipe format]]                         | \[{item_predicate:"minecraft:apple",count:2}] |
 ### Structure
 - id *string*
 - namespace *string*

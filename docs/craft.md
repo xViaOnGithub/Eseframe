@@ -1,4 +1,4 @@
-# `eseframe:craft`
+# `eseframe_api:craft`
 ##### Attempts to craft a registered recipe as the player running the function. 
 ## Description
 #todo Lorem ibsum, among other made-up latinesque words. I'm going to copy and paste this. Lorem ibsum, among other made-up latinesque words. I'm going to copy and paste this. Lorem ibsum, among other made-up latinesque words. I'm no longer going to copy and paste this.

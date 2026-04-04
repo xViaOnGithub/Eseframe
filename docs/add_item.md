@@ -1,5 +1,5 @@
 > **There is a tutorial available for this command!** [[Core Tutorial - Making a new custom item]]
-# `eseframe:add_item`
+# `eseframe_api:add_item`
 ##### Registers a new item to Eseframe.
 #api_function
 ## Description

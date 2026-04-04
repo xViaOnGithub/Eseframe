@@ -1,5 +1,7 @@
-# `eseframe:path/to/function`
+> Banner, if there's a related tutorial
+# `eseframe_api:path/to/function`
 ##### Brief description of basic functionality. 
+#api_function
 ## Description
 
 ## [Macros](https://minecraft.wiki/w/Function_(Java_Edition)#Macros)
@@ -26,7 +28,7 @@
 ## Return Codes
 | Return Code | Meaning |
 | ----------- | ------- |
-| fail        |         |
-| 1           |         |
+| fail        | ...     |
+| 1           | ...     |
 ## See also:
 #todo
