@@ -8,4 +8,4 @@ $function eseframe:content/item/generate/loot_table/run {id:"$(id)",namespace:"$
 data modify storage eseframe:cache tick.content.item.give.loot_table set from storage eseframe:cache tick.content.item.generate.loot_table.output
 
 # Give this player the loot table
-function eseframe:content/item/give/steps/01_generate_and_call_loot_table with storage eseframe:cache tick.content.item.give
+function eseframe:content/item/give/steps/01_give_loot with storage eseframe:cache tick.content.item.give
