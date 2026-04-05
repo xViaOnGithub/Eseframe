@@ -1,5 +1,7 @@
 {
     "values": [
+        "#eseframe:util/initialize",
+
         "eseframe:clear_cache/session",
 
         "#eseframe:content/clear",
