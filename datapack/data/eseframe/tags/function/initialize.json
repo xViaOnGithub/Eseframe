@@ -2,6 +2,7 @@
     "values": [
         "eseframe:util/get_list_highest_index/setup_scoreboard",
         "eseframe:util/loop/setup_scoreboard",
+        "eseframe:content/item/proxy/init_scoreboard",
         
         "eseframe:clear_cache/session",
 
