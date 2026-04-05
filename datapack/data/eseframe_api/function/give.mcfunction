@@ -1,1 +1,2 @@
-$function eseframe:content/item/generate/give/run {id:"$(id)",namespace:"$(namespace)",count:$(count)}
+say todo: make sure item exists
+$function eseframe:content/item/give/run {id:"$(id)",namespace:"$(namespace)",count:$(count)}
