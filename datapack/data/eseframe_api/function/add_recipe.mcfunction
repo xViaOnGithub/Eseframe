@@ -3,8 +3,8 @@ execute unless data storage eseframe:cache {initialize:{content:{allow_content_r
 execute unless data storage eseframe:cache {initialize:{content:{allow_content_register:1b}}} run return fail
 
 # Prevent duplicate id/namespace combonations. 
-$execute unless data storage eseframe:content item[{id:"$(id)",namespace:"$(namespace)"}] run say [Eseframe API] Error! There is already a custom recipe registered with id "$(id)" and namespace "$(namespace)".
-$execute unless data storage eseframe:content item[{id:"$(id)",namespace:"$(namespace)"}] run return fail
+$execute if data storage eseframe:content item[{id:"$(id)",namespace:"$(namespace)"}] run say [Eseframe API] Error! There is already a custom recipe registered with id "$(id)" and namespace "$(namespace)".
+$execute if data storage eseframe:content item[{id:"$(id)",namespace:"$(namespace)"}] run return fail
 
 
 $function eseframe:content/recipe/add {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients)}
