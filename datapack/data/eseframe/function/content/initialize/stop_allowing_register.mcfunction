@@ -7,4 +7,3 @@
 
 # Stop allowing new registers
 data modify storage eseframe:cache initialize.content.allow_content_register set value 0b
-say REGISTER END
