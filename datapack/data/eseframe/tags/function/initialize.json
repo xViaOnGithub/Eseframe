@@ -1,7 +1,12 @@
 {
     "values": [
         "eseframe:clear_cache/session",
+
         "#eseframe:content/clear",
-        "#eseframe:content/add"
+        "eseframe:content/initialize/allow_register",
+        "#eseframe:content/add",
+        "eseframe:content/initialize/stop_allowing_register",
+        
+        "eseframe:clear_cache/clear_initialize_cache"
     ]
 }
