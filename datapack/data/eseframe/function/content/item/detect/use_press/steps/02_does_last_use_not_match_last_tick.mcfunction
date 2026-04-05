@@ -1,1 +1,1 @@
-$return run execute unless data entity @s {SelectedItem:{components:{"minecraft:custom_data":{Eseframe:{last_use:$(last_gametime)L}}}}}
+$return run execute unless data entity @s {SelectedItem:{components:{"minecraft:custom_data":{eseframe:{last_use:$(last_gametime)L}}}}}

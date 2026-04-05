@@ -6,8 +6,8 @@ execute store result storage eseframe:cache tick.content.item.detect.use_press.l
 
 
 # Return 1 if this is the first time this item is being used
-execute unless data entity @s SelectedItem.components."minecraft:custom_data".Eseframe.last_use run say first use
-execute unless data entity @s SelectedItem.components."minecraft:custom_data".Eseframe.last_use run return 1
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".eseframe.last_use run say first use
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".eseframe.last_use run return 1
 
 # Return the inverse of whether the item was used last tick
 return run function eseframe:content/item/detect/use_press/steps/02_does_last_use_not_match_last_tick with storage eseframe:cache tick.content.item.detect.use_press

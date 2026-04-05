@@ -24,5 +24,5 @@ $data modify storage eseframe:cache tick.content.item.generate.item_modifier.out
 
 
 
-# Last, add the custom item's id and namespace to a fixed path (Eseframe:{id,namespace}) in component "minecraft:custom_data"
-$data modify storage eseframe:cache tick.content.item.generate.item_modifier.output.functions append value {function:"minecraft:set_custom_data",tag:{Eseframe:{id:"$(id)",namespace:"$(namespace)"}}}
+# Last, add the custom item's id and namespace to a fixed path (eseframe:{id,namespace}) in component "minecraft:custom_data"
+$data modify storage eseframe:cache tick.content.item.generate.item_modifier.output.functions append value {function:"minecraft:set_custom_data",tag:{eseframe:{id:"$(id)",namespace:"$(namespace)"}}}

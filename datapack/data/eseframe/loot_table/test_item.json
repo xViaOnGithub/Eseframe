@@ -11,7 +11,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
-                  "Eseframe": {
+                  "eseframe": {
                     "id": "test_item",
                     "namespace": "eseframe",
                     "detect_consume": true,

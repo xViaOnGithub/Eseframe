@@ -7,7 +7,7 @@
   "ops": [
     {
       "source": "tick.content.item.detect.use_press.current_gametime",
-      "target": "Eseframe.last_use",
+      "target": "eseframe.last_use",
       "op": "replace"
     }
   ]

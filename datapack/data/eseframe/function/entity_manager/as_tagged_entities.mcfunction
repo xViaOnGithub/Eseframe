@@ -3,8 +3,8 @@
 ## Conditions
 
 # Return and kill if Eseframe data is missing
-execute unless data entity @s {data:{Eseframe:{requirements:[{}]}}} run say structure missing
-execute unless data entity @s {data:{Eseframe:{requirements:[{}]}}} run return run kill
+execute unless data entity @s {data:{eseframe:{requirements:[{}]}}} run say structure missing
+execute unless data entity @s {data:{eseframe:{requirements:[{}]}}} run return run kill
 
 # Return and kill if any requirements fail
 ## TODO: Make requirements into it's own system
