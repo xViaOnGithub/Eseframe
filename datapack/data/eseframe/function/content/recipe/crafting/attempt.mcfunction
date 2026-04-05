@@ -23,7 +23,7 @@ execute if data storage eseframe:tmp {perform_custom_recipe_entity:{ingredient_c
 $function eseframe:utils/list_loop/start {function_path:"eseframe:content/recipe/crafting/steps/02_clear_ingredient",list_path:'storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
 
 # Give results
-$loot give @s loot $(namespace):eseframe/recipe/$(id)
+$loot give @s loot $(namespace):eseframe_api/recipe/$(id)
 
 ## TODO scoreboard and data Cleanup
 function eseframe:content/recipe/crafting/steps/03_cleanup
