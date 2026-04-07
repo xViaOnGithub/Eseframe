@@ -7,4 +7,4 @@ $execute if data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namesp
 $execute if data storage eseframe:content recipe[{id:"$(id)",namespace:"$(namespace)"}] run return fail
 
 
-$function eseframe:content/recipe/add {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients)}
+$function eseframe:content/recipe/add {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients),properties:$(properties)}

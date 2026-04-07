@@ -1,1 +1,1 @@
-$data modify storage eseframe:content recipe append value {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients)}
+$data modify storage eseframe:content recipe append value {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients),properties:{$(properties)}}

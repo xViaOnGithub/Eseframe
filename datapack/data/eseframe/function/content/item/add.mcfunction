@@ -1,1 +1,1 @@
-$data modify storage eseframe:content item append value {id:"$(id)",namespace:"$(namespace)",components:$(components)}
+$data modify storage eseframe:content item append value {id:"$(id)",namespace:"$(namespace)",components:$(components),properties:$(properties)}

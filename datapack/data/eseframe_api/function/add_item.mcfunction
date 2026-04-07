@@ -7,4 +7,4 @@ $execute if data storage eseframe:content item[{id:"$(id)",namespace:"$(namespac
 $execute if data storage eseframe:content item[{id:"$(id)",namespace:"$(namespace)"}] run return fail
 
 
-$function eseframe:content/item/add {id:"$(id)",namespace:"$(namespace)",components:$(components)}
+$function eseframe:content/item/add {id:"$(id)",namespace:"$(namespace)",components:$(components),properties:{$(properties)}}
