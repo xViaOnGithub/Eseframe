@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:rarity": {},
+                "!minecraft:item_name": {},
+                "!minecraft:item_model": {},
+                "!minecraft:max_stack_size": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,8 +8,8 @@
 
 ## Outputs to storage eseframe:cache tick.content.item.generate.loot_table.output
 
-# Start with $(count) amount of `minecraft:command_block`
-$data modify storage eseframe:cache tick.content.item.generate.loot_table.output set value {type:"minecraft:generic",pools:[{rolls:$(count),entries:[{type:"minecraft:item",name:"minecraft:command_block",functions:[{function:"minecraft:set_components",components:{"!minecraft:rarity":{},"!minecraft:item_name":{},"!minecraft:item_model":{},"!minecraft:max_stack_size":{}}}]}]}]}
+# Start with $(count) amount of a dummy item
+$data modify storage eseframe:cache tick.content.item.generate.loot_table.output set value {type:"minecraft:generic",pools:[{rolls:$(count),entries:[{type:"minecraft:loot_table",value:"eseframe:dummy_item",functions:[]}]}]}
 
 # Generate an item modifier that will turn the command block(s) into the desired item
 $function eseframe:content/item/generate/item_modifier/run {id:"$(id)",namespace:"$(namespace)"}
