@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "use_hold": {
+    "using": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
@@ -15,10 +15,10 @@
   },
   "requirements": [
     [
-      "use_hold"
+      "using"
     ]
   ],
   "rewards": {
-    "function": "eseframe:content/item/detect/use_hold/run"
+    "function": "eseframe:content/item/detect/using/run"
   }
 }

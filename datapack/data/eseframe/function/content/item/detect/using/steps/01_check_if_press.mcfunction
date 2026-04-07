@@ -1,5 +1,5 @@
 # Return 1 if item changed
-execute if function eseframe:content/item/detect/use_hold/steps/02_check_if_different_item run return 1
+execute if function eseframe:content/item/detect/using/steps/02_check_if_different_item run return 1
 
 # If the function makes it to this point, the player is using an Eseframe item
 #   with the same namespace and ID as the last time they used an Eseframe item. 
