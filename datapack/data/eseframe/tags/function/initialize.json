@@ -11,7 +11,7 @@
         "#eseframe:content/add",
         "eseframe:content/initialize/stop_allowing_register",
 
-        "eseframe:generate_menus/run",
+        "eseframe:dev_tools/menu/item/generate/run",
 
         "eseframe:clear_cache/clear_initialize_cache"
     ]

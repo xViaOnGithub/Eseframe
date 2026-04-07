@@ -1,0 +1,1 @@
+function eseframe:dev_tools/menu/item/show/steps/01_show_dialog_from_macro with storage eseframe:cache session.dev_tools.menu.item.generate

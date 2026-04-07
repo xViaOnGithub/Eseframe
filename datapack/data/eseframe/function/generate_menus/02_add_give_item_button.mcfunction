@@ -1,2 +1,0 @@
-$data modify storage eseframe:cache session.generate_menus.dialog.actions append value {label:"$(id)",tooltip:"$(namespace):$(id)",width:150,action:{type:"minecraft:dynamic/run_command",template:"function eseframe:content/item/give/run {id:\"$(id)\",namespace:\"$(namespace)\",count:\"$(stringified_dialog_macro)\"}"}}
-#$data modify storage eseframe:cache session.generate_menus.dialog.actions append value {label:"dialog",action:{type:"minecraft:copy_to_clipboard",value:"a"}}

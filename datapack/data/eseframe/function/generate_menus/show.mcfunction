@@ -1,1 +1,0 @@
-function eseframe:generate_menus/01a with storage eseframe:cache session.generate_menus
