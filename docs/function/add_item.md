@@ -10,11 +10,12 @@ This function can be used to add new items to the game through Eseframe. It work
 Like similar registry functions, is best practice to invoke this during function tag `#eseframe_api:content/add`. 
 ## [Macros](https://minecraft.wiki/w/Function_(Java_Edition)#Macros)
 
-| key        | type     | description                                                                     | example                                                                                           |
-| ---------- | -------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| id         | string   | A unique identifier for the item within the namespace.                          | "cool_ingot"                                                                                      |
-| namespace  | string   | The namespace of the core adding the item                                       | "my_core"                                                                                         |
-| components | compound | See https://minecraft.wiki/w/Data_component_format#Item_format for reference... | {"minecraft:max_stack_size":3,"minecraft:item_model":"minecraft:stick","!minecraft:item_name":{}} |
+| key        | type     | description                                                                      | example                                                                                           |
+| ---------- | -------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| id         | string   | A unique identifier for the item within the namespace.                           | "cool_ingot"                                                                                      |
+| namespace  | string   | The namespace of the core adding the item                                        | "my_core"                                                                                         |
+| components | compound | See https://minecraft.wiki/w/Data_component_format#Item_format for reference...  | {"minecraft:max_stack_size":3,"minecraft:item_model":"minecraft:stick","!minecraft:item_name":{}} |
+| properties | compound | A compound that holds optional metadata about the item. See [[Item Properties]]. | {override_template_item:"minecraft:iron_pickaxe"}                                                 |
 ### Structure
 - id *string*
 - namespace *string*

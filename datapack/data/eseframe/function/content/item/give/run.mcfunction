@@ -4,7 +4,7 @@
 #   - count (integer): The amount of the item to give the player running this function
 
 # Generate a loot table of the desired amount of the given registered custom item
-$function eseframe:content/item/generate/loot_table/run {id:"$(id)",namespace:"$(namespace)",count:$(count),template_item:""}
+$function eseframe:content/item/generate/loot_table/run {id:"$(id)",namespace:"$(namespace)",count:$(count)}
 data modify storage eseframe:cache tick.content.item.give.loot_table set from storage eseframe:cache tick.content.item.generate.loot_table.output
 
 # Give this player the loot table
