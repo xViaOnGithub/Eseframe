@@ -23,6 +23,6 @@ execute unless data storage eseframe:content item[] run return 0
 data modify storage eseframe:cache session.generate_menus.dialog set value {type:"minecraft:multi_action",inputs:[{type:"minecraft:number_range",key:"count",label:{text:"Item Count"},start:1,end:64,step:1,initial:1,width:300}],can_close_with_escape:1,title:"Eseframe Registered Items (Dev Menu)",actions:[],exit_action:{label:{translate:"gui.back"}}}
 
 # Add a button to the menu for each registered item
-function eseframe:utils/list_loop/start {function_path:"eseframe:generate_menus/01",list_path:"storage eseframe:content item"}
+function eseframe:utils/list_loop/start {function_path:"eseframe:generate_menus/01_prepare_macro",list_path:"storage eseframe:content item"}
 
 return 1
