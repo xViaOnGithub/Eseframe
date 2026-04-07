@@ -3,7 +3,7 @@
 #   - namespace (string): The namespace of the custom item within the item registry
 
 # Generates an item modifier that applies item components from the item registry (storage eseframe:content item[]),
-#   intended to be used on a "minecraft:command_block" item that has default components.
+#   intended to be used on an item that has it's default components removed (though sometimes it is useful to not do that!).
 
 ## Outputs to storage eseframe:cache tick.content.item.generate.item_modifier.output
 
@@ -15,14 +15,9 @@
 data modify storage eseframe:cache tick.content.item.generate.item_modifier.output set value {function:"minecraft:sequence",functions:[]}
 
 
-# First, remove the default components found on item "minecraft:command_block"
-data modify storage eseframe:cache tick.content.item.generate.item_modifier.output.functions append value {function:"minecraft:set_components",components:{"!minecraft:rarity":{},"!minecraft:item_name":{},"!minecraft:item_model":{},"!minecraft:max_stack_size":{}}}
-
-# Second, apply components copied over from the item registry
+# Apply components copied over from the item registry
 data modify storage eseframe:cache tick.content.item.generate.item_modifier.output.functions append value {function:"minecraft:set_components"}
-$data modify storage eseframe:cache tick.content.item.generate.item_modifier.output.functions[1].components set from storage eseframe:content item[{id:"$(id)",namespace:"$(namespace)"}].components
+$data modify storage eseframe:cache tick.content.item.generate.item_modifier.output.functions[0].components set from storage eseframe:content item[{id:"$(id)",namespace:"$(namespace)"}].components
 
-
-
-# Last, add the custom item's id and namespace to a fixed path (eseframe:{id,namespace}) in component "minecraft:custom_data"
+# Add the custom item's id and namespace to a fixed path (eseframe:{id,namespace}) in component "minecraft:custom_data"
 $data modify storage eseframe:cache tick.content.item.generate.item_modifier.output.functions append value {function:"minecraft:set_custom_data",tag:{eseframe:{id:"$(id)",namespace:"$(namespace)"},eseframe_api:{id:"$(id)",namespace:"$(namespace)"}}}
