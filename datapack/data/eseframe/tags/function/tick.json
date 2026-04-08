@@ -3,6 +3,7 @@
     "values": [
         "eseframe:clear_cache/tick",
         "eseframe:content/item/detect/use_press/tick",
+        "eseframe:content/item/detect/using/tick",
         "eseframe:entity_manager/tick"
     ] 
 }
