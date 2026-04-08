@@ -1,0 +1,1 @@
+data modify storage eseframe:content recipe_tag set value []
