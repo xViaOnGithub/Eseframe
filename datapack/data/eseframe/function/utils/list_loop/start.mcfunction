@@ -1,3 +1,5 @@
+say [Eseframe Internal] eseframe:utils/list_loop/start is DEPRECATED! Please use eseframe:util/list_loop/run instead!
+
 function eseframe:utils/list_loop/initialize
 
 # Set up function parameters that doesn't require math
