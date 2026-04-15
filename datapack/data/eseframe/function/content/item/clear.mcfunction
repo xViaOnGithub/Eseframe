@@ -1,1 +1,0 @@
-data modify storage eseframe:content item set value []

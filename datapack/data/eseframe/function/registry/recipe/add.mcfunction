@@ -1,0 +1,1 @@
+$data modify storage eseframe:registry recipe append value {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients),properties:$(properties)}

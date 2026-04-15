@@ -1,1 +1,1 @@
-$function eseframe:content/recipe/crafting/attempt {id:"$(id)",namespace:"$(namespace)"}
+$function eseframe:registry/recipe/crafting/attempt {id:"$(id)",namespace:"$(namespace)"}

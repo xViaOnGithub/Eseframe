@@ -3,14 +3,14 @@
         "eseframe:util/get_list_highest_index/setup_scoreboard",
         "eseframe:util/loop/setup_scoreboard",
         "eseframe:util/list_loop/setup_scoreboard",
-        "eseframe:content/item/proxy/init_scoreboard",
+        "eseframe:registry/item/proxy/init_scoreboard",
         
         "eseframe:clear_cache/session",
 
-        "#eseframe:content/clear",
-        "eseframe:content/initialize/allow_register",
-        "#eseframe:content/add",
-        "eseframe:content/initialize/stop_allowing_register",
+        "#eseframe:registry/clear",
+        "eseframe:registry/initialize/allow_register",
+        "#eseframe:registry/add",
+        "eseframe:registry/initialize/stop_allowing_register",
 
         "eseframe:dev_tools/menu/item/generate/run",
 

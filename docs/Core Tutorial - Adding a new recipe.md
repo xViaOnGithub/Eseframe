@@ -114,11 +114,11 @@ For example, this lets the recipe accept the Esephor item **salt**.
 
 ## 5. Automatically Loading the Recipe
 
-To ensure your recipe loads automatically, add your function to the Eseframe content load tag.
+To ensure your recipe loads automatically, add your function to the Eseframe registry load tag.
 
 The file path is:
 
-	<datapack folder>/data/eseframe/tags/02_load_content.json
+	<datapack folder>/data/eseframe/tags/02_load_registry.json
 
 Add your recipe function to the list:
 
@@ -133,7 +133,7 @@ When the datapack loads, Eseframe will run this function and register your recip
 After installing your datapack:
 
 1. Use the command `/reload`
-2. ==#datapack-todo some sort of content test command==
+2. ==#datapack-todo some sort of registry test command==
 3. 
 
 ---

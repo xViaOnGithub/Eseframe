@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         "eseframe:clear_cache/tick",
-        "eseframe:content/item/detect/using/tick",
+        "eseframe:registry/item/detect/using/tick",
         "eseframe:entity_manager/tick"
     ] 
 }

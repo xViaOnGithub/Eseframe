@@ -1,0 +1,1 @@
+$data modify storage eseframe:registry item append value {id:"$(id)",namespace:"$(namespace)",components:$(components),properties:$(properties)}

@@ -7,7 +7,7 @@ This function can be used to add new items to the game through Eseframe. It work
 
 **Note:** Certain default components, including but not limited to `minecraft:item_name`, `minecraft:item_model`, and `minecraft:max_stack_size` are intentionally removed from the dummy item. ==It is recommended you manually set every component you plan to use, even if it's value matches a default.==
 
-Like similar registry functions, is best practice to invoke this during function tag `#eseframe_api:content/add`. 
+Like similar registry functions, is best practice to invoke this during function tag `#eseframe_api:registry/add`. 
 ## [Macros](https://minecraft.wiki/w/Function_(Java_Edition)#Macros)
 
 | key        | type     | description                                                                      | example                                                                                           |

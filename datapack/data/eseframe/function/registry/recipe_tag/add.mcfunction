@@ -1,0 +1,1 @@
+$data modify storage eseframe:registry recipe_tag[{id:"$(tag_id)",namespace:"$(tag_namespace)"}].recipes append value {id:"$(recipe_id)",namespace:"$(recipe_namespace)"}

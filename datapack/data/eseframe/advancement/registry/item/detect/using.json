@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "using": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "eseframe": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "using"
+    ]
+  ],
+  "rewards": {
+    "function": "eseframe:registry/item/detect/using/run"
+  }
+}

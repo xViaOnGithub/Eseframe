@@ -1,0 +1,1 @@
+$function eseframe:utils/list_loop/start {function_path:"eseframe:registry/recipe_tag/crafting/steps/01",list_path:'storage eseframe:registry recipe_tag[{id:"$(id)",namespace:"$(namespace)"}].recipes'}
