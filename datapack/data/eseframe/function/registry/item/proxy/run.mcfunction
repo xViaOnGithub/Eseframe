@@ -12,7 +12,7 @@ execute store result storage eseframe:cache tick.registry.item.proxy.loop_macro.
 function eseframe:util/loop/start with storage eseframe:cache tick.registry.item.proxy.loop_macro
 
 # For each unique item proxy found, clear all of that proxy and give an equal amount of the custom item it points to 
-function eseframe:utils/list_loop/start {function_path:"eseframe:registry/item/proxy/steps/03_clear_and_replace_proxies",list_path:"storage eseframe:cache tick.registry.item.proxy.proxies_found"}
+function eseframe:util/list_loop/run {pass_index:false,function_path:"eseframe:registry/item/proxy/steps/03_clear_and_replace_proxies",list_path:"storage eseframe:cache tick.registry.item.proxy.proxies_found"}
 
 
 # Revoke the advancement at the end of the function to prevent it from being triggered when this function modifies the inventory.

@@ -14,13 +14,13 @@ scoreboard objectives add eseframe.tmp.perform_custom_recipe dummy
 
 # Check if all the ingredients are present
 # TODO: Split this off into it's own function
-$execute store result storage eseframe:tmp perform_custom_recipe_entity.ingredient_check_result byte 1 run function eseframe:utils/list_loop/start {function_path:"eseframe:registry/recipe/crafting/steps/01_check_ingredient",list_path:'storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
+$execute store result storage eseframe:tmp perform_custom_recipe_entity.ingredient_check_result byte 1 run function eseframe:util/list_loop/run {pass_index:false,function_path:"eseframe:registry/recipe/crafting/steps/01_check_ingredient",list_path:'storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
 
 # Return fail if ingredient check failed
 execute if data storage eseframe:tmp {perform_custom_recipe_entity:{ingredient_check_result:0b}} if function eseframe:registry/recipe/crafting/steps/03_cleanup run return fail
 
 ## Clear items
-$function eseframe:utils/list_loop/start {function_path:"eseframe:registry/recipe/crafting/steps/02_clear_ingredient",list_path:'storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
+$function eseframe:util/list_loop/run {pass_index:false,function_path:"eseframe:registry/recipe/crafting/steps/02_clear_ingredient",list_path:'storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredients'}
 
 # Give results
 $loot give @s loot $(namespace):eseframe_api/recipe/$(id)
