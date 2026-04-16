@@ -23,7 +23,7 @@
 $execute unless data $(list_path)[] run return fail
 
 # Set the initial index to 0, copy $(function) and $(list_path) to the loop macro
-$data modify storage eseframe:cache tick.util.list_loop.StartMacro set value {function:"$(function)",list_path:"$(list_path)",index:0}
+$data modify storage eseframe:cache tick.util.list_loop.StartMacro set value {function:"$(function)",list_path:'$(list_path)',index:0}
 
 
 ## Run the main loop, store reults at EndResult and EndSuccess 

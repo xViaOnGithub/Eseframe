@@ -35,7 +35,7 @@ execute if predicate {condition:"minecraft:any_of",terms:[{condition:"minecraft:
 ## Increase index (unless it was deleted) and stop if it exceeds the length of the list
 
 # Store list $(list_path)[] length as score #max_index
-$execute store result score #max_index eseframe.util.list_loop run function eseframe:util/get_list_highest_index/run {list_path:"$(list_path)"}
+$execute store result score #max_index eseframe.util.list_loop run function eseframe:util/get_list_highest_index/run {list_path:'$(list_path)'}
 
 # Set score #index to $(index)
 $scoreboard players set #index eseframe.util.list_loop $(index)
