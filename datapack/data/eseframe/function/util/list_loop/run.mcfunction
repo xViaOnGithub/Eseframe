@@ -1,4 +1,4 @@
-# Marco keys for starting:                      function, list_path
+# Marco keys for starting:                      function, list_path, pass_index
 # Macro keys for internal repeating function:   function, list_path, index
 
 
@@ -25,5 +25,11 @@ $execute unless data $(list_path)[] run return fail
 # Set the initial index to 0, copy $(function) and $(list_path) to the loop macro
 $data modify storage eseframe:cache tick.util.list_loop.StartMacro set value {function:"$(function)",list_path:"$(list_path)",index:0}
 
-# Run the main loop, store reults at EndResult and EndSuccess
+
+## Run the main loop, store reults at EndResult and EndSuccess 
+
+# With index key, if $(pass_index) is 1
+$execute if predicate {condition:"minecraft:value_check",value:$(pass_index),range:1} run return run function eseframe:util/list_loop/steps/02_repeat_and_pass_index_key with storage eseframe:cache tick.util.list_loop.StartMacro
+
+# Without index key
 return run function eseframe:util/list_loop/steps/01_repeat with storage eseframe:cache tick.util.list_loop.StartMacro
