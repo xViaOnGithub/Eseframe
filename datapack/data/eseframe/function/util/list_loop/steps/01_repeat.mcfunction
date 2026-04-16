@@ -10,11 +10,19 @@
 # ----------------------------------------------------------------------------------------------------------
 
 
+## Insert the index into a copy of an entry of the list
 
-## Run the given function with an entry from the list, stop early and/or delete index if requested.
+# Get a copy of the current list entry
+$data modify storage eseframe:cache tick.util.list_loop.Step01.ListEntryWithIndex set from $(list_path)[$(index)]
 
-# Run the function with the list entry, store success and return code
-$execute store success storage eseframe:cache tick.util.list_loop.Step01.Success byte 1 store result storage eseframe:cache tick.util.list_loop.Step01.Result int 1 run function $(function) with $(list_path)[$(index)]
+# Overwrite the entry copy's "index" key with the list index if $(pass_index) is true
+$execute if predicate {condition:"minecraft:value_check",value:$(pass_index),range:1} run data modify storage eseframe:cache tick.util.list_loop.Step01.ListEntryWithIndex.index set value $(index)
+
+
+## Run the given function with the modified entry copy from the list, stop early and/or delete index if requested.
+
+# Run the function with the modified copy of the list entry, store success and return code
+$execute store success storage eseframe:cache tick.util.list_loop.Step01.Success byte 1 store result storage eseframe:cache tick.util.list_loop.Step01.Result int 1 run function $(function) with storage eseframe:cache tick.util.list_loop.Step01.ListEntryWithIndex
 
 # If return code matches -1 or -2 (can be checked with predicate), delete the index
 $execute if predicate {condition:"minecraft:value_check",value:{type:"minecraft:storage",storage:"eseframe:cache",path:"tick.util.list_loop.Step01.Result"},range:{min:-2,max:-1}} run data remove $(list_path)[$(index)]
@@ -42,8 +50,8 @@ execute if score #index eseframe.util.list_loop > #max_index eseframe.util.list_
 
 ## Repeat this function
 
-# Set up a macro with the same function and list_path
-$data modify storage eseframe:cache tick.util.list_loop.Step01.RepeatMacro set value {function:"$(function)",list_path:'$(list_path)'}
+# Set up a macro with the same function, list_path, and pass_index
+$data modify storage eseframe:cache tick.util.list_loop.Step01.RepeatMacro set value {function:"$(function)",list_path:'$(list_path)',pass_index:"$(pass_index)"}
 
 # Insert the updated index into the new macro
 execute store result storage eseframe:cache tick.util.list_loop.Step01.RepeatMacro.index int 1 run scoreboard players get #index eseframe.util.list_loop

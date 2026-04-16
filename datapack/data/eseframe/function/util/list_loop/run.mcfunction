@@ -23,13 +23,8 @@
 $execute unless data $(list_path)[] run return fail
 
 # Set the initial index to 0, copy $(function) and $(list_path) to the loop macro
-$data modify storage eseframe:cache tick.util.list_loop.StartMacro set value {function:"$(function)",list_path:'$(list_path)',index:0}
+$data modify storage eseframe:cache tick.util.list_loop.StartMacro set value {function:"$(function)",list_path:'$(list_path)',pass_index:"$(pass_index)",index:0}
 
 
-## Run the main loop, store reults at EndResult and EndSuccess 
-
-# With index key, if $(pass_index) is 1
-$execute if predicate {condition:"minecraft:value_check",value:$(pass_index),range:1} run return run function eseframe:util/list_loop/steps/02_repeat_and_pass_index_key with storage eseframe:cache tick.util.list_loop.StartMacro
-
-# Without index key
+# Run the main loop and pass on the return code
 return run function eseframe:util/list_loop/steps/01_repeat with storage eseframe:cache tick.util.list_loop.StartMacro
