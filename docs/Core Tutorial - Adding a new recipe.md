@@ -1,6 +1,6 @@
 # Tutorial: Adding a New Recipe
 
-*This tutorial assumes you have already completed [[Core Tutorial - Making a new custom item]]
+>[!note] This tutorial assumes you have already completed [[Core Tutorial - Making a new custom item]]
 
 Cores can add new crafting recipes to Eseframe using the command `function eseframe:add_recipe` . This command is usually called inside a function that runs when your datapack loads.
 

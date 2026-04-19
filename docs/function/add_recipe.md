@@ -1,4 +1,4 @@
-> **There is a tutorial available for this command!** [[Core Tutorial - Adding a new recipe]]
+> [!info] **There is a tutorial available for this command!** [[Core Tutorial - Adding a new recipe]]
 # `eseframe_api:add_recipe`
 ##### Registers a new item to Eseframe.
 #api_function

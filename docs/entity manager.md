@@ -1,6 +1,6 @@
-> The entity system is an **internal system**, and is not part of the [[Eseframe API]]. It's innerworkings are subject to change, so please be cautious if you are trying to hook into it directly!
+>[!warning] The entity system is an **internal system**, and is not part of the [[Eseframe API]]. It's innerworkings are subject to change, so please be cautious if you are trying to hook into it directly!
 
->If you are making your own [[Core]], is recommended to use [[add_block]] instead of directly using the Entity Manager where possible.
+>[!info] If you are making your own [[Core]], is recommended to use [[add_block]] instead of directly using the Entity Manager where possible.
 
 The Eseframe Entity Manager is an internal system in Eseframe that used to internally keep track of the entities it spawns, to control what conditions that must exist under, and to control what they do in certain conditions to create new functionality.
 ## draft stuff
