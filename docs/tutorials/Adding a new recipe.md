@@ -1,6 +1,12 @@
 # Tutorial: Adding a New Recipe
 
->[!note] This tutorial assumes you have already completed [[Core Tutorial - Making a new custom item]]
+>[!todo] #todo this needs some rewritting
+>make it cleaner, and consistent with previous tutorials (which is just [[Core Tutorials/Creating a new datapack]] right now)
+>remove esephor from examples
+>make the first step being making a functon/content/recipe folder, then make the function (just make it "say hello world" for now, or a playsound if there is too much flooding their chat on reload (also say they can skip this once they get the hang of it)), then add it to a \[function tag under (add convention callout)] function tag `#eseframe_api:registry/add` and then once they know it
+
+
+>[!note] This tutorial assumes you have already completed [[tutorials/Making a new custom item]]
 
 Cores can add new crafting recipes to Eseframe using the command `function eseframe:add_recipe` . This command is usually called inside a function that runs when your datapack loads.
 

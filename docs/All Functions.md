@@ -1,4 +1,6 @@
 #todo categorize these
+
+## Custom reipces
 ##### [[function/add_recipe|eseframe_api:add_recipe]]
 Registers a new recipe to Eseframe. 
 ##### [[function/craft|eseframe_api:craft]]

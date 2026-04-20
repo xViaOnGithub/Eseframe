@@ -1,4 +1,4 @@
-> [!info] **There is a tutorial available for this command!** [[Core Tutorial - Making a new custom item]]
+> [!info] **There is a tutorial available for this function!** [[tutorials/Making a new custom item]]
 # `eseframe_api:add_item`
 ##### Registers a new item to Eseframe.
 #api_function
@@ -15,12 +15,12 @@ Like similar registry functions, is best practice to invoke this during function
 | id         | string   | A unique identifier for the item within the namespace.                           | "cool_ingot"                                                                                      |
 | namespace  | string   | The namespace of the core adding the item                                        | "my_core"                                                                                         |
 | components | compound | See https://minecraft.wiki/w/Data_component_format#Item_format for reference...  | {"minecraft:max_stack_size":3,"minecraft:item_model":"minecraft:stick","!minecraft:item_name":{}} |
-| properties | compound | A compound that holds optional metadata about the item. See [[Item Properties]]. | {override_template_item:"minecraft:iron_pickaxe"}                                                 |
+| properties | compound | A compound that holds optional metadata about the item. See [[add_item optional properties]]. | {override_template_item:"minecraft:iron_pickaxe"}                                                 |
 ### Structure
 - id *string*
 - namespace *string*
 - components *compound*:
-	- ==See https://minecraft.wiki/w/Data_component_format#Item_format for reference...==
+	- ==See https://minecraft.wiki/w/Data_component_format#Item_format for reference...== #todo write this better
 
 ## Return Codes
 (none) #datapack-todo

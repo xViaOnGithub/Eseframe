@@ -1,4 +1,4 @@
-> Banner, if there's a related tutorial
+> [!info] **There is a tutorial available for this function!** ==tutorial link here==
 # `eseframe_api:path/to/function`
 ##### Brief description of basic functionality. 
 #api_function
