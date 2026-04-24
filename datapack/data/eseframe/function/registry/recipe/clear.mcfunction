@@ -1,1 +1,0 @@
-data modify storage eseframe:registry recipe set value []

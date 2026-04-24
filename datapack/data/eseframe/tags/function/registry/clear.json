@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "eseframe:registry/item/clear",
-        "eseframe:registry/recipe/clear",
-        "eseframe:registry/recipe_tag/clear"
-    ]
-}
