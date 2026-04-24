@@ -6,10 +6,16 @@
         "eseframe:registry/item/proxy/init_scoreboard",
         
         "eseframe:clear_cache/session",
+        
 
         "#eseframe:registry/clear",
         "eseframe:registry/initialize/allow_register",
-        "#eseframe:registry/add",
+
+        "#eseframe_api:register/items",
+        "#eseframe_api:register/recipes",
+        "#eseframe_api:register/recipe_tags",
+
+
         "eseframe:registry/initialize/stop_allowing_register",
 
         "eseframe:dev_tools/menu/item/generate/run",
