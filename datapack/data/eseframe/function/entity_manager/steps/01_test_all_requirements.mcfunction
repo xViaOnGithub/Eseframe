@@ -1,1 +1,0 @@
-return run function eseframe:util/list_loop/run {pass_index:false,function:"eseframe:entity_manager/steps/02_single_requirement",list_path:"entity @s data.eseframe.requirements"}

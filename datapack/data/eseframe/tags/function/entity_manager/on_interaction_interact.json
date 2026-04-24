@@ -1,6 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#eseframe_api:entity_manager/on_interaction_interact"
-    ]
-}

@@ -1,1 +1,0 @@
-execute if data entity @s {data:{eseframe:{flags:["kill_on_attack"]}}} run kill

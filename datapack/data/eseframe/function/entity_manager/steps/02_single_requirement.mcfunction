@@ -1,1 +1,0 @@
-$return run function $(namespace):eseframe/requirement/$(type) $(data)
