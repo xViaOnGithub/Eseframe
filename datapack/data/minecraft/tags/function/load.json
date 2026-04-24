@@ -9,14 +9,23 @@
         
 
         "#eseframe:registry/clear",
-        "eseframe:registry/initialize/allow_register",
 
+
+        "eseframe:initialize/allow_register/item",
         "#eseframe_api:register/items",
+        "eseframe:initialize/allow_register/stop",
+
+
+        "eseframe:initialize/allow_register/recipe",
         "#eseframe_api:register/recipes",
+        "eseframe:initialize/allow_register/stop",
+
+
+        "eseframe:initialize/allow_register/recipe_tag",
         "#eseframe_api:register/recipe_tags",
+        "eseframe:initialize/allow_register/stop",
 
 
-        "eseframe:registry/initialize/stop_allowing_register",
 
         "eseframe:dev_tools/menu/item/generate/run",
 
