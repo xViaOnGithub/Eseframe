@@ -1,11 +1,14 @@
 {
     "values": [
+        "eseframe:clear_cache/clear_initialize_cache",
+        "eseframe:clear_cache/session",
+        "eseframe:clear_cache/tick",
+
+
         "eseframe:util/get_list_highest_index/setup_scoreboard",
         "eseframe:util/loop/setup_scoreboard",
         "eseframe:util/list_loop/setup_scoreboard",
         "eseframe:registry/item/proxy/init_scoreboard",
-        
-        "eseframe:clear_cache/session",
 
 
         "eseframe:registry/clear",
@@ -23,9 +26,6 @@
         "eseframe:initialize/allow_register/stop",
 
 
-
-        "eseframe:dev_tools/menu/item/generate/run",
-
-        "eseframe:clear_cache/clear_initialize_cache"
+        "eseframe:dev_tools/menu/item/generate/run"
     ]
 }
