@@ -58,4 +58,4 @@ execute store result storage eseframe:cache tick.util.list_loop.Step01.RepeatMac
 
 
 # Run this function again with the macro
-function eseframe:util/list_loop/steps/01_repeat with storage eseframe:cache tick.util.list_loop.Step01.RepeatMacro
+return run function eseframe:util/list_loop/steps/01_repeat with storage eseframe:cache tick.util.list_loop.Step01.RepeatMacro
