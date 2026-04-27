@@ -1,7 +1,5 @@
 # Ran from loop, WITH the loop index
 
-say 01
-
 $data modify storage eseframe:cache tick.util.list_concat.Index set value $(index)
 function eseframe:util/list_concat/steps/02_get_list_entry with storage eseframe:cache tick.util.list_concat
 

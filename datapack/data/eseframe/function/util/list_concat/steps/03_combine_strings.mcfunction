@@ -1,1 +1,1 @@
-$data modify storage eseframe:cache tick.util.list_concat.CombinedString set value "$(CombinedString)$(ListEntry)"
+$data modify storage eseframe:cache tick.util.list_concat.CombinedString set value '$(CombinedString)$(ListEntry)'
