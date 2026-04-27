@@ -1,0 +1,3 @@
+$data modify storage eseframe:cache tick.util.list_concat.ListEntry set from $(ListPath)[$(Index)]
+function eseframe:util/list_concat/steps/03_combine_strings with storage eseframe:cache tick.util.list_concat
+say 02
