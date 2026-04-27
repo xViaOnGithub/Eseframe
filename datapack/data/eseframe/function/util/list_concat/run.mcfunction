@@ -12,7 +12,7 @@ $data modify storage eseframe:cache tick.util.list_concat set value {CombinedStr
 ## Combine each entry of the list into one string
 
 # Set starting index (0) and function for loop util
-data modify storage eseframe:cache tick.util.list_concat.LoopMacro set value {index:0,function:"eseframe:util/list_concat/steps/01"}
+data modify storage eseframe:cache tick.util.list_concat.LoopMacro set value {index:0,function:"eseframe:util/list_concat/steps/01_store_index"}
 
 # Store the length of the list
 $execute store result storage eseframe:cache tick.util.list_concat.LoopMacro.max_index int 1 run function eseframe:util/get_list_highest_index/run {list_path:"$(list_path)"}
