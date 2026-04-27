@@ -1,4 +1,6 @@
-# Loop with a list called ingredients of entries formatted like this:
+## Keys: id, namespace, ingredients
+
+# ingredients formatted like this:
 
 # TODO: Type          required    string      "item"
 # Components    optional    compound
@@ -26,6 +28,7 @@ $data modify storage eseframe:cache tick.registry.recipe.process.generate_item_p
 function eseframe:util/list_loop/run {list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients",function:"eseframe:registry/recipe/process/generate_item_predicates/steps/01",pass_index:true}
 
 #TODO: Copy output to registry
+$data modify storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredient_item_predicates set from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.IngredientItemPredicatesForClear
 tellraw @a ["final item predicate list:",{storage:"eseframe:cache",nbt:"tick.registry.recipe.process.generate_item_predicate.IngredientItemPredicatesForClear"}]
 # tellraw @a {storage:"eseframe:cache",nbt:"tick.registry.recipe.process.generate_item_predicate"}
 
