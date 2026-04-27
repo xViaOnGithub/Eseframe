@@ -1,4 +1,4 @@
-# Marco keys: function_path, index, max_index
+# Marco keys: function, index, max_index
 
 # storage path: eseframe:cache tick.util.loop.function_success
 # scoreboard:   eseframe.util.loop
