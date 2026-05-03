@@ -27,10 +27,9 @@ $data modify storage eseframe:cache tick.registry.recipe.process.generate_item_p
 # Loop through each ingredient, generating an item predicate and store it in storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.GeneratedItemPredicates
 function eseframe:util/list_loop/run {list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients",function:"eseframe:registry/recipe/process/generate_item_predicates/steps/01_get_type",pass_index:true}
 
-#TODO: Copy output to registry
+# Copy output to registry
 $data modify storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredient_item_predicates set from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.IngredientItemPredicatesForClear
-tellraw @a ["final item predicate list:",{storage:"eseframe:cache",nbt:"tick.registry.recipe.process.generate_item_predicate.IngredientItemPredicatesForClear"}]
-# tellraw @a {storage:"eseframe:cache",nbt:"tick.registry.recipe.process.generate_item_predicate"}
+# tellraw @a ["final item predicate list:",{storage:"eseframe:cache",nbt:"tick.registry.recipe.process.generate_item_predicate.IngredientItemPredicatesForClear"}]
 
 # Continue the loop through each recipe
 return 1
