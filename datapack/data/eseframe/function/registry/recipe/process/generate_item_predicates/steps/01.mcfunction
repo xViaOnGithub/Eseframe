@@ -46,9 +46,8 @@ data modify storage eseframe:cache tick.registry.recipe.process.generate_item_pr
 # Add a space before the item count
 data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append value " "
 
-# Add count (default to 1 if it's missing)
-$execute if data storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].count run data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].count
-$execute unless data storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].count run data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append value 1
+# Add count
+$data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].count
 
 
 # Combine strings in list into one item predicate string
