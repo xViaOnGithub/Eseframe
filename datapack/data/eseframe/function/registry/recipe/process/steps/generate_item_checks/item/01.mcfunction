@@ -27,11 +27,11 @@ data modify storage eseframe:cache tick.registry.recipe.process.generate_item_pr
 
 # todo skip if no components
 # add all components to item predicate
-$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].components",function:"eseframe:registry/recipe/process/generate_item_predicates/steps/02"}
+$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].components",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/02"}
 
 # todo skip if no predicates
 # add all predicates to item predicate
-$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].predicates",function:"eseframe:registry/recipe/process/generate_item_predicates/steps/03"}
+$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].predicates",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/03"}
 
 # remove last added item (comma)
 # todo: only do this is there were are components or predicates
