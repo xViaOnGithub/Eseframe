@@ -27,14 +27,18 @@ data remove storage eseframe:cache tick.registry.recipe.process
 # Copy the recipe's ingredients
 $data modify storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients set value $(ingredients)
 
-# Loop through each ingredient, generating an item predicate and store it in storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.GeneratedItemPredicates
+
+# Create a data path that will be the new entry to the recipe registry
+# Start with the ID and namespace of the recipe
+$data modify storage eseframe:cache tick.registry.recipe.process.Step01.final_recipe_entry_data set value {id:"$(id)",namespace:"$(namespace)"}
+
+# Loop through each ingredient, generating data based on each ingredient and storing it to storage eseframe:cache tick.registry.recipe.process.Step01.final_recipe_entry_data
 function eseframe:util/list_loop/run {list_path:"storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients",function:"eseframe:registry/recipe/process/steps/02_for_every_ingredient",pass_index:true}
 
 
+## Append final output to the custom recipe registry
+data modify storage eseframe:registry recipe append from storage eseframe:cache tick.registry.recipe.process.Step01.final_recipe_entry_data
 
-# Copy output to registry
-$data modify storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredient_item_predicates set from storage eseframe:cache tick.registry.recipe.process.Output.ingredient_item_predicates
 
-
-# Continue the loop through each recipe
-return 1
+# Delete this entry, and continue the loop through each recipe
+return -1

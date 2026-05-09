@@ -23,10 +23,17 @@ $execute if data storage eseframe:cache {tick:{registry:{recipe:{process:{genera
 $execute if data storage eseframe:cache {tick:{registry:{recipe:{process:{generate_item_predicate:{IngredientType:"custom_item"}}}}}} run function eseframe:registry/recipe/process/steps/generate_item_checks/custom_item/01 with storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)]
 
 
-## todo: copy the generated data back into the registry here instead of during the functions above
+## Copy the generated data to the recipe's final data
+
+# Add generated item predicate and the ingredient count to a compound called "ingredient_item_predicates_entry"
+$data modify storage eseframe:cache tick.registry.recipe.process.Step02.ingredient_item_predicates_entry.count set value $(count)
+data modify storage eseframe:cache tick.registry.recipe.process.Step02.ingredient_item_predicates_entry.item_predicate set from storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate
+
+# Copy the pair to <recipe data>.ingredient_item_predicates
+data modify storage eseframe:cache tick.registry.recipe.process.Step01.final_recipe_entry_data.ingredient_item_predicates append from storage eseframe:cache tick.registry.recipe.process.Step02.ingredient_item_predicates_entry
 
 
-data modify storage eseframe:cache tick.registry.recipe.process.Output.ingredient_item_predicates append from storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate
+# 
 
 
 # Continue the loop

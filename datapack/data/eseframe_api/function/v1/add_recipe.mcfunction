@@ -4,5 +4,5 @@ execute unless data storage eseframe:cache {initialize:{registry:{allow_registry
 # Prevent duplicate id/namespace combonations.
 $execute if data storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}] run return run say [Eseframe API] Error! There is already a custom recipe registered with id "$(id)" and namespace "$(namespace)".
 
-# TODO: Add the recipe directly to a storage path, then check/process that after?
-$function eseframe:registry/recipe/add {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients),properties:$(properties)}
+# Add the recipe directly to a storage path for processing
+$data modify storage eseframe_api:buffer recipe append value {id:"$(id)",namespace:"$(namespace)",ingredients:$(ingredients),properties:$(properties)}
