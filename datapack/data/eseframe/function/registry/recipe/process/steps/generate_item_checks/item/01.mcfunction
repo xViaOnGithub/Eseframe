@@ -1,4 +1,4 @@
-# this will be ran with each item in a recipe, and the index key is passed here
+# this will be ran with each "item" typed ingredient in a recipe, and the index key is passed here
 
 
 ## Item Type/Tag
@@ -8,7 +8,7 @@ data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated
 
 # If the ingredient specifies an item, replace the wildcard with the item
 # Can the execute if part be removed?
-$execute if data storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].item run data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate[0] set from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].item
+$execute if data storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].item run data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate[0] set from storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].item
 
 
 ## if components or predicates (todo: split off into it's own function)
@@ -22,11 +22,11 @@ data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated
 
 # todo skip if no components
 # add all components to item predicate
-$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].components",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/02"}
+$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].components",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/02"}
 
 # todo skip if no predicates
 # add all predicates to item predicate
-$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].predicates",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/03"}
+$function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].predicates",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/03"}
 
 # remove last added item (comma)
 # todo: only do this is there were are components or predicates
@@ -42,7 +42,7 @@ data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated
 data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value " "
 
 # Add count
-$data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].count
+$data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append from storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].count
 
 
 # Combine strings in list into one item predicate string
