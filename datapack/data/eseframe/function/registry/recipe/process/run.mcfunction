@@ -1,2 +1,2 @@
 # Generate an item predicate list for each recipe
-function eseframe:util/list_loop/run {list_path:"storage eseframe_api:buffer recipe",function:"eseframe:registry/recipe/process/steps/01_with_every_recipe",pass_index:true}
+function eseframe:util/list_loop/run {list_path:"storage eseframe:buffer recipe",function:"eseframe:registry/recipe/process/steps/01_with_every_recipe",pass_index:true}
