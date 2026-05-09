@@ -27,3 +27,7 @@ $execute if data storage eseframe:cache {tick:{registry:{recipe:{process:{genera
 
 
 data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Output append from storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate
+
+
+# Continue the loop
+return 1
