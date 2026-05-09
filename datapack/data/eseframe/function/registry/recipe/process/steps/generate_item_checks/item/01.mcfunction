@@ -7,35 +7,51 @@
 #   can be inserted into `execute if items` or part of `clear`.
 
 
-# Start the string with the item type (or item tag)
+## Item Type/Tag
+
+# Start the item predicate string with the item type (or item tag)
 $data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append from storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].item
 
 # If there was no item tag, use a wildcard (detect any item) instead 
 execute unless data storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate[0] run data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "*"
+
+# Set the item id for item test (This will be missing if there is no item set, which is intended behavoir because it defaults to any item)
+$data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_test.items set from storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].item
+
 
 
 # Opening bracket for component checks
 data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "["
 
 
-# add all components to item predicate
+
+## Components & Predicates
+
+# add all components to item predicate and item test
 $function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].components",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/02"}
 
-# add all predicates to item predicate
+# add all predicates to item predicate and item test
 $function eseframe:util/list_loop/run {pass_index:false,list_path:"storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].predicates",function:"eseframe:registry/recipe/process/steps/generate_item_checks/item/03"}
 
 
-# add min stack count check
+
+## Count
+
+# add min stack count check to item predicate
 data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "minecraft:count~{min:"
 $data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append from storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].count
 data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "}"
+
+# Set min count in item test
+$data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_test.count.min set from storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)].count
+
 
 
 # Closing bracket for component checks
 data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "]"
 
 
-# Combine strings in list into one item predicate string
+# Combine strings in generated item predicate list into one item predicate string
 function eseframe:util/list_concat/run {list_path:"storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate"}
 
 
