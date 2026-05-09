@@ -10,7 +10,7 @@ $say $(type) $(count)
 data remove storage eseframe:cache tick.registry.recipe.process.Step02.generated
 
 
-## Generate item predicate and item
+## Generate item predicate and item test
 
 # Get type
 $data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.IngredientType set value "$(type)"
@@ -23,7 +23,7 @@ $execute if data storage eseframe:cache {tick:{registry:{recipe:{process:{genera
 $execute if data storage eseframe:cache {tick:{registry:{recipe:{process:{generate_item_predicate:{IngredientType:"custom_item"}}}}}} run function eseframe:registry/recipe/process/steps/generate_item_checks/custom_item/01 with storage eseframe:cache tick.registry.recipe.process.Step01.all_ingredients[$(index)]
 
 
-## Copy the generated data to the recipe's final data
+## Copy the generated item predicate data to the recipe's final data
 
 # Add generated item predicate and the ingredient count to a compound called "ingredient_item_predicates_entry"
 $data modify storage eseframe:cache tick.registry.recipe.process.Step02.ingredient_item_predicates_entry.count set value $(count)
@@ -33,7 +33,10 @@ data modify storage eseframe:cache tick.registry.recipe.process.Step02.ingredien
 data modify storage eseframe:cache tick.registry.recipe.process.Step01.final_recipe_entry_data.ingredient_item_predicates append from storage eseframe:cache tick.registry.recipe.process.Step02.ingredient_item_predicates_entry
 
 
-# 
+## Insert the generated item test into the recipe's final data
+
+# Placeholder path, will be inserted into a predicate set up by 01
+data modify storage eseframe:cache tick.registry.recipe.process.Step01.final_recipe_entry_data.PLACEHOLDER append from storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_test
 
 
 # Continue the loop
