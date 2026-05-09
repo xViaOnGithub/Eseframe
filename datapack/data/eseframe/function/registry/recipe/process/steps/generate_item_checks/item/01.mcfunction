@@ -1,29 +1,24 @@
 # this will be ran with each item in a recipe, and the index key is passed here
 
 
-
-# Clear leftover data
-data remove storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01
-
-
 ## Item Type/Tag
 
 # Set item to wildcard (any item) 
-data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append value "*"
+data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "*"
 
 # If the ingredient specifies an item, replace the wildcard with the item
 # Can the execute if part be removed?
-$execute if data storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].item run data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate[0] set from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].item
+$execute if data storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].item run data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate[0] set from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].item
 
 
 ## if components or predicates (todo: split off into it's own function)
 
 # Opening bracket for component checks
-data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append value "["
+data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "["
 
 ## TODO: this is a bandage fix for skipping the bracket section entirely if there are no components or predicates
 # This blank string will be deleted instead of a comma if no component checks are appended 
-data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append value ""
+data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value ""
 
 # todo skip if no components
 # add all components to item predicate
@@ -35,26 +30,24 @@ $function eseframe:util/list_loop/run {pass_index:false,list_path:"storage esefr
 
 # remove last added item (comma)
 # todo: only do this is there were are components or predicates
-data remove storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate[-1]
+data remove storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate[-1]
 
 # Closing bracket for component checks
-data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append value "]"
+data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value "]"
 
 
 ## Count
 
 # Add a space before the item count
-data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append value " "
+data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append value " "
 
 # Add count
-$data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate append from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].count
+$data modify storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate append from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Ingredients[$(index)].count
 
 
 # Combine strings in list into one item predicate string
-function eseframe:util/list_concat/run {list_path:"storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate"}
+function eseframe:util/list_concat/run {list_path:"storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate"}
 
-# Add final generated item predicate to a list in the output
-data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.IngredientItemPredicatesForClear append from storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Step01.GeneratedItemPredicate
 
 
 return 1

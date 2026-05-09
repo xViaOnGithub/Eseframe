@@ -1,11 +1,16 @@
 # Ran WITH every ingredient (and it's index)
 
-$say $(type)
+$say $(type) $(count)
 
 
 
 ## todo: set up data for the next functions this calls to write to
 
+#reset generation output
+data remove storage eseframe:cache tick.registry.recipe.process.Step02.generated
+
+
+## Generate item predicate and item
 
 # Get type
 $data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.IngredientType set value "$(type)"
@@ -19,3 +24,6 @@ $execute if data storage eseframe:cache {tick:{registry:{recipe:{process:{genera
 
 
 ## todo: copy the generated data back into the registry here instead of during the functions above
+
+
+data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Output append from storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate
