@@ -9,6 +9,9 @@
 
         "eseframe:registry/clear",
 
+
+        "eseframe:registry/clear_buffer",
+
         "eseframe:initialize/allow_register/item",
         "#eseframe_api:v1/register/items",
         "eseframe:initialize/allow_register/stop",
