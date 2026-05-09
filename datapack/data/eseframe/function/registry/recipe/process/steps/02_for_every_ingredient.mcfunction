@@ -26,7 +26,7 @@ $execute if data storage eseframe:cache {tick:{registry:{recipe:{process:{genera
 ## todo: copy the generated data back into the registry here instead of during the functions above
 
 
-data modify storage eseframe:cache tick.registry.recipe.process.generate_item_predicate.Output append from storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate
+data modify storage eseframe:cache tick.registry.recipe.process.Output.ingredient_item_predicates append from storage eseframe:cache tick.registry.recipe.process.Step02.generated.item_predicate
 
 
 # Continue the loop
