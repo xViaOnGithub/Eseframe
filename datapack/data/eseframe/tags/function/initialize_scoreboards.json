@@ -3,6 +3,7 @@
         "eseframe:util/get_list_highest_index/setup_scoreboard",
         "eseframe:util/loop/setup_scoreboard",
         "eseframe:util/list_loop/setup_scoreboard",
+        "eseframe:registry/recipe/crafting/init_scoreboard",
         "eseframe:registry/item/proxy/init_scoreboard"
     ]
 }

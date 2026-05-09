@@ -1,6 +1,6 @@
 #macros: id, namespace
 ## temporary storage eseframe:tmp perform_custom_recipe_entity
-## Temporary scoreboard used: eseframe.tmp.perform_custom_recipe
+## Scoreboard: eseframe.registry.recipe.crafting
 
 
 # Return fail if recipe does not exist, or if there are no ingredients

@@ -1,3 +1,2 @@
-scoreboard objectives remove eseframe.tmp.perform_custom_recipe
 data remove storage eseframe:tmp perform_custom_recipe_entity
 return 1
