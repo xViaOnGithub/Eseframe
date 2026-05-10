@@ -1,6 +1,6 @@
 ## Goes through each slot checking for an ingredient, and subtracts from it's count when found.
 # Since the count to remove is also the min count of the item predicate, there will always be enough of the item in the stack to remove 
-
+say parsed
 #0-9
 $execute if items block ~ ~ ~ container.0 $(item_predicate) run return run item modify block ~ ~ ~ container.0 {function:"minecraft:set_count",count:-$(count),add:true}
 $execute if items block ~ ~ ~ container.1 $(item_predicate) run return run item modify block ~ ~ ~ container.1 {function:"minecraft:set_count",count:-$(count),add:true}
@@ -61,14 +61,8 @@ $execute if items block ~ ~ ~ container.47 $(item_predicate) run return run item
 $execute if items block ~ ~ ~ container.48 $(item_predicate) run return run item modify block ~ ~ ~ container.48 {function:"minecraft:set_count",count:-$(count),add:true}
 $execute if items block ~ ~ ~ container.49 $(item_predicate) run return run item modify block ~ ~ ~ container.49 {function:"minecraft:set_count",count:-$(count),add:true}
 
-# 50-59
+# 50-53
 $execute if items block ~ ~ ~ container.50 $(item_predicate) run return run item modify block ~ ~ ~ container.50 {function:"minecraft:set_count",count:-$(count),add:true}
 $execute if items block ~ ~ ~ container.51 $(item_predicate) run return run item modify block ~ ~ ~ container.51 {function:"minecraft:set_count",count:-$(count),add:true}
 $execute if items block ~ ~ ~ container.52 $(item_predicate) run return run item modify block ~ ~ ~ container.52 {function:"minecraft:set_count",count:-$(count),add:true}
 $execute if items block ~ ~ ~ container.53 $(item_predicate) run return run item modify block ~ ~ ~ container.53 {function:"minecraft:set_count",count:-$(count),add:true}
-$execute if items block ~ ~ ~ container.54 $(item_predicate) run return run item modify block ~ ~ ~ container.54 {function:"minecraft:set_count",count:-$(count),add:true}
-$execute if items block ~ ~ ~ container.55 $(item_predicate) run return run item modify block ~ ~ ~ container.55 {function:"minecraft:set_count",count:-$(count),add:true}
-$execute if items block ~ ~ ~ container.56 $(item_predicate) run return run item modify block ~ ~ ~ container.56 {function:"minecraft:set_count",count:-$(count),add:true}
-$execute if items block ~ ~ ~ container.57 $(item_predicate) run return run item modify block ~ ~ ~ container.57 {function:"minecraft:set_count",count:-$(count),add:true}
-$execute if items block ~ ~ ~ container.58 $(item_predicate) run return run item modify block ~ ~ ~ container.58 {function:"minecraft:set_count",count:-$(count),add:true}
-$execute if items block ~ ~ ~ container.59 $(item_predicate) run return run item modify block ~ ~ ~ container.59 {function:"minecraft:set_count",count:-$(count),add:true}
