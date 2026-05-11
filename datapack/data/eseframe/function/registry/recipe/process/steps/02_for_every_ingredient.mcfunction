@@ -1,10 +1,5 @@
 # Ran WITH every ingredient (and it's index)
 
-$say $(type) $(count)
-
-
-
-## todo: set up data for the next functions this calls to write to
 
 #reset generation output
 data remove storage eseframe:cache tick.registry.recipe.process.Step02.generated
