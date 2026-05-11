@@ -1,6 +1,6 @@
 ## Goes through each slot checking for an ingredient, and subtracts from it's count when found.
 # Since the count to remove is also the min count of the item predicate, there will always be enough of the item in the stack to remove 
-say parsed
+
 #0-9
 $execute if items block ~ ~ ~ container.0 $(item_predicate) run return run item modify block ~ ~ ~ container.0 {function:"minecraft:set_count",count:-$(count),add:true}
 $execute if items block ~ ~ ~ container.1 $(item_predicate) run return run item modify block ~ ~ ~ container.1 {function:"minecraft:set_count",count:-$(count),add:true}
