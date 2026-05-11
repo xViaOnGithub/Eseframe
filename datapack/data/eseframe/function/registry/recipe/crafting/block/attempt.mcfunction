@@ -1,6 +1,10 @@
 #macros: id, namespace
 
-## Alot of this is the same as the player crafting logic. Should (not?) crafting with the block be a flag on that one?
+
+# Return fail if this block is not a container with items in it
+# Uses "if" instead of "unless", because "unless" will actually fail here if the block doesn't have container slots 
+execute store success storage eseframe:cache tick.registry.recipe.crafting.block.IsContainerWithItems byte 1 if items block ~ ~ ~ container.* *
+execute if predicate {condition:"minecraft:value_check",value:{type:"storage",storage:"eseframe:cache",path:"tick.registry.recipe.crafting.block.IsContainerWithItems"},range:0} run return fail
 
 # Return fail if recipe does not exist, or if there are no ingredients
 $execute unless data storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredient_item_predicates[] run return fail
