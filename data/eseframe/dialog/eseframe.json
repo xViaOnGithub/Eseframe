@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": [
+      "Making custom items, recipes, and more easy since 2026!"
+    ]
+  },
+  "can_close_with_escape": true,
+  "columns": 3,
+  "title": "Eseframe",
+  "external_title": "Eseframe",
+  "actions": [
+    {
+      "label": "All Items",
+      "width": 100
+    },
+    {
+      "label": "All Recipes",
+      "width": 100
+    },
+    {
+      "label": "All Multiblocks",
+      "width": 100
+    },
+    {
+      "label": "What's this?",
+      "width": 100
+    },
+    {
+      "label": "How to use",
+      "width": 100
+    },
+    {
+      "label": "Creator Tools",
+      "width": 100
+    },
+    {
+      "label": "Credits"
+    },
+    {
+      "label": "Documentation"
+    }
+  ]
+}

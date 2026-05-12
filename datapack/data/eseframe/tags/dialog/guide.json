@@ -1,5 +1,6 @@
 {
     "values": [
+        "eseframe:eseframe",
         "#eseframe_api:guide_additions"
     ]
 }
