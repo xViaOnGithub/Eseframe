@@ -36,10 +36,12 @@
       "width": 100
     },
     {
-      "label": "Credits"
+      "label": "Credits",
+      "width": 150
     },
     {
-      "label": "Documentation"
+      "label": "Documentation",
+      "width": 150
     }
   ]
 }
