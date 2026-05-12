@@ -4,7 +4,7 @@
   "pause": false,
   "button_width": 310,
   "columns": 1,
-  "dialogs": "#eseframe_api:guide_additions",
+  "dialogs": "#eseframe:guide",
   "exit_action": {
     "label": {
       "translate": "gui.back"
