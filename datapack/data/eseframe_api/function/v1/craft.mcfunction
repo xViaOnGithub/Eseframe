@@ -1,1 +1,2 @@
-$function eseframe:registry/recipe/crafting/attempt {id:"$(id)",namespace:"$(namespace)"}
+$execute if predicate {condition:"minecraft:value_check",value:$(block),range:1} run return run function eseframe:registry/recipe/crafting/block/attempt {id:"$(id)",namespace:"$(namespace)"}
+$return run function eseframe:registry/recipe/crafting/player/attempt {id:"$(id)",namespace:"$(namespace)"}

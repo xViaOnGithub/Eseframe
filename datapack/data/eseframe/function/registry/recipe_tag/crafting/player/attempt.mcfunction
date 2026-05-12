@@ -1,0 +1,1 @@
+$function eseframe:util/list_loop/run {function:"eseframe:registry/recipe_tag/crafting/player/steps/01",list_path:'storage eseframe:registry recipe_tag[{id:"$(id)",namespace:"$(namespace)"}].recipes',pass_index:false}

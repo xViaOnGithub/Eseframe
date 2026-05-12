@@ -9,6 +9,9 @@
 
         "eseframe:registry/clear",
 
+
+        "eseframe:registry/clear_buffer",
+
         "eseframe:initialize/allow_register/item",
         "#eseframe_api:v1/register/items",
         "eseframe:initialize/allow_register/stop",
@@ -16,6 +19,7 @@
         "eseframe:initialize/allow_register/recipe",
         "#eseframe_api:v1/register/recipes",
         "eseframe:initialize/allow_register/stop",
+        "eseframe:registry/recipe/process/run",
 
         "eseframe:initialize/allow_register/recipe_tag",
         "#eseframe_api:v1/register/recipe_tags",
