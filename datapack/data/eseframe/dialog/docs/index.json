@@ -12,13 +12,13 @@
   "columns": 1,
   "actions": [
     {
-      "label": "Tutorials"
+      "label": "Tutorials (TODO)"
     },
     {
-      "label": "Cheat Sheet"
+      "label": "Cheat Sheet (TODO)"
     },
     {
-      "label": "API Reference"
+      "label": "API Reference (TODO)"
     }
   ]
 }

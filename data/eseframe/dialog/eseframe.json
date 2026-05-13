@@ -21,31 +21,31 @@
   "external_title": "Eseframe",
   "actions": [
     {
-      "label": "All Items",
+      "label": "All Items (TODO)",
       "width": 100
     },
     {
-      "label": "All Recipes",
+      "label": "All Recipes (TODO)",
       "width": 100
     },
     {
-      "label": "All Multiblocks",
+      "label": "All Multiblocks (TODO)",
       "width": 100
     },
     {
-      "label": "What's this?",
+      "label": "What's this? (TODO)",
       "width": 100
     },
     {
-      "label": "How to use",
+      "label": "How to use (TODO)",
       "width": 100
     },
     {
-      "label": "Creator Tools",
+      "label": "Creator Tools (TODO)",
       "width": 100
     },
     {
-      "label": "Credits",
+      "label": "Credits (TODO)",
       "width": 150
     },
     {
