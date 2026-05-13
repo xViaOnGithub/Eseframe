@@ -13,7 +13,7 @@
             "\n"
           ]
         },
-        "\n\n",
+        "\n\n\n",
         [
           "",
           {
@@ -123,8 +123,101 @@
             ]
           }
         ],
-        "\n",
-        "TODO: Recipe, Recipe Tag, etc..."
+        "\n\n\n",
+        [
+          "",
+          {
+            "text": "Custom Recipes",
+            "extra": [
+              "\n"
+            ],
+            "bold": true
+          },
+          "\n",
+          [
+            "",
+            {
+              "text": "Add custom recipe (todo: click to copy)",
+              "underlined": true,
+              "extra": [
+                "\n"
+              ],
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": ""
+              }
+            },
+            {
+              "text": "(in #eseframe_api:v1/register/recipes)",
+              "color": "gray",
+              "underlined": false,
+              "extra": [
+                "\n"
+              ]
+            }
+          ],
+          "\n",
+          {
+            "text": "Regular item as ingredient (todo)",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": ""
+            }
+          },
+          "\n",
+          {
+            "text": "Custom item as ingredient (todo)",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": ""
+            }
+          },
+          "\n",
+          {
+            "text": "Regular item with soft component check as ingredient (todo)",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": ""
+            }
+          },
+          "\n\n",
+          {
+            "text": "Craft as player (todo)",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": ""
+            }
+          },
+          {
+            "text": "Craft with block (todo)",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": ""
+            }
+          }
+        ],
+        "\n\n\n",
+        "TODO: Recipe Tag, etc..."
       ]
     }
   ],
