@@ -5,125 +5,123 @@
     {
       "type": "minecraft:plain_message",
       "contents": [
+        "",
+        {
+          "text": "Click on underlined text to copy it's data to clipboard.",
+          "italic": true,
+          "extra": [
+            "\n"
+          ]
+        },
+        "\n\n",
         [
           "",
           {
-            "text": "Click on underlined text to copy it's data to clipboard.",
-            "italic": true,
+            "text": "Custom Items",
             "extra": [
               "\n"
-            ]
+            ],
+            "bold": true
           },
-          "\n\n",
+          "\n",
           [
             "",
             {
-              "text": "Custom Items",
-              "extra": [
-                "\n"
-              ],
-              "bold": true
-            },
-            "\n",
-            [
-              "",
-              {
-                "text": "Add custom item",
-                "underlined": true,
-                "extra": [
-                  "\n"
-                ],
-                "click_event": {
-                  "action": "copy_to_clipboard",
-                  "value": "{id:\"ID\", namespace:\"NAMESPACE\", components: {\"minecraft:item_name\": \"ITEM NAME\", \"minecraft:item_model\": \"minecraft:stick\", \"minecraft:max_stack_size\": 64}, properties: {}}"
-                }
-              },
-              {
-                "text": "(in #eseframe_api:v1/register/items)",
-                "color": "gray",
-                "underlined": false,
-                "extra": [
-                  "\n"
-                ]
-              }
-            ],
-            "\n",
-            {
-              "text": "Give custom item",
+              "text": "Add custom item",
               "underlined": true,
               "extra": [
                 "\n"
               ],
               "click_event": {
                 "action": "copy_to_clipboard",
-                "value": "function eseframe_api:v1/give {id: \"ID\", namespace: \"NAMESPACE\", count: 64}"
+                "value": "{id:\"ID\", namespace:\"NAMESPACE\", components: {\"minecraft:item_name\": \"ITEM NAME\", \"minecraft:item_model\": \"minecraft:stick\", \"minecraft:max_stack_size\": 64}, properties: {}}"
               }
             },
-            "\n",
-            [
-              "",
-              {
-                "text": "Item proxy",
-                "underlined": true,
-                "click_event": {
-                  "action": "copy_to_clipboard",
-                  "value": "{\"eseframe_api\":{\"item_proxy\":{\"id\":\"ID\",\"namespace\":\"NAMESPACE\"}}}"
-                }
-              },
-              "\n",
-              {
-                "text": "Include in minecraft:custom_data",
-                "color": "gray",
-                "extra": [
-                  "\n"
-                ]
-              },
-              {
-                "text": "(Replaces it with a custom item)",
-                "color": "gray"
-              },
-              "\n"
-            ],
-            "\n\n",
             {
-              "text": "Run functions while using:",
+              "text": "(in #eseframe_api:v1/register/items)",
+              "color": "gray",
               "underlined": false,
               "extra": [
-                "\n",
-                {
-                  "text": "#<namespace>:eseframe_api/item/<id>/use_hold",
-                  "color": "gray"
-                },
-                "\n"
-              ]
-            },
-            "\n",
-            {
-              "text": "Run functions when begin using:",
-              "underlined": false,
-              "extra": [
-                "\n",
-                {
-                  "text": "#<namespace>:eseframe_api/item/<id>/use_hold",
-                  "color": "gray"
-                },
-                "\n"
-              ]
-            },
-            "\n",
-            {
-              "text": "Run functions when consumed:",
-              "underlined": false,
-              "extra": [
-                "\n",
-                {
-                  "text": "#<namespace>:eseframe_api/item/<id>/on_consume",
-                  "color": "gray"
-                },
                 "\n"
               ]
             }
-          ]
+          ],
+          "\n",
+          {
+            "text": "Give custom item",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/give {id: \"ID\", namespace: \"NAMESPACE\", count: 64}"
+            }
+          },
+          "\n",
+          [
+            "",
+            {
+              "text": "Item proxy",
+              "underlined": true,
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": "{\"eseframe_api\":{\"item_proxy\":{\"id\":\"ID\",\"namespace\":\"NAMESPACE\"}}}"
+              }
+            },
+            "\n",
+            {
+              "text": "Include in minecraft:custom_data",
+              "color": "gray",
+              "extra": [
+                "\n"
+              ]
+            },
+            {
+              "text": "(Replaces it with a custom item)",
+              "color": "gray"
+            },
+            "\n"
+          ],
+          "\n\n",
+          {
+            "text": "Run functions while using:",
+            "underlined": false,
+            "extra": [
+              "\n",
+              {
+                "text": "#<namespace>:eseframe_api/item/<id>/use_hold",
+                "color": "gray"
+              },
+              "\n"
+            ]
+          },
+          "\n",
+          {
+            "text": "Run functions when begin using:",
+            "underlined": false,
+            "extra": [
+              "\n",
+              {
+                "text": "#<namespace>:eseframe_api/item/<id>/use_hold",
+                "color": "gray"
+              },
+              "\n"
+            ]
+          },
+          "\n",
+          {
+            "text": "Run functions when consumed:",
+            "underlined": false,
+            "extra": [
+              "\n",
+              {
+                "text": "#<namespace>:eseframe_api/item/<id>/on_consume",
+                "color": "gray"
+              },
+              "\n"
+            ]
+          }
         ],
         "\n",
         "TODO: Recipe, Recipe Tag, etc..."
