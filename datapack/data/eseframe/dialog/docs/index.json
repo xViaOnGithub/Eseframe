@@ -24,7 +24,11 @@
       "label": "Tutorials (TODO)"
     },
     {
-      "label": "Cheat Sheet (TODO)"
+      "label": "Cheat Sheet (Unfinished)",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "eseframe:docs/cheat_sheet"
+      }
     },
     {
       "label": "API Reference (TODO)"
