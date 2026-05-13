@@ -9,6 +9,15 @@
       ]
     }
   ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:eseframe"
+    }
+  },
   "columns": 1,
   "actions": [
     {
