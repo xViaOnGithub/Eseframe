@@ -7,6 +7,15 @@
     ]
   },
   "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:guide"
+    }
+  },
   "columns": 3,
   "title": "Eseframe",
   "external_title": "Eseframe",
