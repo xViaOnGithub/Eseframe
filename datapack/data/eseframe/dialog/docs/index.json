@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Eseframe Documentation",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        "Welcome to the Eseframe Docs!"
+      ]
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Tutorials"
+    },
+    {
+      "label": "Cheat Sheet"
+    },
+    {
+      "label": "API Reference"
+    }
+  ]
+}
