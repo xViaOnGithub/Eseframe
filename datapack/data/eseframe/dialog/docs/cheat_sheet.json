@@ -158,39 +158,50 @@
           ],
           "\n",
           {
-            "text": "Regular item as ingredient (todo)",
-            "underlined": true,
+            "text": "Ingredients",
             "extra": [
+              "\n",
+              {
+                "text": "custom item",
+                "color": "gray",
+                "underlined": true,
+                "click_event": {
+                  "action": "copy_to_clipboard",
+                  "value": "{type:\"custom_item\",id:\"ID\",namespace:\"NAMESPACE\",count:1}"
+                }
+              },
+              " ",
+              {
+                "text": "item",
+                "color": "gray",
+                "underlined": true,
+                "click_event": {
+                  "action": "copy_to_clipboard",
+                  "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",count:1}"
+                }
+              },
+              " ",
+              {
+                "text": "item with components",
+                "color": "gray",
+                "underlined": true,
+                "click_event": {
+                  "action": "copy_to_clipboard",
+                  "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",predicates:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"strings must be in double and single quotes\"'}],count:1}"
+                }
+              },
+              " ",
+              {
+                "text": "item with components (strict)",
+                "color": "gray",
+                "underlined": true,
+                "click_event": {
+                  "action": "copy_to_clipboard",
+                  "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",components:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"strings must be in double and single quotes\"'}],count:1}"
+                }
+              },
               "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": ""
-            }
-          },
-          "\n",
-          {
-            "text": "Custom item as ingredient (todo)",
-            "underlined": true,
-            "extra": [
-              "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": ""
-            }
-          },
-          "\n",
-          {
-            "text": "Regular item with soft component check as ingredient (todo)",
-            "underlined": true,
-            "extra": [
-              "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": ""
-            }
+            ]
           },
           "\n\n",
           {
