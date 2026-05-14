@@ -203,6 +203,18 @@
               "\n"
             ]
           },
+          "\n",
+          [
+            "Define recipe results",
+            "\n",
+            {
+              "text": "with loot table <namespace>:eseframe_api/recipe/<id>",
+              "color": "gray",
+              "extra": [
+                "\n"
+              ]
+            }
+          ],
           "\n\n",
           {
             "text": "Craft as player",
