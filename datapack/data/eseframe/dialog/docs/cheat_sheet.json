@@ -205,25 +205,25 @@
           },
           "\n\n",
           {
-            "text": "Craft as player (todo)",
+            "text": "Craft as player",
             "underlined": true,
             "extra": [
               "\n"
             ],
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": ""
+              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: false}"
             }
           },
           {
-            "text": "Craft with block (todo)",
+            "text": "Craft with block",
             "underlined": true,
             "extra": [
               "\n"
             ],
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": ""
+              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: true}"
             }
           }
         ],
