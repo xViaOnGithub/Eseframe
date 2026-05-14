@@ -227,6 +227,7 @@
               "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: false}"
             }
           },
+          "\n",
           {
             "text": "Craft with block",
             "underlined": true,
