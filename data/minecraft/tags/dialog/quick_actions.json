@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "eseframe:guide"
+        "eseframe:addon_guide_selector"
     ]
 }

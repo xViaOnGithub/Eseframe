@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:dialog_list", 
+  "can_close_with_escape": true,
+  "pause": false,
+  "button_width": 150,
+  "columns": 2,
+  "dialogs": "#eseframe:guide",
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    }
+  },
+  "title": "Guide",
+  "external_title": "Eseframe Guide"
+}
