@@ -139,5 +139,14 @@
   },
   "title": "eseframe_api:v1/craft",
   "external_title": "eseframe_api:v1/craft",
-  "can_close_with_escape": true
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/api_reference/function/index"
+    }
+  }
 }
