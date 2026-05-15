@@ -1,6 +1,7 @@
 {
   "type": "minecraft:notice",
   "title": "Eseframe Documentation: Cheat Sheet",
+  "external_title": "Cheat Sheet (Needs testing)",
   "body": [
     {
       "type": "minecraft:plain_message",
