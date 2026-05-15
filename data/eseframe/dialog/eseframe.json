@@ -13,7 +13,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "eseframe:guide"
+      "dialog": "eseframe:addon_guide_selector"
     }
   },
   "columns": 3,
