@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:multi_action",
+  "type": "minecraft:dialog_list",
   "title": "Eseframe Documentation",
   "body": [
     {
@@ -19,23 +19,8 @@
     }
   },
   "columns": 1,
-  "actions": [
-    {
-      "label": "Tutorials (TODO)"
-    },
-    {
-      "label": "Cheat Sheet (Unfinished)",
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "eseframe:docs/cheat_sheet"
-      }
-    },
-    {
-      "label": "API Reference",
-      "action": {
-        "type": "show_dialog",
-        "dialog": "eseframe:docs/api_reference/index"
-      }
-    }
+  "dialogs": [
+    "eseframe:docs/cheat_sheet",
+    "eseframe:docs/api_reference/index"
   ]
 }
