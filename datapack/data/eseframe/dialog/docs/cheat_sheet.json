@@ -7,6 +7,13 @@
       "contents": [
         "",
         {
+          "text": "TODO: Test each copyable data, then make it have consistant spacing",
+          "bold": true,
+          "extra": [
+            "\n"
+          ]
+        },
+        {
           "text": "Click on underlined text to copy it's data to clipboard.",
           "italic": true,
           "extra": [
