@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Functions",
+  "external_title": "Functions",
+  "dialogs": [
+    "eseframe:docs/api_reference/function/v1/craft"
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/api_reference/index"
+    }
+  }
+}

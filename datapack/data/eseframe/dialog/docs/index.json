@@ -31,7 +31,11 @@
       }
     },
     {
-      "label": "API Reference (TODO)"
+      "label": "API Reference",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "eseframe:docs/api_reference/index"
+      }
     }
   ]
 }

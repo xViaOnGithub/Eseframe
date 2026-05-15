@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: API Reference",
+  "external_title": "API Reference",
+  "dialogs": [
+    "eseframe:docs/api_reference/function/index"
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/index"
+    }
+  }
+}
