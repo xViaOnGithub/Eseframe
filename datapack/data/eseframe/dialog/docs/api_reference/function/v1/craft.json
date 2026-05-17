@@ -69,7 +69,7 @@
             },
             " : ",
             {
-              "text": "When set to true, check for ingredients at and send results to the block that the function is invoked at",
+              "text": "The namespace the recipe was added under.",
               "color": "gray"
             },
             "\n"
@@ -85,7 +85,7 @@
             },
             " : ",
             {
-              "text": "The namespace the recipe was added under.",
+              "text": "When set to true, check for ingredients at and send results to the block that the function is invoked at",
               "color": "gray"
             },
             "\n"
