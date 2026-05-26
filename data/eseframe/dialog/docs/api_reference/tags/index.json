@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Tags",
+  "external_title": "Tags (TODO)",
+  "dialogs": [
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/api_reference/index"
+    }
+  }
+}

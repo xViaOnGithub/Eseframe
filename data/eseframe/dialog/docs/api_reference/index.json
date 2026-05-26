@@ -3,7 +3,8 @@
   "title": "Eseframe Documentation: API Reference",
   "external_title": "API Reference",
   "dialogs": [
-    "eseframe:docs/api_reference/function/index"
+    "eseframe:docs/api_reference/function/index",
+    "eseframe:docs/api_reference/tags/index"
   ],
   "exit_action": {
     "label": {
