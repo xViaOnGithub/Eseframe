@@ -2,6 +2,10 @@
   "type": "minecraft:dialog_list",
   "title": "Eseframe Documentation: API Reference",
   "external_title": "API Reference",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "TODO: This section also needs a catagory to include item proxies!\nRemove this body text after that is done."
+  },
   "dialogs": [
     "eseframe:docs/api_reference/function/index",
     "eseframe:docs/api_reference/tags/index"
