@@ -1,8 +1,10 @@
 {
   "type": "minecraft:dialog_list",
   "title": "Eseframe Documentation: Tags",
-  "external_title": "Tags (TODO)",
+  "external_title": "Tags",
   "dialogs": [
+    "eseframe:docs/api_reference/tags/dialog/index",
+    "eseframe:docs/api_reference/tags/function/index"
   ],
   "exit_action": {
     "label": {
