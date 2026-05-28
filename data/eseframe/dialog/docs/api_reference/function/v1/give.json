@@ -2,10 +2,100 @@
   "type": "minecraft:notice",
   "body": {
     "type": "minecraft:plain_message",
-    "contents": "TODO"
+    "contents": [
+      "",
+      "Gives a registered custom item to this player.\n",
+      "\n\n",
+      [
+        "",
+        {
+          "text": "Description",
+          "extra": [
+            "\n"
+          ],
+          "bold": true
+        },
+        {
+          "text": "",
+          "color": "gray",
+          "extra": [
+            "Inserts the specific amount of a registered custom item into the inventory of the player this command is invoked as, using the `loot give` command with a loot table generated from the custom item's data.\n"
+          ]
+        }
+      ],
+      "\n\n",
+      [
+        "",
+        {
+          "text": "Macro Keys",
+          "extra": [
+            "\n"
+          ],
+          "color": "blue",
+          "bold": true,
+          "underlined": true,
+          "click_event": {
+            "action": "open_url",
+            "url": "https://minecraft.wiki/w/Function_(Java_Edition)#Macros"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": "https://minecraft.wiki/w/Function_(Java_Edition)#Macros"
+          }
+        },
+        {
+          "text": "id",
+          "extra": [
+            " ",
+            {
+              "text": "string",
+              "italic": true
+            },
+            " : ",
+            {
+              "text": "Should match the \"id\" of the custom item",
+              "color": "gray"
+            },
+            "\n"
+          ]
+        },
+        {
+          "text": "namespace",
+          "extra": [
+            " ",
+            {
+              "text": "string",
+              "italic": true
+            },
+            " : ",
+            {
+              "text": "Should match the \"namespace\" of the custom item",
+              "color": "gray"
+            },
+            "\n"
+          ]
+        },
+        {
+          "text": "count",
+          "extra": [
+            " ",
+            {
+              "text": "integer",
+              "italic": true
+            },
+            " : ",
+            {
+              "text": "How many of the item to give to the player",
+              "color": "gray"
+            },
+            "\n"
+          ]
+        }
+      ]
+    ]
   },
   "title": "eseframe_api:v1/give",
-  "external_title": "eseframe_api:v1/give (TODO)",
+  "external_title": "eseframe_api:v1/give",
   "can_close_with_escape": true,
   "action": {
     "label": {
