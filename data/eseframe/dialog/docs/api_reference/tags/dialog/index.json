@@ -1,8 +1,9 @@
 {
   "type": "minecraft:dialog_list",
-  "title": "Eseframe Documentation: Dialog Tags (TODO)",
-  "external_title": "Dialog Tags (TODO)",
+  "title": "Eseframe Documentation: Dialog Tags",
+  "external_title": "Dialog Tags",
   "dialogs": [
+    "eseframe:docs/api_reference/tags/dialog/guide_additions"
   ],
   "exit_action": {
     "label": {
