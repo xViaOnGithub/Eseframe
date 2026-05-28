@@ -8,7 +8,8 @@
   },
   "dialogs": [
     "eseframe:docs/api_reference/function/index",
-    "eseframe:docs/api_reference/tags/index"
+    "eseframe:docs/api_reference/tags/index",
+    "eseframe:docs/api_reference/misc/index"
   ],
   "exit_action": {
     "label": {
