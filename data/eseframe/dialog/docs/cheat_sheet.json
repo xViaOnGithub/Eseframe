@@ -133,7 +133,84 @@
           }
         ],
         "\n\n\n",
+        "\n\n\n",
         [
+          "",
+          {
+            "text": "Custom Tag Recipes",
+            "extra": [
+              "\n"
+            ],
+            "bold": true
+          },
+          "\n",
+          [
+            "",
+            {
+              "text": "Add custom recipe to tag",
+              "underlined": true,
+              "extra": [
+                "\n"
+              ],
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": "function eseframe_api:v1/tag_recipe {id:\"RECIPE_ID\",namespace:\"RECIPE_NAMESPACE\",tag_id:\"TAG_ID\",tag_namespace:\"TAG_NAMESPACE\"}"
+              }
+            },
+            {
+              "text": "(in #eseframe_api:v1/register/recipe_tags)",
+              "color": "gray",
+              "extra": [
+                "\n",
+                "Tags are created automatically when set",
+                "\n"
+              ]
+            }
+          ],
+          "\n",
+          [
+            "Define recipe results",
+            "\n",
+            {
+              "text": "with loot table <namespace>:eseframe_api/recipe/<id>",
+              "color": "gray",
+              "extra": [
+                "\n"
+              ]
+            }
+          ],
+          "\n\n",
+          {
+            "text": "Craft first recipe as player",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: false}"
+            }
+          },
+          "\n",
+          {
+            "text": "Craft first valid recipe with block",
+            "underlined": true,
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: true}"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": [
+                [
           "",
           {
             "text": "Custom Recipes",
@@ -212,113 +289,72 @@
               "\n"
             ]
           },
-          "\n",
+          "\n\n",
           [
-            "Define recipe results",
+            "Set what items your recipe gives:",
             "\n",
             {
-              "text": "with loot table <namespace>:eseframe_api/recipe/<id>",
+              "text": "Create a loot table at <your_datapack>/data/<recipe_namespace>/loot_table/eseframe_api/recipe/<recipe_id>.json",
               "color": "gray",
-              "extra": [
-                "\n"
-              ]
+              "extra": ["\n"]
             }
           ],
           "\n\n",
-          {
-            "text": "Craft as player",
-            "underlined": true,
-            "extra": [
-              "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: false}"
-            }
-          },
-          "\n",
-          {
-            "text": "Craft with block",
-            "underlined": true,
-            "extra": [
-              "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: true}"
-            }
-          }
-        ],
-        "\n\n\n",
-        [
-          "",
-          {
-            "text": "Custom Tag Recipes",
-            "extra": [
-              "\n"
-            ],
-            "bold": true
-          },
-          "\n",
           [
             "",
             {
-              "text": "Add custom recipe to tag",
-              "underlined": true,
-              "extra": [
-                "\n"
-              ],
-              "click_event": {
-                "action": "copy_to_clipboard",
-                "value": "function eseframe_api:v1/tag_recipe {id:\"RECIPE_ID\",namespace:\"RECIPE_NAMESPACE\",tag_id:\"TAG_ID\",tag_namespace:\"TAG_NAMESPACE\"}"
-              }
+              "text": "Craft a recipe with a player's items:",
+              "color": "white",
+              "extra": ["\n"]
             },
             {
-              "text": "(in #eseframe_api:v1/register/recipe_tags)",
+              "text": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:false}",
               "color": "gray",
-              "extra": [
-                "\n",
-                "Tags are created automatically when set",
-                "\n"
-              ]
-            }
-          ],
-          "\n",
-          [
-            "Define recipe results",
-            "\n",
-            {
-              "text": "with loot table <namespace>:eseframe_api/recipe/<id>",
-              "color": "gray",
-              "extra": [
-                "\n"
-              ]
+              "underlined": true,
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": [
+                  "AS the player with the ingredients"
+                ]
+              },
+
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:false}"
+              }
             }
           ],
           "\n\n",
-          {
-            "text": "Craft first recipe as player",
-            "underlined": true,
-            "extra": [
-              "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: false}"
+          [
+            "",
+            {
+              "text": "Craft a recipe with a block's items:",
+              "color": "white",
+              "extra": ["\n"]
+            },
+            {
+              "text": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:true}",
+              "color": "gray",
+              "underlined": true,
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": [
+                  "AS the player to credit the crafting to",
+                  "\n",
+                  "AT the block with the ingredients"
+                ]
+              },
+
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:true}"
+              }
             }
-          },
-          "\n",
-          {
-            "text": "Craft first valid recipe with block",
-            "underlined": true,
-            "extra": [
-              "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id: \"ID\", namespace: \"NAMESPACE\", block: true}"
-            }
-          }
+          ]
         ]
       ]
     }
