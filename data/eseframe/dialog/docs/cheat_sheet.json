@@ -112,7 +112,7 @@
             "extra": [
               "\n",
               {
-                "text": "#<namespace>:eseframe_api/item/<id>/use_hold",
+                "text": "#<namespace>:eseframe_api/item/<id>/use_press",
                 "color": "gray"
               },
               "\n"
@@ -125,7 +125,7 @@
             "extra": [
               "\n",
               {
-                "text": "#<namespace>:eseframe_api/item/<id>/on_consume",
+                "text": "#<namespace>:eseframe_api/item/<id>/consume",
                 "color": "gray"
               },
               "\n"
