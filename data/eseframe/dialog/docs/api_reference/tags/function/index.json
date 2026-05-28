@@ -1,7 +1,7 @@
 {
   "type": "minecraft:dialog_list",
-  "title": "Eseframe Documentation: Function Tags (TODO)",
-  "external_title": "Function Tags (TODO)",
+  "title": "Eseframe Documentation: Function Tags",
+  "external_title": "Function Tags",
   "dialogs": [
     "eseframe:docs/api_reference/tags/function/v1/register/items",
     "eseframe:docs/api_reference/tags/function/v1/register/recipes",
