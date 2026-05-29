@@ -208,6 +208,42 @@
     },
     {
       "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "",
+          "italic": true
+        },
+        {
+          "text": "Click on ",
+
+          "extra": [
+            "",
+            {
+              "text": "underlined text",
+              "underlined": true,
+
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": "underlined text"
+              }
+            },
+            " to copy it to the clipboard.",
+            "\n"
+          ]
+        },
+        {
+          "text": "Some lines will give you extra info when you hover over them.",
+          "color": "gray",
+
+          "hover_event": {
+            "action": "show_text",
+            "value": "Tooltips are used to provide relevant details about the line; For example, a tooltip may include the context a function should be ran under."
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
       "width": 300,
       "contents": [
         [
