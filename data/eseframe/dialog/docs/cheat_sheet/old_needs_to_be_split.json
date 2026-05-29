@@ -499,7 +499,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "eseframe:docs/index"
+      "dialog": "eseframe:docs/cheat_sheet/index"
     }
   }
 }
