@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "TODO"
+  },
+  "title": "Eseframe Options",
+  "external_title": "Eseframe Options...",
+  "can_close_with_escape": true,
+  "after_action": "wait_for_response",
+  "pause": false,
+  "actions": [
+    {
+      "label": "TODO"
+    },
+    {
+      "label": "TODO"
+    }
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.done"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "minecraft:custom_options"
+    }
+  }
+}
