@@ -265,8 +265,8 @@
               "extra": ["\n"]
             },
             {
-              "text": "TODO: command to copy (dont forget to also have the final command copied when clicked)",
-              "color": "red",
+              "text": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}",
+              "color": "white",
               "underlined": true,
               "extra": ["\n"],
 
@@ -279,7 +279,7 @@
 
               "click_event": {
                 "action": "copy_to_clipboard",
-                "value": "INSERT COMMAND HERE"
+                "value": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}"
               }
             }
           ],
