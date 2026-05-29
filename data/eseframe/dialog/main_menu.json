@@ -26,9 +26,6 @@
       "label": "All Recipes (TODO)"
     },
     {
-      "label": "Content Editor (TODO)"
-    },
-    {
       "label": "GitHub Page",
       "action": {
         "type": "minecraft:open_url",

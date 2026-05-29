@@ -11,10 +11,10 @@
   "pause": false,
   "actions": [
     {
-      "label": "TODO"
+      "label": "Item/Recipe Maker (TODO)"
     },
     {
-      "label": "TODO"
+      "label": "Disabled Items/Recipes... (TODO)"
     }
   ],
   "exit_action": {
