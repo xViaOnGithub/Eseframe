@@ -21,7 +21,7 @@
   "columns": 1,
   "dialogs": [
     "eseframe:docs/tutorial/index",
-    "eseframe:docs/cheat_sheet",
+    "eseframe:docs/cheat_sheet/index",
     "eseframe:docs/api_reference/index"
   ]
 }

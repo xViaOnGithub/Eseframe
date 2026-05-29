@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Cheat Sheet",
+  "external_title": "Cheat Sheet (TODO)",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "TODO: the existing cheat sheet needs to be tested and split into pages"
+  },
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/index"
+    }
+  },
+  "columns": 1,
+  "dialogs": [
+    "eseframe:docs/cheat_sheet/old_needs_to_be_split"
+  ]
+}
