@@ -15,7 +15,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "eseframe:eseframe"
+      "dialog": "eseframe:main_menu"
     }
   },
   "columns": 1,
