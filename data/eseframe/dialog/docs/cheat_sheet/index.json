@@ -1,11 +1,7 @@
 {
   "type": "minecraft:dialog_list",
   "title": "Eseframe Documentation: Cheat Sheet",
-  "external_title": "Cheat Sheet (TODO)",
-  "body": {
-    "type": "minecraft:plain_message",
-    "contents": "TODO: the existing cheat sheet needs to be tested and split into pages"
-  },
+  "external_title": "Cheat Sheet",
   "exit_action": {
     "label": {
       "translate": "gui.back"
