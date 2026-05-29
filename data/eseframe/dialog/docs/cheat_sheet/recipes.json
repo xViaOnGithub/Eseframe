@@ -239,7 +239,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:false}",
+            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",block:false}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -253,7 +253,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:false}"
+              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",block:false}"
             }
           }
         ],
@@ -266,7 +266,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:true}",
+            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",block:true}",
             "color": "gray",
             "underlined": true,
 
@@ -281,7 +281,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id:\"ID\",namespace:\"NAMESPACE\",block:true}"
+              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",block:true}"
             }
           }
         ]
