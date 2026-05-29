@@ -214,7 +214,7 @@
           "",
           {
             "text": "Adding New Recipes",
-            "color": "white",
+            "color": "gold",
             "bold": true,
             "extra": ["\n"]
           },
@@ -276,7 +276,7 @@
           "",
           {
             "text": "Ingredients",
-            "color": "white",
+            "color": "gold",
             "bold": true,
             "extra": ["\n"]
           },
@@ -388,7 +388,7 @@
           "",
           {
             "text": "Crafting",
-            "color": "white",
+            "color": "gold",
             "bold": true,
             "extra": ["\n"]
           },
