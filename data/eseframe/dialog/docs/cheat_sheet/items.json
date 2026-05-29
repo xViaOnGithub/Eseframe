@@ -1,0 +1,253 @@
+{
+  "type": "minecraft:notice",
+  "title": "Eseframe Documentation: Cheat Sheet - Items",
+  "external_title": "Items (Needs testing)",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "",
+          "italic": true
+        },
+        {
+          "text": "Click on ",
+
+          "extra": [
+            "",
+            {
+              "text": "underlined text",
+              "underlined": true,
+
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": "underlined text"
+              }
+            },
+            " to copy it to the clipboard.",
+            "\n"
+          ]
+        },
+        {
+          "text": "Some lines will give you extra info when you hover over them.",
+          "color": "gray",
+
+          "hover_event": {
+            "action": "show_text",
+            "value": "Tooltips are used to provide relevant details about the line; For example, a tooltip may include the context a function should be ran under."
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": [
+        "",
+        {
+          "text": "Adding New Items",
+          "color": "gold",
+          "bold": true,
+          "extra": ["\n"]
+        },
+
+        "\n",
+
+        [
+          "",
+          {
+            "text": "Register an item:",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "function eseframe_api:v1/add_item {id:\"<item_id>\",namespace:\"<item_namespace>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}",
+            "color": "gray",
+            "underlined": true,
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "DURING function tag #eseframe_api:v1/register/items"
+              ]
+            },
+
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/add_item {id:\"<item_id>\",namespace:\"<item_namespace>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": [
+        "",
+        {
+          "text": "Getting items",
+          "color": "gold",
+          "bold": true,
+          "extra": ["\n"]
+        },
+
+        "\n",
+
+        [
+          "",
+          {
+            "text": "Give a player a custom item:",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "function eseframe_api:v1/give {id:\"<item_id>\",namespace:\"<item_namespace>\",count:1}",
+            "color": "gray",
+            "underlined": true,
+            "extra": ["\n"],
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "AS the player you want to give the item to",
+                "\n",
+                "Count must be a whole number and at least 1"
+              ]
+            },
+
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/give {id:\"<item_id>\",namespace:\"<item_namespace>\",count:1}"
+            }
+          }
+        ],
+        "\n",
+        [
+          "",
+          {
+            "text": "Custom data to make an Item Proxy:",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "{\"eseframe_api\":{\"item_proxy\":{\"id\":\"<item_id>\",\"namespace\":\"<item_namespace>\"}}}",
+            "color": "gray",
+            "underlined": true,
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "Create an item with this as it's \"minecraft:custom_data\" data component. It will be replaced with the real thing once a player picks it up."
+              ]
+            },
+
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "{\"eseframe_api\":{\"item_proxy\":{\"id\":\"<item_id>\",\"namespace\":\"<item_namespace>\"}}}"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": [
+        "",
+        {
+          "text": "Event Detection",
+          "color": "gold",
+          "bold": true,
+          "extra": ["\n"]
+        },
+
+        "\n",
+
+        [
+          "",
+          {
+            "text": "Do something when an item is consumed (thrown/eaten):",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/consume",
+            "color": "gray",
+            "extra": ["\n"],
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/consume.json",
+                "\n",
+                "The item must have components that make it consumable."
+              ]
+            }
+          }
+        ],
+        "\n",
+                [
+          "",
+          {
+            "text": "Do something when an item starts being used (\"right-clicked\"):",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/use_press",
+            "color": "gray",
+            "extra": ["\n"],
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/use_press.json",
+                "\n",
+                "The item must have components that make it consumable.",
+                "\n",
+                "The item must also not have an instant consume time."
+              ]
+            }
+          }
+        ],
+        "\n",
+                [
+          "",
+          {
+            "text": "Do something every tick an item is being used (\"right-clicked\"):",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/use_hold",
+            "color": "gray",
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/use_hold.json",
+                "\n",
+                "The item must have components that make it consumable.",
+                "\n",
+                "The item must also not have an instant consume time."
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ],
+  "inputs": [],
+  "after_action": "none",
+  "pause": false,
+  "action": {
+    "label": {
+      "translate": "gui.ok"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/cheat_sheet/index"
+    }
+  }
+}

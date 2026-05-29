@@ -17,6 +17,7 @@
   },
   "columns": 1,
   "dialogs": [
+    "eseframe:docs/cheat_sheet/items",
     "eseframe:docs/cheat_sheet/recipes",
     "eseframe:docs/cheat_sheet/old_needs_to_be_split"
   ]
