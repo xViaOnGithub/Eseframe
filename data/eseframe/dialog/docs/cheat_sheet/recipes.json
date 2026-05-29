@@ -1,7 +1,7 @@
 {
   "type": "minecraft:notice",
   "title": "Eseframe Documentation: Cheat Sheet - Recipes",
-  "external_title": "Recipes",
+  "external_title": "Recipes (Tag info needs testing)",
   "body": [
     {
       "type": "minecraft:plain_message",
@@ -282,6 +282,103 @@
             "click_event": {
               "action": "copy_to_clipboard",
               "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",block:true}"
+            }
+          }
+        ]
+      ]
+    },
+        {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": [
+        "",
+        {
+          "text": "Recipe Tags",
+          "color": "gold",
+          "bold": true,
+          "extra": ["\n"]
+        },
+
+        "\n",
+
+        [
+          "",
+          {
+            "text": "Tag a recipe:",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",tag_id:\"<recipe_tag_id>\",tag_namespace:\"<recipe_tag_namespace>\"}",
+            "color": "gray",
+            "underlined": true,
+            "extra": ["\n"],
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "DURING function tag #eseframe_api:v1/register/recipe_tags"
+              ]
+            },
+
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",tag_id:\"<recipe_tag_id>\",tag_namespace:\"<recipe_tag_namespace>\"}"
+            }
+          }
+        ],
+        "\n\n",
+        [
+          "",
+          {
+            "text": "Try to craft every tagged recipe with a player's items until one succeeds:",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_namespace>\",block:false}",
+            "color": "gray",
+            "underlined": true,
+            "extra": ["\n"],
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "AS the player with the ingredients"
+              ]
+            },
+
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_namespace>\",block:false}"
+            }
+          }
+        ],
+        "\n\n",
+        [
+          "",
+          {
+            "text": "Try to craft every tagged recipe with a block's items until one succeeds:",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_namespace>\",block:true}",
+            "color": "gray",
+            "underlined": true,
+
+            "hover_event": {
+              "action": "show_text",
+              "value": [
+                "AS the player to credit the crafting to",
+                "\n",
+                "AT the block with the ingredients"
+              ]
+            },
+
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_namespace>\",block:true}"
             }
           }
         ]
