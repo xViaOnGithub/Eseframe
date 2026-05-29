@@ -235,7 +235,7 @@
           "",
           {
             "text": "Craft a recipe with a player's items:",
-            "color": "gray",
+            "color": "white",
             "extra": ["\n"]
           },
           {
