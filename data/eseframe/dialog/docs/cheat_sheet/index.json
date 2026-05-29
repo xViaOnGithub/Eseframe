@@ -2,6 +2,10 @@
   "type": "minecraft:dialog_list",
   "title": "Eseframe Documentation: Cheat Sheet",
   "external_title": "Cheat Sheet",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Brief notes and clipboard-ready snipets of data/commands for every API feature."
+  },
   "exit_action": {
     "label": {
       "translate": "gui.back"
