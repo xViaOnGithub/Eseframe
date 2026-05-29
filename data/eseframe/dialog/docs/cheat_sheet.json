@@ -210,95 +210,180 @@
       "type": "minecraft:plain_message",
       "width": 300,
       "contents": [
-        "",
-        {
-          "text": "Custom Recipes",
-          "extra": [
-            "\n"
-          ],
-          "bold": true
-        },
-        "\n",
         [
           "",
           {
-            "text": "Add custom recipe (todo: click to copy)",
-            "underlined": true,
-            "extra": [
-              "\n"
-            ],
-            "click_event": {
-              "action": "copy_to_clipboard",
-              "value": ""
-            }
+            "text": "Adding New Recipes",
+            "color": "white",
+            "bold": true,
+            "extra": ["\n"]
           },
-          {
-            "text": "(in #eseframe_api:v1/register/recipes)",
-            "color": "gray",
-            "underlined": false,
-            "extra": [
-              "\n"
-            ]
-          }
-        ],
-        "\n",
-        {
-          "text": "Ingredients",
-          "extra": [
-            "\n",
+
+          "\n",
+
+          [
+            "",
             {
-              "text": "custom item",
-              "color": "gray",
+              "text": "Register a recipe:",
+              "color": "white",
+              "extra": ["\n"]
+            },
+            {
+              "text": "TODO: command to copy (dont forget to also have the final command copied when clicked)",
+              "color": "red",
               "underlined": true,
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": [
+                  "DURING function tag #eseframe_api:v1/register/recipes"
+                ]
+              },
+
               "click_event": {
                 "action": "copy_to_clipboard",
-                "value": "{type:\"custom_item\",id:\"ID\",namespace:\"NAMESPACE\",count:1}"
+                "value": "INSERT COMMAND HERE"
               }
-            },
-            " ",
+            }
+          ],
+          "\n\n",
+          [
+            "",
             {
-              "text": "item",
+              "text": "Set what items a recipe gives when crafted:",
+              "color": "white",
+              "extra": ["\n"]
+            },
+            {
+              "text": "Define loot table <recipe_namespace>:eseframe_api/recipe/<recipe_id>",
+              "color": "gray",
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": [
+                  "Path: <your_datapack>/data/<recipe_namespace>/loot_table/eseframe_api/recipe/<recipe_id>.json",
+                  "\n",
+                  "TIP: You can use Item Proxies to give a player a custom item when they craft your recipe!"
+                ]
+              }
+            }
+          ]
+        ],
+        "\n\n\n",
+        [
+          "",
+          {
+            "text": "Ingredients",
+            "color": "white",
+            "bold": true,
+            "extra": ["\n"]
+          },
+
+          "\n",
+
+          [
+            "",
+            {
+              "text": "Custom item added with Eseframe:",
+              "color": "white",
+              "extra": ["\n"]
+            },
+            {
+              "text": "{type:\"custom_item\",id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",count:1}",
               "color": "gray",
               "underlined": true,
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              },
+
+              "click_event": {
+                "action": "copy_to_clipboard",
+                "value": "{type:\"custom_item\",id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",count:1}"
+              }
+            }
+          ],
+          "\n\n",
+          [
+            "",
+            {
+              "text": "Regular item:",
+              "color": "white",
+              "extra": ["\n"]
+            },
+            {
+              "text": "{type:\"item\",item:\"minecraft:ITEM_ID\",count:1}",
+              "color": "gray",
+              "underlined": true,
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              },
+
               "click_event": {
                 "action": "copy_to_clipboard",
                 "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",count:1}"
               }
-            },
-            " ",
+            }
+          ],
+          "\n\n",
+          [
+            "",
             {
-              "text": "item with components",
+              "text": "Regular item with components:",
+              "color": "white",
+              "extra": ["\n"]
+            },
+            {
+              "text": "{type:\"item\",item:\"minecraft:ITEM_ID\",predicates:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"string values must be in double and single quotes\"'}],count:1}",
               "color": "gray",
               "underlined": true,
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              },
+
               "click_event": {
                 "action": "copy_to_clipboard",
-                "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",predicates:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"strings must be in double and single quotes\"'}],count:1}"
+                "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",predicates:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"string values must be in double and single quotes\"'}],count:1}"
               }
-            },
-            " ",
+            }
+          ],
+          "\n\n",
+          [
+            "",
             {
-              "text": "item with components (strict)",
+              "text": "Regular item with exact components:",
+              "color": "white",
+              "extra": ["\n"]
+            },
+            {
+              "text": "{type:\"item\",item:\"minecraft:ITEM_ID\",components:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"string values must be in double and single quotes\"'}],count:1}",
               "color": "gray",
               "underlined": true,
+              "extra": ["\n"],
+
+              "hover_event": {
+                "action": "show_text",
+                "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              },
+
               "click_event": {
                 "action": "copy_to_clipboard",
-                "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",components:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"strings must be in double and single quotes\"'}],count:1}"
+                "value": "{type:\"item\",item:\"minecraft:ITEM_ID\",components:[{id:\"minecraft:custom_data\",value:{key:\"value\"}},{id:\"minecraft:custom_name\",value:'\"string values must be in double and single quotes\"'}],count:1}"
               }
-            },
-            "\n"
+            }
           ]
-        },
-        "\n\n",
-        [
-          "Set what items your recipe gives:",
-          "\n",
-          {
-            "text": "Create a loot table at <your_datapack>/data/<recipe_namespace>/loot_table/eseframe_api/recipe/<recipe_id>.json",
-            "color": "gray",
-            "extra": ["\n"]
-          }
         ],
-        "\n\n",
+        "\n\n\n",
         [
           "",
           {
@@ -307,7 +392,9 @@
             "bold": true,
             "extra": ["\n"]
           },
-          
+
+          "\n",
+
           [
             "",
             {
