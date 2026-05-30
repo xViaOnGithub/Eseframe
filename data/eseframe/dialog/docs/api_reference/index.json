@@ -4,7 +4,7 @@
   "external_title": "API Reference",
   "body": {
     "type": "minecraft:plain_message",
-    "contents": "No nonsense technical overviews of all the features the Eseframe API has to offer."
+    "contents": "Technical synopses of every function, hook, tag, and feature provided by the Eseframe API."
   },
   "dialogs": [
     "eseframe:docs/api_reference/function/index",
