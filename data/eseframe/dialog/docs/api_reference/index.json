@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: API Reference",
+  "external_title": "API Reference",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Technical synopses of every function, hook, tag, and feature provided by the Eseframe API."
+  },
+  "dialogs": [
+    "eseframe:docs/api_reference/function/index",
+    "eseframe:docs/api_reference/tags/index",
+    "eseframe:docs/api_reference/misc/index"
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/index"
+    }
+  }
+}

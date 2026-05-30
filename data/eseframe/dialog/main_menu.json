@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": [
+      "Making custom items, recipes, and more easy since 2026!"
+    ]
+  },
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:addon_guide_selector"
+    }
+  },
+  "title": "Eseframe",
+  "external_title": "Eseframe",
+  "actions": [
+    {
+      "label": "All Items (TODO)"
+    },
+    {
+      "label": "All Recipes (TODO)"
+    },
+    {
+      "label": "GitHub Page",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://github.com/xViaOnGithub/Eseframe"
+      }
+    },
+    {
+      "label": "Tutorials & Documentation",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "eseframe:docs/index"
+      }
+    }
+  ]
+}

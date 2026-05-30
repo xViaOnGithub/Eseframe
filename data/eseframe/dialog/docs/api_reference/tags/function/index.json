@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Function Tags",
+  "external_title": "Function Tags",
+  "dialogs": [
+    "eseframe:docs/api_reference/tags/function/v1/register/items",
+    "eseframe:docs/api_reference/tags/function/v1/register/recipes",
+    "eseframe:docs/api_reference/tags/function/v1/register/recipe_tags",
+    "eseframe:docs/api_reference/tags/function/generated/item_consume",
+    "eseframe:docs/api_reference/tags/function/generated/item_use_press",
+    "eseframe:docs/api_reference/tags/function/generated/item_use_hold"
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/api_reference/tags/index"
+    }
+  }
+}

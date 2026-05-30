@@ -2,14 +2,13 @@
   "type": "minecraft:dialog_list", 
   "can_close_with_escape": true,
   "pause": false,
-  "button_width": 310,
-  "columns": 1,
-  "dialogs": "#eseframe_api:guide_additions",
+  "button_width": 150,
+  "columns": 2,
+  "dialogs": "#eseframe:addon_guide_selector",
   "exit_action": {
     "label": {
       "translate": "gui.back"
-    },
-    "width": 200
+    }
   },
   "title": "Guide",
   "external_title": "Eseframe Guide"

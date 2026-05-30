@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Dialog Tags",
+  "external_title": "Dialog Tags",
+  "dialogs": [
+    "eseframe:docs/api_reference/tags/dialog/guide_additions"
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:docs/api_reference/tags/index"
+    }
+  }
+}
