@@ -2,5 +2,5 @@
 execute unless data storage eseframe:cache initialize.include.Allowed run return run say [Eseframe API] Error! Function `eseframe_api:v1/include` is only allowed during function tag `#eseframe_api:v1/include`!
 
 
-# Placeholder for adding a "namespace" key to a list.
-say include success
+# Add the namespace to a list of addons
+$data modify storage eseframe:cache initialize.include.Addons append value {namespace:"$(namespace)"}
