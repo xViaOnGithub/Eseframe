@@ -1,0 +1,1 @@
+data modify storage eseframe:cache initialize.add_content.Allowed set value 1b
