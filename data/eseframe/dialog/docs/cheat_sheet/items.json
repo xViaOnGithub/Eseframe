@@ -68,7 +68,7 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function tag #eseframe_api:v1/register/items"
+                "DURING function <addon_namespace>:eseframe_api/content"
               ]
             },
 

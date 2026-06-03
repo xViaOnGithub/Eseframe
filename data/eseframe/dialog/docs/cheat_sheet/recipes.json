@@ -69,7 +69,7 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function tag #eseframe_api:v1/register/recipes"
+                "DURING function <addon_namespace>:eseframe_api/content"
               ]
             },
 
@@ -317,7 +317,7 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function tag #eseframe_api:v1/register/recipe_tags"
+                "DURING function <addon_namespace>:eseframe_api/content"
               ]
             },
 
