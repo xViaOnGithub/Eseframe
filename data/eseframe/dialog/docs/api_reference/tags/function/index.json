@@ -3,7 +3,7 @@
   "title": "Eseframe Documentation: Function Tags",
   "external_title": "Function Tags",
   "dialogs": [
-    "eseframe:docs/api_reference/tags/function/v1/add_content",
+    "eseframe:docs/api_reference/tags/function/v1/include",
     "eseframe:docs/api_reference/tags/function/generated/item_consume",
     "eseframe:docs/api_reference/tags/function/generated/item_use_press",
     "eseframe:docs/api_reference/tags/function/generated/item_use_hold"
