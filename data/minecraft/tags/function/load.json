@@ -14,14 +14,10 @@
 
 
         "eseframe:initialize/allow_register/start",
-
-        "#eseframe_api:v1/register/items",
-        "#eseframe_api:v1/register/recipes",
-        "#eseframe_api:v1/register/recipe_tags",
+        "#eseframe_api:v1/add_content",
+        "eseframe:initialize/allow_register/stop",
 
         "eseframe:registry/recipe/process/run",
-
-        "eseframe:initialize/allow_register/stop",
 
 
         "eseframe:dev_tools/menu/item/generate/run"
