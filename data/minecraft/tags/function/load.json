@@ -16,10 +16,10 @@
         "eseframe:initialize/include/allow",
         "#eseframe_api:v1/include",
         "eseframe:initialize/include/unallow",
-        "eseframe:initialize/include/list_addons/run",
+
 
         "eseframe:initialize/add_content/allow",
-        "#eseframe_api:v1/add_content",
+        "eseframe:initialize/include/add_content/run",
         "eseframe:initialize/add_content/unallow",
 
         "eseframe:registry/recipe/process/run",
