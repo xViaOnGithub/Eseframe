@@ -13,7 +13,9 @@
         "eseframe:registry/clear_buffer",
 
 
+        "eseframe:initialize/include/allow",
         "#eseframe_api:v1/include",
+        "eseframe:initialize/include/unallow",
 
         "eseframe:initialize/allow_register/start",
         "#eseframe_api:v1/add_content",
