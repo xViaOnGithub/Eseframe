@@ -1,5 +1,5 @@
 # Stop if used outside of the intended function tag (#eseframe_api:register/recipe_tags)
-execute unless data storage eseframe:cache {initialize:{registry:{allow_registry_register:"recipe_tag"}}} run return run say [Eseframe API] Error! Custom recipes can only be tagged during function tag `#eseframe_api:register/recipe_tags`.
+execute unless data storage eseframe:cache initialize.registry.allow_registry_register run return run say [Eseframe API] Error! Custom recipes can only be tagged during function tag `#eseframe_api:register/recipe_tags`.
 
 # Prevent duplicate id/namespace combonations within the recipe tag.
 $execute if data storage eseframe:registry recipe_tag[{id:"$(id)",namespace:"$(namespace)"}] run return run say [Eseframe API] Error! Custom recipe with id "$(id)" and namespace "$(namespace)" already has tag with id $(tag_id) and namespace $(tag_namespace).
