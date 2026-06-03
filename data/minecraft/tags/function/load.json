@@ -13,6 +13,8 @@
         "eseframe:registry/clear_buffer",
 
 
+        "#eseframe_api:v1/include",
+
         "eseframe:initialize/allow_register/start",
         "#eseframe_api:v1/add_content",
         "eseframe:initialize/allow_register/stop",
