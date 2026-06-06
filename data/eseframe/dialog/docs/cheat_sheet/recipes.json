@@ -88,14 +88,14 @@
             "extra": ["\n"]
           },
           {
-            "text": "Define loot table <recipe_namespace>:eseframe_api/recipe/<recipe_id>",
+            "text": "Define loot table <recipe_namespace>:eseframe_api/v1/recipe/<recipe_id>",
             "color": "gray",
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<recipe_namespace>/loot_table/eseframe_api/recipe/<recipe_id>.json",
-                "\n",
+                "Path: <your_datapack>/data/<recipe_namespace>/loot_table/eseframe_api/v1/recipe/<recipe_id>.json",
+                "\n\n",
                 "TIP: You can use Item Proxies to give a player a custom item when they craft your recipe!"
               ]
             }
