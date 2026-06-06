@@ -1,5 +1,5 @@
 # Only allow during function <namespace>:eseframe_api/content
-execute unless data storage eseframe:cache initialize.add_content.Allowed run return run say [Eseframe API] Error! Custom recipes can only be tagged during function `<addon_namespace>:eseframe_api/content`.
+execute unless data storage eseframe:cache initialize.include.add_content.Allowed run return run say [Eseframe API] Error! Custom recipes can only be tagged during function `<addon_namespace>:eseframe_api/content`.
 
 # Prevent duplicate id/namespace combonations within the recipe tag.
 $execute if data storage eseframe:registry recipe_tag[{id:"$(id)",namespace:"$(namespace)"}] run return run say [Eseframe API] Error! Custom recipe with id "$(id)" and namespace "$(namespace)" already has tag with id $(tag_id) and namespace $(tag_namespace).

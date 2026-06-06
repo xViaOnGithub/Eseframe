@@ -18,9 +18,7 @@
         "eseframe:initialize/include/unallow",
 
 
-        "eseframe:initialize/add_content/allow",
         "eseframe:initialize/include/add_content/run",
-        "eseframe:initialize/add_content/unallow",
 
         "eseframe:registry/recipe/process/run",
 
