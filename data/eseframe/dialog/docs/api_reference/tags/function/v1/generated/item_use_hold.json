@@ -4,8 +4,8 @@
     "type": "minecraft:plain_message",
     "contents": "TODO"
   },
-  "title": "#$(namespace):eseframe_api/item/$(id)/use_hold",
-  "external_title": "#$(namespace):eseframe_api/item/$(id)/use_hold (TODO)",
+  "title": "#$(namespace):eseframe_ap/v1/item/$(id)/use_hold",
+  "external_title": "#$(namespace):eseframe_api/v1/item/$(id)/use_hold (TODO)",
   "can_close_with_escape": true,
   "action": {
     "label": {

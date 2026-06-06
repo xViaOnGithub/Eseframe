@@ -4,9 +4,9 @@
   "external_title": "Function Tags",
   "dialogs": [
     "eseframe:docs/api_reference/tags/function/v1/include",
-    "eseframe:docs/api_reference/tags/function/generated/item_consume",
-    "eseframe:docs/api_reference/tags/function/generated/item_use_press",
-    "eseframe:docs/api_reference/tags/function/generated/item_use_hold"
+    "eseframe:docs/api_reference/tags/function/v1/generated/item_consume",
+    "eseframe:docs/api_reference/tags/function/v1/generated/item_use_press",
+    "eseframe:docs/api_reference/tags/function/v1/generated/item_use_hold"
   ],
   "exit_action": {
     "label": {
