@@ -9,7 +9,10 @@
     "eseframe:docs/api_reference/function/v1/tag_recipe",
     "eseframe:docs/api_reference/function/v1/give",
     "eseframe:docs/api_reference/function/v1/craft",
-    "eseframe:docs/api_reference/function/v1/craft_tag"
+    "eseframe:docs/api_reference/function/v1/craft_tag",
+    
+    "eseframe:docs/api_reference/function/v1_addon/include",
+    "eseframe:docs/api_reference/function/v1_addon/content"
   ],
   "exit_action": {
     "label": {
