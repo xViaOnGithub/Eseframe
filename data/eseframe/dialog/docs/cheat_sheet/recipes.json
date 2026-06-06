@@ -69,7 +69,7 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function <addon_namespace>:eseframe_api/content"
+                "DURING function <addon_namespace>:eseframe_api/v1/content"
               ]
             },
 
@@ -317,7 +317,7 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function <addon_namespace>:eseframe_api/content"
+                "DURING function <addon_namespace>:eseframe_api/v1/content"
               ]
             },
 

@@ -68,7 +68,7 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function <addon_namespace>:eseframe_api/content"
+                "DURING function <addon_namespace>:eseframe_api/v1/content"
               ]
             },
 
@@ -172,14 +172,14 @@
             "extra": ["\n"]
           },
           {
-            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/consume",
+            "text": "Add a function to #<item_namespace>:eseframe_api/v1/item/<item_id>/consume",
             "color": "gray",
             "extra": ["\n"],
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/consume.json",
+                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/v1/item/<item_id>/consume.json",
                 "\n",
                 "The item must have components that make it consumable."
               ]
@@ -195,14 +195,14 @@
             "extra": ["\n"]
           },
           {
-            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/use_press",
+            "text": "Add a function to #<item_namespace>:eseframe_api/v1/item/<item_id>/use_press",
             "color": "gray",
             "extra": ["\n"],
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/use_press.json",
+                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/v1/item/<item_id>/use_press.json",
                 "\n",
                 "The item must have components that make it consumable.",
                 "\n",
@@ -220,13 +220,13 @@
             "extra": ["\n"]
           },
           {
-            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/use_hold",
+            "text": "Add a function to #<item_namespace>:eseframe_api/v1/item/<item_id>/use_hold",
             "color": "gray",
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/use_hold.json",
+                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/v1/item/<item_id>/use_hold.json",
                 "\n",
                 "The item must have components that make it consumable.",
                 "\n",
