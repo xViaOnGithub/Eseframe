@@ -3,4 +3,4 @@ execute unless data storage eseframe:cache initialize.include.Allowed run return
 
 
 # Add the namespace to a list of addons
-$data modify storage eseframe:cache initialize.include.Addons append value {namespace:"$(namespace)"}
+$data modify storage eseframe:cache initialize.include.Addons append value {namespace:"$(addon)"}
