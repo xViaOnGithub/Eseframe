@@ -8,6 +8,11 @@ data remove storage eseframe:cache initialize.include.add_content.Step01.Content
 # Enable the functions that add content
 data modify storage eseframe:cache initialize.include.add_content.Allowed set value 1b
 
+# Store the namespace of this addon for use in the content-adding API functions 
+$data modify storage eseframe:cache initialize.include.add_content.Addon set value "$(namespace)"
+
+
+
 # Try to run the function for adding content
 $execute store success storage eseframe:cache initialize.include.add_content.Step01.ContentFunctionSuccess byte 1 run function $(namespace):eseframe_api/v1/content
 
