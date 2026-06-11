@@ -61,7 +61,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}",
+            "text": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -75,7 +75,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",namespace:\"<recipe_namespace>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}"
+              "value": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}"
             }
           }
         ],
