@@ -125,7 +125,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "{type:\"custom_item\",id:\"<item_id>\",namespace:\"<item_addon>\",count:1}",
+            "text": "{type:\"custom_item\",id:\"<item_id>\",addon:\"<item_addon>\",count:1}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -137,7 +137,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "{type:\"custom_item\",id:\"<item_id>\",namespace:\"<item_addon>\",count:1}"
+              "value": "{type:\"custom_item\",id:\"<item_id>\",addon:\"<item_addon>\",count:1}"
             }
           }
         ],
