@@ -131,7 +131,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "{\"eseframe_api\":{\"item_proxy\":{\"v1\":{\"id\":\"<item_id>\",\"namespace\":\"<item_addon>\"}}}}",
+            "text": "{\"eseframe_api\":{\"item_proxy\":{\"v1\":{\"id\":\"<item_id>\",\"addon\":\"<item_addon>\"}}}}",
             "color": "gray",
             "underlined": true,
 
@@ -144,7 +144,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "{\"eseframe_api\":{\"item_proxy\":{\"v1\":{\"id\":\"<item_id>\",\"namespace\":\"<item_addon>\"}}}}"
+              "value": "{\"eseframe_api\":{\"item_proxy\":{\"v1\":{\"id\":\"<item_id>\",\"addon\":\"<item_addon>\"}}}}"
             }
           }
         ]
