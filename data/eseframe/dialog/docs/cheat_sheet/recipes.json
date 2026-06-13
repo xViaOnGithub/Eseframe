@@ -239,7 +239,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_addon>\",block:false}",
+            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:false}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -253,7 +253,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_addon>\",block:false}"
+              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:false}"
             }
           }
         ],
@@ -266,7 +266,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_addon>\",block:true}",
+            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:true}",
             "color": "gray",
             "underlined": true,
 
@@ -281,7 +281,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",namespace:\"<recipe_addon>\",block:true}"
+              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:true}"
             }
           }
         ]
@@ -309,7 +309,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",namespace:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_namespace:\"<recipe_tag_addon>\"}",
+            "text": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -323,7 +323,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",namespace:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_namespace:\"<recipe_tag_addon>\"}"
+              "value": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}"
             }
           }
         ],
@@ -336,7 +336,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_addon>\",block:false}",
+            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:false}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -350,7 +350,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_addon>\",block:false}"
+              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:false}"
             }
           }
         ],
@@ -363,7 +363,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_addon>\",block:true}",
+            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:true}",
             "color": "gray",
             "underlined": true,
 
@@ -378,7 +378,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",namespace:\"<recipe_tag_addon>\",block:true}"
+              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:true}"
             }
           }
         ]
