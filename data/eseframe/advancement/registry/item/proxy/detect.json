@@ -1,16 +1,14 @@
 {
   "criteria": {
-    "has_item_proxy": {
+    "v1_item_proxy": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "predicates": {
               "minecraft:custom_data": {
-                "eseframe_api": {
-                  "v1": {
-                    "item_proxy": {}
-                  }
+                "eseframe_api-v1": {
+                  "item_proxy": {}
                 }
               }
             }
@@ -21,7 +19,7 @@
   },
   "requirements": [
     [
-      "has_item_proxy"
+      "v1_item_proxy"
     ]
   ],
   "rewards": {
