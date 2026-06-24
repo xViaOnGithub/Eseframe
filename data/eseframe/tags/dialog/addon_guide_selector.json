@@ -1,6 +1,6 @@
 {
     "values": [
         "eseframe:main_menu",
-        "#eseframe_api:v1/guide_additions"
+        "#eseframe_api-v1:guide_additions"
     ]
 }

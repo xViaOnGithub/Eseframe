@@ -14,7 +14,7 @@
 
 
         "eseframe:initialize/include/allow",
-        "#eseframe_api:v1/include",
+        "#eseframe_api-v1:include",
         "eseframe:initialize/include/unallow",
 
 
