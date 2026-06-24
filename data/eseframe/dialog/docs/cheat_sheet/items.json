@@ -61,20 +61,20 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/add_item {id:\"<item_id>\",namespace:\"<item_namespace>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}",
+            "text": "function eseframe_api:v1/add_item {id:\"<item_id>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}",
             "color": "gray",
             "underlined": true,
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function tag #eseframe_api:v1/register/items"
+                "DURING function <addon>:eseframe_api/v1/content"
               ]
             },
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/add_item {id:\"<item_id>\",namespace:\"<item_namespace>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}"
+              "value": "function eseframe_api:v1/add_item {id:\"<item_id>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}"
             }
           }
         ]
@@ -102,7 +102,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/give {id:\"<item_id>\",namespace:\"<item_namespace>\",count:1}",
+            "text": "function eseframe_api:v1/give {id:\"<item_id>\",addon:\"<item_addon>\",count:1}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -118,7 +118,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/give {id:\"<item_id>\",namespace:\"<item_namespace>\",count:1}"
+              "value": "function eseframe_api:v1/give {id:\"<item_id>\",addon:\"<item_addon>\",count:1}"
             }
           }
         ],
@@ -131,7 +131,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "{\"eseframe_api\":{\"item_proxy\":{\"id\":\"<item_id>\",\"namespace\":\"<item_namespace>\"}}}",
+            "text": "{\"eseframe_api\":{\"item_proxy\":{\"v1\":{\"id\":\"<item_id>\",\"addon\":\"<item_addon>\"}}}}",
             "color": "gray",
             "underlined": true,
 
@@ -144,7 +144,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "{\"eseframe_api\":{\"item_proxy\":{\"id\":\"<item_id>\",\"namespace\":\"<item_namespace>\"}}}"
+              "value": "{\"eseframe_api\":{\"item_proxy\":{\"v1\":{\"id\":\"<item_id>\",\"addon\":\"<item_addon>\"}}}}"
             }
           }
         ]
@@ -156,7 +156,41 @@
       "contents": [
         "",
         {
-          "text": "Event Detection",
+          "text": "Detect Items",
+          "color": "gold",
+          "bold": true,
+          "extra": ["\n"]
+        },
+
+        "\n",
+
+        [
+          "",
+          {
+            "text": "Custom data for a specific custom item:",
+            "color": "white",
+            "extra": ["\n"]
+          },
+          {
+            "text": "{eseframe_api:{v1:{custom_item:{id:\"<item_id>\",addon:\"<item_addon>\"}}}}",
+            "color": "gray",
+            "underlined": true,
+
+            "click_event": {
+              "action": "copy_to_clipboard",
+              "value": "{eseframe_api:{v1:{custom_item:{id:\"<item_id>\",addon:\"<item_addon>\"}}}}"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": [
+        "",
+        {
+          "text": "Detect Item Events",
           "color": "gold",
           "bold": true,
           "extra": ["\n"]
@@ -172,14 +206,14 @@
             "extra": ["\n"]
           },
           {
-            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/consume",
+            "text": "Add a function to #<item_addon>:eseframe_api/v1/item/<item_id>/consume",
             "color": "gray",
             "extra": ["\n"],
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/consume.json",
+                "Path: <your_datapack>/data/<item_addon>/tags/function/eseframe_api/v1/item/<item_id>/consume.json",
                 "\n",
                 "The item must have components that make it consumable."
               ]
@@ -195,14 +229,14 @@
             "extra": ["\n"]
           },
           {
-            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/use_press",
+            "text": "Add a function to #<item_addon>:eseframe_api/v1/item/<item_id>/use_press",
             "color": "gray",
             "extra": ["\n"],
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/use_press.json",
+                "Path: <your_datapack>/data/<item_addon>/tags/function/eseframe_api/v1/item/<item_id>/use_press.json",
                 "\n",
                 "The item must have components that make it consumable.",
                 "\n",
@@ -220,13 +254,13 @@
             "extra": ["\n"]
           },
           {
-            "text": "Add a function to #<item_namespace>:eseframe_api/item/<item_id>/use_hold",
+            "text": "Add a function to #<item_addon>:eseframe_api/v1/item/<item_id>/use_hold",
             "color": "gray",
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<item_namespace>/tags/function/eseframe_api/item/<item_id>/use_hold.json",
+                "Path: <your_datapack>/data/<item_addon>/tags/function/eseframe_api/v1/item/<item_id>/use_hold.json",
                 "\n",
                 "The item must have components that make it consumable.",
                 "\n",

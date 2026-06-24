@@ -4,8 +4,8 @@
     "type": "minecraft:plain_message",
     "contents": "TODO"
   },
-  "title": "#eseframe_api:v1/register/recipes",
-  "external_title": "#eseframe_api:v1/register/recipes (TODO)",
+  "title": "#$(addon):eseframe_api/v1/item/$(id)/use_hold",
+  "external_title": "#$(addon):eseframe_api/v1/item/$(id)/use_hold (TODO)",
   "can_close_with_escape": true,
   "action": {
     "label": {

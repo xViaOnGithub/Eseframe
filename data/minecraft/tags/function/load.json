@@ -12,18 +12,15 @@
 
         "eseframe:registry/clear_buffer",
 
-        "eseframe:initialize/allow_register/item",
-        "#eseframe_api:v1/register/items",
-        "eseframe:initialize/allow_register/stop",
 
-        "eseframe:initialize/allow_register/recipe",
-        "#eseframe_api:v1/register/recipes",
-        "eseframe:initialize/allow_register/stop",
+        "eseframe:initialize/include/allow",
+        "#eseframe_api:v1/include",
+        "eseframe:initialize/include/unallow",
+
+
+        "eseframe:initialize/include/add_content/run",
+
         "eseframe:registry/recipe/process/run",
-
-        "eseframe:initialize/allow_register/recipe_tag",
-        "#eseframe_api:v1/register/recipe_tags",
-        "eseframe:initialize/allow_register/stop",
 
 
         "eseframe:dev_tools/menu/item/generate/run"
