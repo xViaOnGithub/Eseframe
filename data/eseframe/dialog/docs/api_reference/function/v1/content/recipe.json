@@ -4,8 +4,8 @@
     "type": "minecraft:plain_message",
     "contents": "TODO"
   },
-  "title": "eseframe_api:v1/add_item",
-  "external_title": "eseframe_api:v1/add_item (TODO)",
+  "title": "eseframe_api:v1/content/recipe",
+  "external_title": "eseframe_api:v1/content/recipe (TODO)",
   "can_close_with_escape": true,
   "action": {
     "label": {
