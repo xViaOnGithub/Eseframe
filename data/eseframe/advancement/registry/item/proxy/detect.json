@@ -8,9 +8,7 @@
             "predicates": {
               "minecraft:custom_data": {
                 "eseframe_api": {
-                  "v1": {
-                    "item_proxy": {}
-                  }
+                  "item_proxy": {}
                 }
               }
             }

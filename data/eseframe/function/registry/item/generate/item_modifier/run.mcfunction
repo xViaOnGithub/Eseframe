@@ -20,4 +20,4 @@ data modify storage eseframe:cache tick.registry.item.generate.item_modifier.out
 $data modify storage eseframe:cache tick.registry.item.generate.item_modifier.output.functions[0].components set from storage eseframe:registry item[{id:"$(id)",namespace:"$(namespace)"}].components
 
 # Add the custom item's id and namespace to a fixed path (eseframe:{id,namespace}) in component "minecraft:custom_data"
-$data modify storage eseframe:cache tick.registry.item.generate.item_modifier.output.functions append value {function:"minecraft:set_custom_data",tag:{eseframe:{id:"$(id)",namespace:"$(namespace)"},eseframe_api:{v1:{custom_item:{id:"$(id)",addon:"$(namespace)"}}}}}
+$data modify storage eseframe:cache tick.registry.item.generate.item_modifier.output.functions append value {function:"minecraft:set_custom_data",tag:{eseframe:{id:"$(id)",namespace:"$(namespace)"},eseframe_api:{id:"$(id)",namespace:"$(namespace)"}}}

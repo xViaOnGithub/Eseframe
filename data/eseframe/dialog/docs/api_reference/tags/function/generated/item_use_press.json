@@ -4,8 +4,8 @@
     "type": "minecraft:plain_message",
     "contents": "TODO"
   },
-  "title": "#$(addon):eseframe_api/v1/item/$(id)/consume",
-  "external_title": "#$(addon):eseframe_api/v1/item/$(id)/consume (TODO)",
+  "title": "#$(namespace):eseframe_api/item/$(id)/use_press",
+  "external_title": "#$(namespace):eseframe_api/item/$(id)/use_press (TODO)",
   "can_close_with_escape": true,
   "action": {
     "label": {

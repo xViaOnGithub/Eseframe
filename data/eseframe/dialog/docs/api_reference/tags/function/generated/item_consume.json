@@ -4,8 +4,8 @@
     "type": "minecraft:plain_message",
     "contents": "TODO"
   },
-  "title": "eseframe_api:v1/include",
-  "external_title": "eseframe_api:v1/include (TODO)",
+  "title": "#$(namespace):eseframe_api/item/$(id)/consume",
+  "external_title": "#$(namespace):eseframe_api/item/$(id)/consume (TODO)",
   "can_close_with_escape": true,
   "action": {
     "label": {
@@ -13,7 +13,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "eseframe:docs/api_reference/function/index"
+      "dialog": "eseframe:docs/api_reference/tags/function/index"
     }
   }
 }

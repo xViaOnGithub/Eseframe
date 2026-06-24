@@ -60,7 +60,7 @@
           ]
         },
         {
-          "text": "addon",
+          "text": "namespace",
           "extra": [
             " ",
             {
@@ -69,7 +69,7 @@
             },
             " : ",
             {
-              "text": "The addon the desired item is added under",
+              "text": "Should match the \"namespace\" of the custom item",
               "color": "gray"
             },
             "\n"
