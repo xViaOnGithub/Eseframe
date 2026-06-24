@@ -61,7 +61,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/add_item {id:\"<item_id>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}",
+            "text": "function eseframe_api:v1/content/item {id:\"<item_id>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}",
             "color": "gray",
             "underlined": true,
 
@@ -74,7 +74,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/add_item {id:\"<item_id>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}"
+              "value": "function eseframe_api:v1/content/item {id:\"<item_id>\",components:{\"minecraft:item_name\":\"ITEM NAME\",\"minecraft:item_model\":\"minecraft:stick\",\"minecraft:max_stack_size\":64},properties:{}}"
             }
           }
         ]

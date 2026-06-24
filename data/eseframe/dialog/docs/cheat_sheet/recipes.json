@@ -61,7 +61,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}",
+            "text": "function eseframe_api:v1/content/recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -75,7 +75,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/add_recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}"
+              "value": "function eseframe_api:v1/content/recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}"
             }
           }
         ],
@@ -309,7 +309,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}",
+            "text": "function eseframe_api:v1/content/recipe_tag {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -323,7 +323,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/tag_recipe {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}"
+              "value": "function eseframe_api:v1/content/recipe_tag {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}"
             }
           }
         ],
