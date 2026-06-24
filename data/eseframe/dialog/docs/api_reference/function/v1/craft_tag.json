@@ -60,7 +60,7 @@
           ]
         },
         {
-          "text": "namespace",
+          "text": "addon",
           "extra": [
             " ",
             {
@@ -69,7 +69,7 @@
             },
             " : ",
             {
-              "text": "The namespace of the recipe tag to attempt recipes from",
+              "text": "The addon the recipe tag is added under",
               "color": "gray"
             },
             "\n"
