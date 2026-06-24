@@ -4,8 +4,8 @@
     "type": "minecraft:plain_message",
     "contents": "TODO"
   },
-  "title": "$(addon):eseframe_api/v1/content",
-  "external_title": "$(addon):eseframe_api/v1/content (TODO)",
+  "title": "#eseframe_api:v1/register/items",
+  "external_title": "#eseframe_api:v1/register/items (TODO)",
   "can_close_with_escape": true,
   "action": {
     "label": {
@@ -13,7 +13,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "eseframe:docs/api_reference/function/index"
+      "dialog": "eseframe:docs/api_reference/tags/function/index"
     }
   }
 }
