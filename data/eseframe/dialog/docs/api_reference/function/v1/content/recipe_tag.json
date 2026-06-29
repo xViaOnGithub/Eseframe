@@ -4,8 +4,8 @@
     "type": "minecraft:plain_message",
     "contents": "TODO"
   },
-  "title": "eseframe_api:v1/content/recipe_tag",
-  "external_title": "eseframe_api:v1/content/recipe_tag (TODO)",
+  "title": "eseframe_api-v1:content/recipe_tag",
+  "external_title": "eseframe_api-v1:content/recipe_tag (TODO)",
   "can_close_with_escape": true,
   "action": {
     "label": {

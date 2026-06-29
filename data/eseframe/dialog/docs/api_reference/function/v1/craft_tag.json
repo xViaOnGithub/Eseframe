@@ -16,7 +16,7 @@
           "bold": true
         },
         {
-          "text": "Attempts to craft every custom recipe in a custom recipe tag until either one succeeds or it runs out of recipes to try. It does this by invoking `eseframe_api:v1/craft` with every recipe in the tag.",
+          "text": "Attempts to craft every custom recipe in a custom recipe tag until either one succeeds or it runs out of recipes to try. It does this by invoking `eseframe_api-v1:craft` with every recipe in the tag.",
           "color": "gray",
           "extra": [
             "\n"
@@ -137,8 +137,8 @@
       ]
     ]
   },
-  "title": "eseframe_api:v1/craft_tag",
-  "external_title": "eseframe_api:v1/craft_tag",
+  "title": "eseframe_api-v1:craft_tag",
+  "external_title": "eseframe_api-v1:craft_tag",
   "can_close_with_escape": true,
   "action": {
     "label": {

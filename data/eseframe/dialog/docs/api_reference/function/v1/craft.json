@@ -16,7 +16,7 @@
           "bold": true
         },
         {
-          "text": "Attempts to perform a registered custom recipe. It starts by checking if the player has all of it's ingredients, and then if they do, it removes the ingredients from their inventory and gives them loot table `<addon>:eseframe_api/v1/recipe/<id>`.\n\nIf key `block` is set to true, it checks for ingredients and invokes the loot table at the block the function was invoked at instead.",
+          "text": "Attempts to perform a registered custom recipe. It starts by checking if the player has all of it's ingredients, and then if they do, it removes the ingredients from their inventory and gives them loot table `<addon>:eseframe_api-v1/recipe/<id>`.\n\nIf key `block` is set to true, it checks for ingredients and invokes the loot table at the block the function was invoked at instead.",
           "color": "gray",
           "extra": [
             "\n"
@@ -137,8 +137,8 @@
       ]
     ]
   },
-  "title": "eseframe_api:v1/craft",
-  "external_title": "eseframe_api:v1/craft",
+  "title": "eseframe_api-v1:craft",
+  "external_title": "eseframe_api-v1:craft",
   "can_close_with_escape": true,
   "action": {
     "label": {
