@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Tutorials",
+  "external_title": "Tutorials (TODO)",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "TODO"
+    }
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe_api-v1:docs/index"
+    }
+  },
+  "dialogs": [
+  ]
+}

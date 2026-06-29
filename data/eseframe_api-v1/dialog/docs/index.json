@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe API v1 Documentation",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        "Welcome to the Eseframe API v1 Docs!"
+      ]
+    }
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe:main_menu"
+    }
+  },
+  "columns": 1,
+  "dialogs": [
+    "eseframe_api-v1:docs/tutorial/index",
+    "eseframe_api-v1:docs/cheat_sheet/index",
+    "eseframe_api-v1:docs/api_reference/index"
+  ]
+}

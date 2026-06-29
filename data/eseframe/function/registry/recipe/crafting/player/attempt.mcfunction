@@ -15,7 +15,7 @@ execute if predicate {condition:"minecraft:value_check",value:{type:"minecraft:s
 $function eseframe:util/list_loop/run {pass_index:false,function:"eseframe:registry/recipe/crafting/player/steps/02_clear_ingredient",list_path:'storage eseframe:registry recipe[{id:"$(id)",namespace:"$(namespace)"}].ingredient_item_predicates'}
 
 # Give results
-$loot give @s loot $(namespace):eseframe_api/v1/recipe/$(id)
+$loot give @s loot $(namespace):eseframe_api-v1/recipe/$(id)
 
 
 # Return success

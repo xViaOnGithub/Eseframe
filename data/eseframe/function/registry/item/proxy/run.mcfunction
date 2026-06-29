@@ -1,5 +1,5 @@
 # Since this is invoked by an advancement, it runs AS and AT the player.
-# Called when an item with custom data {eseframe_api:{v1:{item_proxy:{}}}} is detected during an inventory change
+# Called when an item with custom data {eseframe_api-v1:{item_proxy:{}}} is detected during an inventory change
 
 
 # Clear leftover data from last time this advancement was called, incase it runs multiple times in one tick
