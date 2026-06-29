@@ -61,7 +61,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/content/recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}",
+            "text": "function eseframe_api-v1:content/recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -69,13 +69,13 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function <addon>:eseframe_api/v1/content"
+                "DURING function <addon>:eseframe_api-v1/content"
               ]
             },
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/content/recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}"
+              "value": "function eseframe_api-v1:content/recipe {id:\"<recipe_id>\",ingredients:[{type:\"item\",item:\"minecraft:stone\",count:1}],properties:{}}"
             }
           }
         ],
@@ -88,13 +88,13 @@
             "extra": ["\n"]
           },
           {
-            "text": "Define loot table <addon>:eseframe_api/v1/recipe/<recipe_id>",
+            "text": "Define loot table <addon>:eseframe_api-v1/recipe/<recipe_id>",
             "color": "gray",
 
             "hover_event": {
               "action": "show_text",
               "value": [
-                "Path: <your_datapack>/data/<addon>/loot_table/eseframe_api/v1/recipe/<recipe_id>.json",
+                "Path: <your_datapack>/data/<addon>/loot_table/eseframe_api-v1/recipe/<recipe_id>.json",
                 "\n\n",
                 "TIP: You can use Item Proxies to give a player a custom item when they craft your recipe!"
               ]
@@ -132,7 +132,7 @@
 
             "hover_event": {
               "action": "show_text",
-              "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              "value": "Add this to the \"ingredients\" key of function eseframe_api-v1:content/recipe"
             },
 
             "click_event": {
@@ -157,7 +157,7 @@
 
             "hover_event": {
               "action": "show_text",
-              "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              "value": "Add this to the \"ingredients\" key of function eseframe_api-v1:content/recipe"
             },
 
             "click_event": {
@@ -182,7 +182,7 @@
 
             "hover_event": {
               "action": "show_text",
-              "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              "value": "Add this to the \"ingredients\" key of function eseframe_api-v1:content/recipe"
             },
 
             "click_event": {
@@ -206,7 +206,7 @@
 
             "hover_event": {
               "action": "show_text",
-              "value": "Add this to the \"ingredients\" key of function eseframe_api:v1/add_recipe"
+              "value": "Add this to the \"ingredients\" key of function eseframe_api-v1:content/recipe"
             },
 
             "click_event": {
@@ -239,7 +239,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:false}",
+            "text": "function eseframe_api-v1:craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:false}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -253,7 +253,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:false}"
+              "value": "function eseframe_api-v1:craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:false}"
             }
           }
         ],
@@ -266,7 +266,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:true}",
+            "text": "function eseframe_api-v1:craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:true}",
             "color": "gray",
             "underlined": true,
 
@@ -281,13 +281,13 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:true}"
+              "value": "function eseframe_api-v1:craft {id:\"<recipe_id>\",addon:\"<recipe_addon>\",block:true}"
             }
           }
         ]
       ]
     },
-        {
+    {
       "type": "minecraft:plain_message",
       "width": 300,
       "contents": [
@@ -309,7 +309,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/content/recipe_tag {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}",
+            "text": "function eseframe_api-v1:content/recipe_tag {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -317,13 +317,13 @@
             "hover_event": {
               "action": "show_text",
               "value": [
-                "DURING function <addon>:eseframe_api/v1/content"
+                "DURING function <addon>:eseframe_api-v1/content"
               ]
             },
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/content/recipe_tag {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}"
+              "value": "function eseframe_api-v1:content/recipe_tag {id:\"<recipe_id>\",addon:\"<recipe_addon>\",tag_id:\"<recipe_tag_id>\",tag_addon:\"<recipe_tag_addon>\"}"
             }
           }
         ],
@@ -336,7 +336,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:false}",
+            "text": "function eseframe_api-v1:craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:false}",
             "color": "gray",
             "underlined": true,
             "extra": ["\n"],
@@ -350,7 +350,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:false}"
+              "value": "function eseframe_api-v1:craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:false}"
             }
           }
         ],
@@ -363,7 +363,7 @@
             "extra": ["\n"]
           },
           {
-            "text": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:true}",
+            "text": "function eseframe_api-v1:craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:true}",
             "color": "gray",
             "underlined": true,
 
@@ -378,7 +378,7 @@
 
             "click_event": {
               "action": "copy_to_clipboard",
-              "value": "function eseframe_api:v1/craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:true}"
+              "value": "function eseframe_api-v1:craft_tag {id:\"<recipe_tag_id>\",addon:\"<recipe_tag_addon>\",block:true}"
             }
           }
         ]
