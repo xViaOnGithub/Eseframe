@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Function Tags",
+  "external_title": "Function Tags",
+  "dialogs": [
+    "eseframe_api-v1:docs/api_reference/tags/function/v1/include",
+
+    "eseframe_api-v1:docs/api_reference/tags/function/v1_addon/item_consume",
+    "eseframe_api-v1:docs/api_reference/tags/function/v1_addon/item_use_press",
+    "eseframe_api-v1:docs/api_reference/tags/function/v1_addon/item_use_hold"
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe_api-v1:docs/api_reference/tags/index"
+    }
+  }
+}

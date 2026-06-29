@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Functions",
+  "external_title": "Functions",
+  "dialogs": [
+    "eseframe_api-v1:docs/api_reference/function/v1/include",
+    "eseframe_api-v1:docs/api_reference/function/v1/content/item",
+    "eseframe_api-v1:docs/api_reference/function/v1/content/recipe",
+    "eseframe_api-v1:docs/api_reference/function/v1/content/recipe_tag",
+    "eseframe_api-v1:docs/api_reference/function/v1/give",
+    "eseframe_api-v1:docs/api_reference/function/v1/craft",
+    "eseframe_api-v1:docs/api_reference/function/v1/craft_tag",
+    
+    "eseframe_api-v1:docs/api_reference/function/v1_addon/include",
+    "eseframe_api-v1:docs/api_reference/function/v1_addon/content"
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe_api-v1:docs/api_reference/index"
+    }
+  }
+}

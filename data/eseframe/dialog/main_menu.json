@@ -36,7 +36,7 @@
       "label": "Tutorials & Documentation",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "eseframe:docs/index"
+        "dialog": "eseframe_api-v1:docs/index"
       }
     }
   ]

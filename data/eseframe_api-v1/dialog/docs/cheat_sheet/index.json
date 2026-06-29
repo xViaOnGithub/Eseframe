@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Eseframe Documentation: Cheat Sheet",
+  "external_title": "Cheat Sheet",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Brief notes and clipboard-ready snipets of data/commands for every API feature."
+  },
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "eseframe_api-v1:docs/index"
+    }
+  },
+  "columns": 1,
+  "dialogs": [
+    "eseframe_api-v1:docs/cheat_sheet/items",
+    "eseframe_api-v1:docs/cheat_sheet/recipes"
+  ]
+}
