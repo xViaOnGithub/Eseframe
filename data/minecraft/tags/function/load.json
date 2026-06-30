@@ -7,10 +7,7 @@
         "#eseframe:initialize_scoreboards",
 
 
-        "eseframe:registry/clear",
-
-
-        "eseframe:registry/clear_buffer",
+        "eseframe:initialize/clear_buffer_and_registry",
 
 
         "eseframe:initialize/include/allow",
