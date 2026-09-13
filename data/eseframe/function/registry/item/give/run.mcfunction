@@ -7,4 +7,4 @@
 $function eseframe-item_loot_table_generator:run {id:"$(id)",namespace:"$(namespace)",count:$(count)}
 
 # Give this player the loot table
-function eseframe:registry/item/give/steps/01_give_loot with storage eseframe-item_generator:output
+function eseframe:registry/item/give/steps/01_give_loot with storage eseframe-item_loot_table_generator:output
