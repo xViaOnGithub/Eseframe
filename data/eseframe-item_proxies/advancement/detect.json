@@ -23,6 +23,6 @@
     ]
   ],
   "rewards": {
-    "function": "eseframe:registry/item/proxy/run"
+    "function": "eseframe-item_proxies:proxy/run"
   }
 }
