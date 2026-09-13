@@ -2,6 +2,6 @@
     "replace": false,
     "values": [
         "eseframe:clear_cache/tick",
-        "eseframe:registry/item/detect/using/tick"
+        "#eseframe-item_callbacks:tick"
     ] 
 }

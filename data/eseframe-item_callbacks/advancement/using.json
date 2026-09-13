@@ -1,7 +1,7 @@
 {
   "criteria": {
-    "consume": {
-      "trigger": "minecraft:consume_item",
+    "using": {
+      "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
           "predicates": {
@@ -15,10 +15,10 @@
   },
   "requirements": [
     [
-      "consume"
+      "using"
     ]
   ],
   "rewards": {
-    "function": "eseframe:registry/item/detect/consume/run"
+    "function": "eseframe-item_callbacks:using/run"
   }
 }
